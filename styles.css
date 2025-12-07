@@ -532,15 +532,6 @@ body {
     }
 }
 
-/* #PassEyeBtn {
-    width: 30px;
-    height: 30px;
-    margin-left: -30px; 
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    background-color: transparent;
-} */
 
 .LoginButtonsBox {
     position: relative;
@@ -722,16 +713,14 @@ body {
     .LoginButtonsBox {
         width: 65%;
     }
+
+    .LoginInput, .PasswInput  {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
-    .LoginInput {
-        font-size: 1.5rem;
-    }
-
-    .PasswInput {
-        font-size: 1.5rem;
-    }
 
     .SubmitButton {
         width: 15%;
@@ -759,7 +748,7 @@ body {
         font-size: 1.4rem;
     }
 
-        .LoginButtonsBox {
+    .LoginButtonsBox {
         width: 75%;
         margin-top: 0;
     }
@@ -1197,6 +1186,10 @@ body {
         margin-top: 7%;
     }
 
+    .SubmitButton, .RegistrateLink { 
+        font-size: 1.1rem;
+    }
+
     .RegistrateLink {
         margin-top: 8px;
     }
@@ -1243,7 +1236,7 @@ body {
         font-size: 0.9rem;
     }
     .LabelCenterTop {
-        font-size: 3rem;
+        font-size: 2.8rem;
         margin-top: 4vh;
     }
 

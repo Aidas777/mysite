@@ -25,7 +25,8 @@ window.onresize = () => {
 // }
 
 function AnimateLabelCenterTop() {
-const LabelCenterTop = document.getElementsByClassName('LabelCenterTop')[0];
+// const LabelCenterTop = document.getElementsByClassName('LabelCenterTop')[0];
+const LabelCenterTop = document.querySelector('.LabelCenterTop');
             setTimeout(function() {
                 LabelCenterTop.classList.add('hover-simulated');
             }, 300);
@@ -77,6 +78,7 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 // document.querySelector('link[href="style_"' + CurrentdMiddleOfPage + '".css"]').href = "style_" + CurrentdMiddleOfPage + ".css?v=" + Date.now();
                 document.title = 'Amiedra ' + (WhatToLoad.includes('aboutus') ? '- About Us' : '');
                 // LoadedMiddlePageName = WhatToLoad;
+                AnimateLabelCenterTop();
             }
 
         })
