@@ -620,6 +620,7 @@ body {
 .DemoLabelBottom {
     position: absolute;
     width: 30%;
+    height: 85px;
     bottom: 12%;
     top: 717px;
     margin-left: 35%;
@@ -629,14 +630,14 @@ body {
     text-align: center;
     opacity: 1;
 
-    /* animation-name: FadeIn;
+    animation-name: DemoFadeIn;
     animation-delay: 10s;
     animation-iteration-count: 1;
     animation-duration: 5s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
-@keyframes FadeIn {
+@keyframes DemoFadeIn {
     0% {    
         opacity: 1;
         letter-spacing: normal;
@@ -786,6 +787,7 @@ body {
 
     .DemoLabelBottom {
         font-size: 1rem;
+        height: 75px;
     }
 }
 
@@ -1251,6 +1253,7 @@ body {
 
     .DemoLabelBottom {
         font-size: 0.8rem;
+        height: 65px;
         top: 380px;
     }
 
