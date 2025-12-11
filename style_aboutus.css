@@ -86,42 +86,44 @@
     position: relative;
 
     font-size: 1.4rem;
-    color: rgb(15, 16, 27);
+    color: rgb(150, 150, 235);
     justify-content: center;
     text-align: justify;
     align-items: center;
-
-    /* background-color: rgb(24, 26, 44); */
-    /* border-radius: 2rem; */
-    /* border: none; */
-    /* box-shadow: inset 0 0 20px rgb(79, 86, 146); */
-
-    /* clip-path: ellipse(-80% 40%); */
+    flex-wrap: wrap;
 
     overflow: hidden;
 
     span {
-        /* background-color: blue; */
         animation-name: BlinkLetters;
         animation-duration: 2s;
         animation-direction: alternate-reverse;
-        /* animation-timing-function: ease-in-out; */
-        /* animation-fill-mode: both; */
         animation-iteration-count: infinite;
     }
+
+    /* span.bright {
+        animation-name: BlinkLetters;
+        animation-duration: 0.5s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    } */
+
 }
 
 @keyframes BlinkLetters {
     0% {
-        color: rgb(15, 16, 27);
-        transform: translateY(0);
+        color: rgb(150, 150, 235);
+        /* transform: translateY(0); */
 
         /* font-size: 1.4rem; */
     }
     100% {
-        color: rgb(150, 150, 235);
-        transform: translateY(-6px);
-        /* font-size: 1.6rem; */
+        /* color: rgb(226, 226, 255); */
+        /* color: rgb(226, 226, 255); */
+        /* letter-spacing:  1.2px; */
+        color: rgb(15, 16, 27);
+        /* transform: translateY(-6px); */
+        /* font-size: 1.41rem; */
     }
     
 }
@@ -198,6 +200,7 @@
         top: 0px;
         margin-top: 23px;
         font-size: 0.9rem;
+        justify-content: left;
     }
 
     .DemoLabelBottom {

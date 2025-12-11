@@ -94,7 +94,8 @@ function LoadPartToPage(WhatToLoad, Parameters) {
             ////////////////////////////////
 
             if (CurrentdMiddleOfPage.includes('aboutus')) {
-                AnimateBlinkWaveLetters(CurrentdMiddleOfPage, '.CenterBottom');
+                AnimateBlinkWaveLetters('.CenterBottom');
+                // AnimateBlinkLetter('.CenterBottom');
             }
 
         })
@@ -216,7 +217,8 @@ function GetPageTitle(WhatToLoad) {
     return 'Amiedra - ' + WhatToLoad;
 }
 
- function AnimateBlinkWaveLetters(CurrentdMiddleOfPage, OnElement) {
+
+function AnimateBlinkWaveLetters(OnElement) {
 
     const ElementForAnimation = document.querySelector(OnElement);
     if (!ElementForAnimation) return;
@@ -228,10 +230,42 @@ function GetPageTitle(WhatToLoad) {
         const Span = document.createElement('span');
 
         Span.innerHTML = (ElementForAnimationText[index] == ' ' ? '\u00A0' : ElementForAnimationText[index]);
-        Span.style.animationDelay = (index * 0.01) + 's';
+        Span.style.animationDelay = (index * 0.03) + 's';
         ElementForAnimation.appendChild(Span);
     }
- }  
+}
+
+
+function AnimateBlinkLetter(OnElement) {
+    
+    const TextElement = document.querySelector(OnElement);
+    const OriginalText = TextElement.innerHTML.trim();
+
+    let index = 0;
+
+    setInterval(() => {
+
+        let Result = '';
+
+    for (let i = 0; i < OriginalText.length; i++) {
+        if (i === index) {
+            Result = Result + "<span class='bright'>" + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]) + "</span>";
+        } else {
+            Result = Result + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]);
+        }
+    }
+
+    TextElement.innerHTML = Result;
+
+    index++;
+
+    if (index >= OriginalText.length) {
+        index = 0; // restart
+    }
+
+    }, 10);
+
+}  
 
 
 // REFRESH BOTTOM LABEL DATE IF CODE AT THE END IS ACTVATED (OTHERWISE DATE IS NOT DISPLAYED)
