@@ -97,7 +97,7 @@
 
     span {
         animation-name: BlinkLetters;
-        animation-duration: 4s;
+        animation-duration: 5s;
         animation-direction: alternate-reverse;
         animation-iteration-count: infinite;
     }
@@ -209,6 +209,22 @@
         font-size: 0.9rem;
         /* justify-content: left; */
     }
+
+    @keyframes BlinkLetters {
+    0% {
+        color: rgb(150, 150, 235);
+    }
+    50% {
+
+        color: rgb(15, 16, 27);
+        filter: blur(5px);
+        
+    }
+    100% {
+        color: rgb(150, 150, 235);
+    }
+    
+}
 
     .DemoLabelBottom {
         top: 408px;
