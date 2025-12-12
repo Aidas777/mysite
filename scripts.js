@@ -94,8 +94,8 @@ function LoadPartToPage(WhatToLoad, Parameters) {
             ////////////////////////////////
 
             if (CurrentdMiddleOfPage.includes('aboutus')) {
-                AnimateBlinkWaveLetters('.CenterBottom');
-                // AnimateBlinkLetter('.CenterBottom');
+                AnimateBlinkWaveAllLetters('.CenterBottom');
+                // AnimateBlinkOneLetter('.CenterBottom');
             }
 
         })
@@ -218,7 +218,7 @@ function GetPageTitle(WhatToLoad) {
 }
 
 
-function AnimateBlinkWaveLetters(OnElement) {
+function AnimateBlinkWaveAllLetters(OnElement) {
 
     const ElementForAnimation = document.querySelector(OnElement);
     if (!ElementForAnimation) return;
@@ -236,7 +236,8 @@ function AnimateBlinkWaveLetters(OnElement) {
 }
 
 
-function AnimateBlinkLetter(OnElement) {
+// CURRENTLY SWITCHED OFF (NOT USED)
+function AnimateBlinkOneLetter(OnElement) {
     
     const TextElement = document.querySelector(OnElement);
     const OriginalText = TextElement.innerHTML.trim();
@@ -247,24 +248,23 @@ function AnimateBlinkLetter(OnElement) {
 
         let Result = '';
 
-    for (let i = 0; i < OriginalText.length; i++) {
-        if (i === index) {
-            Result = Result + "<span class='bright'>" + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]) + "</span>";
-        } else {
-            Result = Result + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]);
+        for (let i = 0; i < OriginalText.length; i++) {
+            if (i === index) {
+                Result = Result + "<span class='bright'>" + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]) + "</span>";
+            } else {
+                Result = Result + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]);
+            }
         }
-    }
 
-    TextElement.innerHTML = Result;
+        TextElement.innerHTML = Result;
 
-    index++;
+        index++;
 
-    if (index >= OriginalText.length) {
-        index = 0; // restart
-    }
+        if (index >= OriginalText.length) {
+            index = 0; // restart
+        }
 
-    }, 10);
-
+    }, 30);
 }  
 
 
@@ -321,7 +321,7 @@ function GenerateStars(StarsQty) {
         && ((RandX < (PasswInputObject.offsetLeft ))
         || (RandY < (PasswInputObject.offsetTop)) 
         || (RandX > (PasswInputObject.offsetLeft + PasswInputObject.offsetWidth))
-        || (RandY > (PasswInputObject.offsetTop + PasswInputObject.offsetHeight + PasswInputObject.offsetTop))) 
+        || (RandY > (PasswInputObject.offsetTop + PasswInputObject.offsetHeight + InputFieldsBoxObject.offsetTop))) 
         )
         {
             LoginOuterBoxObject.appendChild(StarPoints);

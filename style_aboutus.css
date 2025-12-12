@@ -86,7 +86,8 @@
     position: relative;
 
     font-size: 1.4rem;
-    color: rgb(150, 150, 235);
+    /* color: rgb(150, 150, 235); */
+    color: rgb(180, 150, 235);
     justify-content: center;
     text-align: justify;
     align-items: center;
@@ -96,24 +97,25 @@
     overflow: hidden;
 
     span {
-        animation-name: BlinkLetters;
+        animation-name: BlinkAllLetters;
         animation-duration: 5s;
         animation-direction: alternate-reverse;
         animation-iteration-count: infinite;
     }
 
-    /* span.bright {
-        animation-name: BlinkLetters;
-        animation-duration: 0.5s;
+    span.bright {
+        animation-name: BlinkOneLetter;
+        animation-duration: 0.1s;
         animation-direction: alternate-reverse;
-        animation-iteration-count: infinite;
-    } */
+        /* animation-iteration-count: infinite; */
+    }
 
 }
 
-@keyframes BlinkLetters {
+@keyframes BlinkAllLetters {
     0% {
-        color: rgb(150, 150, 235);
+        /* color: rgb(150, 150, 235); */
+        color: rgb(180, 150, 235);
         /* transform: translateY(0); */
 
         /* font-size: 1.4rem; */
@@ -125,11 +127,25 @@
         color: rgb(15, 16, 27);
         /* transform: translateY(-6px); */
         /* font-size: 1.41rem; */
-        filter: blur(10px);
+        filter: blur(5px);
         
     }
     100% {
-        color: rgb(150, 150, 235);
+        /* color: rgb(150, 150, 235); */
+        color: rgb(180, 150, 235);
+    }
+    
+}
+
+@keyframes BlinkOneLetter {
+    0% {
+        color: rgb(158, 158, 233);
+        font-size: 1.4rem;
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        text-shadow: 5px 5px 5px rgb(255, 255, 255);
     }
     
 }
@@ -208,21 +224,25 @@
         margin-top: 23px;
         font-size: 0.9rem;
         /* justify-content: left; */
+        span {
+            animation-name: BlinkAllLetters;
+            animation-duration: 9s;
+        }
     }
 
-    @keyframes BlinkLetters {
-    0% {
+    @keyframes BlinkAllLetters {
+    /* 0% {
         color: rgb(150, 150, 235);
-    }
+    } */
     50% {
 
         color: rgb(15, 16, 27);
-        filter: blur(5px);
+        filter: blur(3px);
         
     }
-    100% {
+    /* 100% {
         color: rgb(150, 150, 235);
-    }
+    } */
     
 }
 
