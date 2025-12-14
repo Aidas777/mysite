@@ -103,7 +103,7 @@
         animation-iteration-count: infinite;
     }
 
-    span.bright {
+    .bright {
         animation-name: BlinkOneLetter;
         animation-duration: 0.1s;
         animation-direction: alternate-reverse;
@@ -223,28 +223,65 @@
         top: 0px;
         margin-top: 23px;
         font-size: 0.9rem;
+        text-align: center;
+        display: inline-block;
+        word-break: break-all;
+
         /* justify-content: left; */
-        span {
+        /* overflow: visible; */
+
+        /* span {  
             animation-name: BlinkAllLetters;
             animation-duration: 9s;
+        } */
+
+        .bright {
+
+            /* display: inline-block; */
+            color: rgb(255, 255, 255);
+            /* transform: scaleX(5); */
+
+            /* animation-name: BlinkOneLetter; */
+            animation-name: none;
+            /* font-weight: 700; */
+            /* animation-duration: 0.05s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-iteration-count: infinite; */
         }
     }
 
     @keyframes BlinkAllLetters {
-    /* 0% {
-        color: rgb(150, 150, 235);
-    } */
-    50% {
+        /* 0% {
+            color: rgb(150, 150, 235);
+        } */
+        50% {
 
-        color: rgb(15, 16, 27);
-        filter: blur(3px);
-        
-    }
-    /* 100% {
-        color: rgb(150, 150, 235);
-    } */
+            color: rgb(15, 16, 27);
+            filter: blur(1px);
+            
+        }
+        /* 100% {
+            color: rgb(150, 150, 235);
+        } */
     
-}
+    }
+
+    /* @keyframes BlinkOneLetter {
+        0% {
+            color: rgb(158, 158, 233);
+            transform: skewX(1);
+            transform: scaleX(1);
+            font-size: 0.9rem;
+        }
+        100% {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            transform: skewX(90deg);
+            transform: scaleX(2);
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px rgb(255, 255, 255);
+        }
+    } */
 
     .DemoLabelBottom {
         top: 408px;

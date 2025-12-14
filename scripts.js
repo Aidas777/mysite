@@ -94,8 +94,12 @@ function LoadPartToPage(WhatToLoad, Parameters) {
             ////////////////////////////////
 
             if (CurrentdMiddleOfPage.includes('aboutus')) {
-                AnimateBlinkWaveAllLetters('.CenterBottom');
-                // AnimateBlinkOneLetter('.CenterBottom');
+                // if (window.innerWidth >= 376) {
+                    AnimateBlinkWaveAllLetters('.CenterBottom');
+                // } else {
+                    // AnimateBlinkOneLetter('.CenterBottom');
+                    // AnimateBlinkWaveAllLetters('.CenterBottom');
+                // }
             }
 
         })
@@ -247,14 +251,21 @@ function AnimateBlinkOneLetter(OnElement) {
     setInterval(() => {
 
         let Result = '';
+        let ResultStart = '';
+        let ResultEnd = '';
+        let AnimationLetter = '';
 
         for (let i = 0; i < OriginalText.length; i++) {
-            if (i === index) {
-                Result = Result + "<span class='bright'>" + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]) + "</span>";
-            } else {
-                Result = Result + (OriginalText[i] == ' ' ? '\u00A0' : OriginalText[i]);
+            if (i == index) {
+
+                ResultStart = OriginalText.substring(0, index);
+                ResultEnd = OriginalText.substring(index + 1);
+
+                AnimationLetter = (OriginalText[index] == ' ') ? '\u00A0' : "<span class='bright'>" + OriginalText[index] + "</span>";
             }
         }
+
+        Result = ResultStart + AnimationLetter + ResultEnd;
 
         TextElement.innerHTML = Result;
 
@@ -264,8 +275,9 @@ function AnimateBlinkOneLetter(OnElement) {
             index = 0; // restart
         }
 
-    }, 30);
-}  
+    }, 10);
+
+}
 
 
 // REFRESH BOTTOM LABEL DATE IF CODE AT THE END IS ACTVATED (OTHERWISE DATE IS NOT DISPLAYED)
