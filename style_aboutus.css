@@ -257,7 +257,7 @@
         50% {
 
             color: rgb(15, 16, 27);
-            filter: blur(1px);
+            filter: blur(0);
             
         }
         /* 100% {
