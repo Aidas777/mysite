@@ -16,7 +16,7 @@
     margin-top: 50px;
     margin-bottom: 10px;
     width: 100%;
-    height: 120px;
+    height: 180px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -31,7 +31,11 @@
     .ListLine {
         display: flex;
         justify-content: right;
+        align-items: center;
         width: 60%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 28px;
         .MyLabel {
             width: 50%;
             text-align: right;
@@ -41,8 +45,8 @@
             text-align: left;
             margin-left: 5%;
             margin-right: 5%;
-            .CopyBtn {
-                margin-left: 30px;
+            .CopyBtn, .ShowTelBtn {
+                /* margin-left: 30px; */
                 margin-right: 10px; 
                 margin-top: 0;
                 padding-top: 0;
@@ -53,10 +57,13 @@
                 width: 100px;
                 height: 30px;
                 font-size: 1.2rem;
-                font-weight: 700;
+                font-weight: 200;
 
                 color: rgb(150, 150, 235);
                 background-color: rgb(15, 16, 27);
+                box-shadow:  0 0 20px inset rgba(150, 150, 235, 0.6);
+
+                cursor: pointer;
 
                 &:hover {
                     background-color: rgb(58, 62, 110);
@@ -75,6 +82,22 @@
             font-size: 2rem;
         }
     } */
+}
+
+.CopyBtn {
+    /* width: 100px; */
+    margin-left: 30px;
+}
+ 
+.ShowTelBtn {
+    /* width: 160px; */
+    margin-left: 0;
+    /* &:active {
+        width: 160px !important;
+    } */
+    &:not(:focus) {
+        width: 100px;
+    }
 }
 
 .CenterMiddleCO {

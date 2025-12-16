@@ -150,13 +150,11 @@ function Controller(ControlName, ActionName) {
         // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
         LoadPartToPage('contacts.html');
         ChangeNavBarElementColorWhenClicked(ControlName);
-
         
     } else if (ControlName == 'ServicesControl' && ActionName == 'OpenPage') {
         // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
         LoadPartToPage('services.html');
         ChangeNavBarElementColorWhenClicked(ControlName);
-
 
     } else if (ControlName != 'LoginControl' && ActionName == 'ShowMsg') {
         ShowMsg(GetTranslationsArrayByCurrentLanguage()['LoginPage']['MsgTexts']['ForDevelopment'], ColorRed);
@@ -176,20 +174,23 @@ function Controller(ControlName, ActionName) {
 
     // CLICK ON EN OR RU CONTROLS EVENTS
     } else if (ControlName == 'LT' && ActionName == 'ChangeLanguage') {
-        
         SwitchLanguageLetters(ControlName);
         ChangeLanguageByCurrent();
         MsgBoxObject.style.display = "none";
 
     } else if (ControlName == 'RU' && ActionName == 'ChangeLanguage')  {
-
         SwitchLanguageLetters(ControlName);
         ChangeLanguageByCurrent();
         MsgBoxObject.style.display = "none";
+
+    // COPY TEXT    
     } else if (ActionName == 'CopyTxt') {
-        console.log(ControlName, ActionName);
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['LoginPage']['MsgTexts']['ForDevelopment'], ColorGreen);
         ShowMsg(CopyTxt(ControlName), ColorGreen);
+
+    // SHOW TEL
+    } else if (ControlName == 'ShowTelBtn' && ActionName == 'ShowTelNr') {
+        // ShowMsg(CopyTxt(ControlName), ColorGreen);
+        ShowDataInElement(GetTelNr('a3ff7kpeoS6rtyw4z#eqr7ufsiwkS7satreyk8weyndriu7kera@ti5f2cchr4psje76'), ControlName);
         
     }
 
@@ -620,6 +621,53 @@ function ShowMsg(Msg, MsgColor) {
         MsgBoxObject.style.display = 'none';
         MsgBoxObject.removeAttribute("class", "FadeAway");
     }, 5100)
+}
+
+function GetTelNr(TelNr) {
+
+    let TelNrDec = '';
+    let index = 0;
+    TelNr = TelNr.replace('o', '0');
+
+    while (index < TelNr.length) {
+
+        if (TelNr[index] == 'a') {
+            TelNrDec = TelNrDec + '+';
+        } else if (TelNr[index] == 'S') {
+            TelNrDec = TelNrDec + ' ';
+        } else {
+            TelNrDec = TelNrDec + TelNr[index];
+        }
+        
+        index++;
+
+        if (index == 2 ) {index = 4 }
+        if (index == 5 ) {index = 8 }
+        if (index == 11) {index = 15}
+        if (index == 16) {index = 21}
+        if (index == 22) {index = 28}
+        if (index == 30) {index = 37}
+        if (index == 38) {index = 46}
+        if (index == 47) {index = 56}
+        if (index == 57) {index = 67}
+        
+    }
+    
+    return TelNrDec;
+
+}   
+
+function ShowDataInElement(DataToShow, ShowInClassElement) {
+    let ShowInElement = document.querySelector('.' + ShowInClassElement);
+    
+    if (ShowInElement.style.width != '160px') {
+        ShowInElement.style.width = '160px';
+        ShowInElement.innerHTML = DataToShow;
+    } else {
+        ShowInElement.style.width = '100px';
+        ShowInElement.innerHTML = 'Show';
+    }
+
 }
 
 function CopyTxt(CopyFromElement) {
