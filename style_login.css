@@ -222,7 +222,7 @@ body {
     background-color: rgb(21, 22, 39);
     /* background-color: rgb(57, 61, 102); */
     color: rgb(150, 150, 235);
-    border: 2px solid rgb(150, 150, 235);
+    border: 2px solid rgb(150, 150, 235, 0.4);
     border-radius: 2.8rem;
     /* border: none; */
     outline: none;
@@ -272,7 +272,7 @@ body {
     /* background-color: rgb(57, 61, 102); */
     color: rgb(150, 150, 235);
     box-shadow: 10px 10px 10px rgb(15, 16, 27);
-    border: 2px solid rgb(150, 150, 235);
+    border: 2px solid rgb(150, 150, 235, 0.4);
     border-radius: 2.8rem;
     /* border: none; */
     outline: none;
@@ -323,12 +323,14 @@ body {
     color: rgb(122, 122, 190);
     /* background-color: rgb(59, 59, 102); */
     /* background-color: rgb(24, 26, 44); */
-    background-color: rgb(24, 26, 44);
+    /* background-color: rgb(24, 26, 44); */
+    background-color: rgb(32, 34, 58);
     
-    box-shadow: 10px 10px 10px rgb(15, 16, 27), 0 0 20px inset rgba(150, 150, 235, 0.6);
+    /* box-shadow: 10px 10px 10px rgb(15, 16, 27), 0 0 20px inset rgba(150, 150, 235, 0.6); */
+    box-shadow: 10px 10px 10px rgb(15, 16, 27);
 
     border-radius: 1.8rem;
-    border: 2px solid rgb(150, 150, 235);
+    border: 2px solid rgb(150, 150, 235, 0.4);
     /* border: none; */
 
     cursor: pointer;
@@ -346,6 +348,7 @@ body {
 
 .SubmitButton:active {
     background-color: rgb(78, 57, 196);
+    /* background-color: rgb(65, 41, 59); */
     transition: 0s;
 }
 
@@ -375,10 +378,12 @@ body {
 
 .RegistrateLink:hover {
     /* background-color: rgb(78, 57, 196); */
-    box-shadow: 10px 10px 10px rgb(15, 16, 27), 0 0 20px inset rgba(150, 150, 235, 0.6);
-    background-color: rgb(58, 62, 110);
+    /* box-shadow: 10px 10px 10px rgb(15, 16, 27), 0 0 20px inset rgba(150, 150, 235, 0.6); */
+    box-shadow: 10px 10px 10px rgb(15, 16, 27);
+    /* background-color: rgb(58, 62, 110); */
+    background-color: rgb(32, 34, 58);
     text-shadow: 5px 5px 10px rgb(15, 16, 27);
-    border: 2px solid rgb(150, 150, 235);
+    border: 2px solid rgb(150, 150, 235, 0.4);
     transition: ease-in 0.3s;
 }
 

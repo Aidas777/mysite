@@ -1,7 +1,9 @@
 
 // REFRESH PAGE
 window.onresize = () => {
-    if (screen.width > 412) {
+    let MiddleOfPage = document.querySelector('.MiddleOfPage');
+
+    if (screen.width > 412 && MiddleOfPage.className == 'MiddleOfPage login') {
         location.reload();
     }
 }
@@ -190,7 +192,7 @@ function Controller(ControlName, ActionName) {
     // SHOW TEL
     } else if (ControlName == 'ShowTelBtn' && ActionName == 'ShowTelNr') {
         // ShowMsg(CopyTxt(ControlName), ColorGreen);
-        ShowDataInElement(GetTelNr('a3ff7kpeoS6rtyw4z#eqr7ufsiwkS7satreyk8weyndriu7kera@ti5f2cchr4psje76'), ControlName);
+        ShowDataInElement(GetTelNr('a3ff7k9eoS6rtyw4z#eqr7ufsiwkS7sa35eyk8weyn2riu7kera@ti5f2c1hr4psje76'), ControlName);
         
     }
 
@@ -660,8 +662,8 @@ function GetTelNr(TelNr) {
 function ShowDataInElement(DataToShow, ShowInClassElement) {
     let ShowInElement = document.querySelector('.' + ShowInClassElement);
     
-    if (ShowInElement.style.width != '160px') {
-        ShowInElement.style.width = '160px';
+    if (ShowInElement.style.width != '220px') {
+        ShowInElement.style.width = '220px';
         ShowInElement.innerHTML = DataToShow;
     } else {
         ShowInElement.style.width = '100px';
