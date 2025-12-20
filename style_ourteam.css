@@ -199,11 +199,12 @@
 }
 
     .DemoLabelBottom {
-        top: 395px;
-        font-size: 0.7rem;
+        top: 408px;
+        font-size: 0.75rem;
     }
 
     .LabelsBottomRightBox { 
-        top: 465px;
+        top: 470px;
     }
+    
 }

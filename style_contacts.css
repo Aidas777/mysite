@@ -207,7 +207,7 @@
     .CenterTopCO {
         font-size: 1.1rem;
         height: 28vh;
-        margin-top: 5px;    
+        margin-top: 5vh;    
         margin-bottom: 0;
         text-align: center;
 
@@ -247,8 +247,9 @@
         }
     }
 
-    .CenterMiddle {
-        height: 100px;
+    .CenterMiddleCO {
+        height: 1vh;
+        margin-top: 15px;
         flex-flow: column;
     }
 
@@ -268,15 +269,32 @@
 
     .CenterBottomCO {
         top: 0px;
-        font-size: 0.8rem;
+        margin-top: 5px;
+        font-size: 1.8rem;
+        height: 32px;
+        text-shadow: 0 0 50px rgb(150, 150, 235), 10px 3px 9px rgb(0, 0, 0);
+        /* box-shadow: inset -20px -3px 0 rgba(150, 150, 235, 0.6); */
     }
 
+    .CenterBottomCO::after {
+    content: '';
+    border-radius: 50%;
+    height: 25px;
+    width: 100%;
+    position: absolute;
+    box-shadow: inset -15px -3px 0 rgba(150, 150, 235, 0.3) , inset -25px -5px 0 rgba(94, 94, 165, 0.3);
+    border-radius: 50%;
+    top: -10%;
+    z-index: -1;
+}
+
     .DemoLabelBottom {
-        top: 390px;
-        font-size: 0.7rem;
+        /* top: 395px; */
+        top: 408px;
+        font-size: 0.75rem;
     }
 
     .LabelsBottomRightBox {
-        top: 465px;
+        top: 470px;
     }
 }
