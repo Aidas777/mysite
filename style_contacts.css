@@ -13,7 +13,7 @@
 .CenterTopCO {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
+    margin-top: 8vh;
     margin-bottom: 10px;
     width: 100%;
     height: 180px;
@@ -116,7 +116,7 @@
 
 .CenterMiddleCO {
     width: 100%;
-    height: 50px;
+    height: 70px;
     margin-top: 40px;
     display: flex;
     position: relative;
@@ -132,7 +132,7 @@
 }
 
 .CenterBottomCO {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     width: 100%;
     height: 100px;
@@ -142,7 +142,40 @@
     font-size: 1.4rem;
     color: rgb(150, 150, 235);
     justify-content: center;
-    text-align: center;
+    text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    position: relative;
+
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Montez", cursive;
+    /* color: rgb(150, 150, 235); */
+    color: rgb(150, 150, 235, 0.8);
+    justify-content: center;
+    align-items: self-end;
+    text-shadow: 0 0 50px rgb(150, 150, 235), 10px 3px 9px rgb(0, 0, 0);
+}
+
+.CenterBottomCO::after {
+    content: '';
+    border-radius: 50%;
+    /* height: 30px; */ 
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    box-shadow: inset -50px -10px 0 rgba(150, 150, 235, 0.3) , inset -60px -10px 0 rgba(94, 94, 165, 0.3);
+    border-radius: 50%;
+    top: -3%;
+    z-index: -1;
+}
+
+.DemoLabelBottom {
+    top: 85vh;
 }
 
 
@@ -154,7 +187,7 @@
     .CenterTopCO {
         font-size: 1.4rem;
         p {
-            margin-top: 3px;
+            margin-top: 3px;    
             margin-bottom: 3px;
             b {
                 font-size: 1.8rem;

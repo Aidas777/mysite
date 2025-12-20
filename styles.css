@@ -93,16 +93,6 @@ body {
     }
 }
 
-/* .LoginControl {
-    color: rgba(117, 117, 182, 0.6) !important;
-    &:hover {
-        .glow {
-            background-color: transparent !important;
-            transition: none !important;
-        }
-    }
-} */
-
 .glow {
     content: '';
     width: 10px;

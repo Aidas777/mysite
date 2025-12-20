@@ -60,9 +60,18 @@ const LanguagesFullArray =
                     "CenterTop" : "AAA"
                 }
             }
+        ,
+
+        "AllPages" :
+            {
+                "DemoLabelBottom" : "Tai demonstracinė svetainė. Adaptyvi ekrano dydžiui." + 
+                    "<br>Pabandykite pakeisti naršyklės lango dydį,<br>išbandykite įvairius mygtukus, nuorodas,<br>perjunkite naršymo puslapius." +
+                    "<br>Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo."
+            }
         }
     ,
 
+    
 /// RU /// RU /// RU ///
     "StringsForLanguageChangeToRU" : 
     
@@ -119,9 +128,17 @@ const LanguagesFullArray =
                     "LeftSide" : "Amiedra LT is AboutUsPage"
                 }
             }
-        }
+        ,
 
+        "AllPages" :
+            {
+                "DemoLabelBottom" : "Это демонстрационный сайт. Полностью адаптивный.<br>Попробуйте изменить размер окна браузера," +
+                "<br>изпробуйте различные элементы управления, переключитесь между страницами навигации," +
+                "<br>также попробуйте изменить язык или проверьте на телефоне.<br>Каждый день мы учимся чему-то новому."
+            }
+        }
     ,
+
 
 /// EN /// EN /// EN ///
     "StringsForLanguageChangeToEN" : 
@@ -177,5 +194,24 @@ const LanguagesFullArray =
                     "LeftSide" : "Amiedra LT is AboutUsPage"
                 }
             }
+        ,
+
+        "AllPages" :
+            {
+                "DemoLabelBottom" : "This is a Demo website. Fully responsive.<br>Try to change browser's window size," +
+                "<br>interact with variuos controls, switch naviagion pages," +
+                "<br>also try to change language or check on phone.<br>Each day we learn something new."
+            }
+        
+        }
+
+    
+        ,
+
+        "FileNamesDecoder" :
+        {
+            'login': 'LoginPage', 'aboutus': 'AboutUsPage',
+            'ourteam' : 'OurTeamPage', 'services' : 'ServicesPage',
+            'contacts' : 'ContactsPage', 'bottom' : 'bottom'
         }
     }

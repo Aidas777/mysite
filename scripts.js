@@ -41,18 +41,14 @@ const LabelCenterTop = document.querySelector('.LabelCenterTop');
 function LoadPartToPage(WhatToLoad, Parameters) {
         
     let CurrentdMiddleOfPage = WhatToLoad.replace('.html','');
-    const FileNameDecoding = (
-        {
-        'login': 'LoginPage', 'aboutus': 'AboutUsPage',
-        'ourteam' : 'OurTeamPage', 'services' : 'ServicesPage',
-        'contacts' : 'ContactsPage', 'bottom' : 'bottom'
-     }
-     [CurrentdMiddleOfPage]) ?? 'Unknown';
 
-    CurrentdMiddleOfPage = FileNameDecoding;
-
-    // console.log(CurrentdMiddleOfPage + ' ||| ' + FileNameDecoding);
-
+    // FILE NAME DECODER (DATA IS IN LANGUAGES.JS)
+    CurrentdMiddleOfPage = LanguagesFullArray['FileNamesDecoder'][CurrentdMiddleOfPage];
+    if (CurrentdMiddleOfPage == undefined) {
+        console.log("%cERROR !!! : '" + WhatToLoad.replace('.html','') +
+        "' WAS NOT FOUND IN FILES DECODER (in Languages.js file -> in FileNamesDecoder section) !!! ERROR",
+        'color: red; font-weight: bold;');
+    }
 
     fetch(WhatToLoad)
         .then(response => response.text())
@@ -117,7 +113,7 @@ function LoadPartToPage(WhatToLoad, Parameters) {
             }
 
         })
-        .catch(error => console.error('Error loading ' + WhatToLoad + ', something is wrong, GREICIAUISIAI REIKIA LEISTI PER SERVERI:', error));
+        .catch(error => console.error('Error loading ' + WhatToLoad + ', something is wrong,', error));
 }
 
 
@@ -241,6 +237,8 @@ function GetPageTitle(WhatToLoad) {
         WhatToLoad = 'Contacts';
     } else if (WhatToLoad.includes('login')) {
         WhatToLoad = 'Login';
+    } else if (WhatToLoad.includes('services')) {
+        WhatToLoad = 'My Projects';
     }
 
     return 'Amiedra - ' + WhatToLoad;
@@ -523,8 +521,22 @@ function ChangeLanguageByCurrent() {
     for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
 
         ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+        // ObjectForLanguageChange = document.querySelector(key)[0];
         ObjectForLanguageChange.style.fontFamily = value;
 
+    }
+
+    // TRANSLATING DemoLabelBottom
+    ElementsPropertyToChange = 'DemoLabelBottom';
+    TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()['AllPages'];
+    
+    if (!TitlesArrayByCurrentLanguage) {
+        console.log("%cERROR !!! : 'AllPages' SECTION FOR THIS LANGUAGE WAS NOT FOUND IN FILES DECODER (in Languages.js file) !!! ERROR",
+        'color: red; font-weight: bold;');
+        return;
+    } else {
+        ObjectForLanguageChange = document.querySelector('.' + ElementsPropertyToChange);
+        ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage[ElementsPropertyToChange];
     }
 
     AnimateLabelCenterTop();
@@ -537,20 +549,16 @@ function GetTranslationsArrayByCurrentLanguage() {
     const LTMenuControl = document.getElementsByClassName('LT')[0];
     const RUMenuControl = document.getElementsByClassName('RU')[0];
 
-    // console.log(LTMenuControl.innerHTML);
-    // console.log(RUMenuControl.innerHTML);
-    
-
     if (LTMenuControl.innerHTML == "EN") {
-        // return ReadFromJson('StringsForLanguageChangeToLT');
+        // LT');
         return LanguagesFullArray['StringsForLanguageChangeToLT'];
 
     } else if (RUMenuControl.innerHTML == "EN") {
-        // return ReadFromJson('StringsForLanguageChangeToRU');
+        // RU');
         return LanguagesFullArray['StringsForLanguageChangeToRU'];
 
     } else {
-        // return ReadFromJson('StringsForLanguageChangeToEN');
+        // EN');
         return LanguagesFullArray['StringsForLanguageChangeToEN'];
         
     }
