@@ -107,12 +107,7 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 // if (window.innerWidth >= 376) {
                     // AnimateBlinkWaveAllLetters('.CenterBottomAU');
                     AnimateBlinkWords('.CenterBottomAU');
-                    
-                // } else {
                     // AnimateBlinkOneLetter('.CenterBottom');
-                    // AnimateBlinkWaveAllLetters('.CenterBottom');
-                    // AnimateBlinkWords('.CenterBottomAU');
-                    
                 // }
             }
 
@@ -129,6 +124,7 @@ function Controller(ControlName, ActionName) {
     const HamburgerControl = document.querySelector('.Hamburger');
     const MenuLabelObject = document.querySelector('.MenuLabel');
     const PasswInputObject = document.querySelector('.PasswInput');
+    const MiddleOfPageObject = document.querySelector('.MiddleOfPage');
 
     // const DemoLabelBottomObject = document.getElementsByClassName('DemoLabelBottom')[0];
     // const NavigationBarObject = document.getElementsByClassName('NavigationBar')[0];
@@ -212,6 +208,7 @@ function Controller(ControlName, ActionName) {
     // AFTER CLICK ON HAMBURGER MENU ITEM WE CLOSE HAMBURGER MENU IF IT WAS OPEN
     if ((NavigationBarAreaObject.className == 'NavigationBarArea active') && (ControlName != 'LT' && ControlName != 'RU' && ControlName != 'EN')) {
         NavigationBarAreaObject.classList.remove('active');
+        
     }
 
     //HAMBURGER OPEN MENU
@@ -220,6 +217,7 @@ function Controller(ControlName, ActionName) {
     } else if ((HamburgerControl.className == 'Hamburger active' || MenuLabelObject.className == 'MenuLabel active') && (ControlName != 'LT' && ControlName != 'RU' && ControlName != 'EN')) {
         HamburgerControl.classList.remove('active');
         MenuLabelObject.classList.remove('active');
+        MiddleOfPageObject.classList.remove('active');
         // DemoLabelBottomObject.style.filter = 'none';
     }
 
@@ -273,7 +271,7 @@ function AnimateBlinkWords(OnElement) {
     const ElementForAnimation = document.querySelector(OnElement);
     if (!ElementForAnimation) return;
 
-    let WindowWidth = window.innerWidth;
+    // let WindowWidth = window.innerWidth;
 
     let ElementForAnimationText = ElementForAnimation.textContent.trim();
     ElementForAnimationText = ElementForAnimationText.split(' ');
@@ -459,12 +457,14 @@ function OpenHamburgerMenu() {
     const NavigationBarAreaObject  = document.querySelector('.NavigationBarArea');
     const LabelCenterTopObject = document.querySelector('.LabelCenterTop');
     const MenuLabelObject = document.querySelector('.MenuLabel');
+    const MiddleOfPageObject = document.querySelector('.MiddleOfPage');
 
     // const DemoLabelBottomObject = document.getElementsByClassName('DemoLabelBottom')[0];
 
     HamburgerControl.classList.toggle('active');
     NavigationBarAreaObject.classList.toggle('active');
     LabelCenterTopObject.classList.toggle('active');
+    MiddleOfPageObject.classList.toggle('active');
 
     MenuLabelObject.classList.toggle('active');
     // DemoLabelBottomObject.style.filter = 'blur(3px)';
@@ -513,7 +513,8 @@ function ChangeLanguageByCurrent() {
 
     let CurentMiddleOfPage = document.querySelector('.MiddleOfPage').className;
     MiddleOfPage = CurentMiddleOfPage.replace('MiddleOfPage ', '');
-    // alert(CurentMiddleOfPage);
+    MiddleOfPage = MiddleOfPage.replace('active', '').trim();
+   
     // let MiddleOfPage = 'LoginPage';
     
     let ObjectForLanguageChange;

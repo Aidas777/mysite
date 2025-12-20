@@ -207,7 +207,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     position: fixed;
-    background-color: rgba(150, 150, 235, 0.8);
+    background-color: rgba(150, 150, 235, 0.4);
     z-index: 2;
 
 }
@@ -267,6 +267,12 @@ body {
     height: 100%;
     margin-top: 82px;
 } */
+
+.MiddleOfPage.active { /* CAN BE IN MAIN STYLES FILE BECAUSE THIS EFFECT IS SAME FOR ALL PAGES  */
+    filter: blur(3px);
+    transition: all 0.4s ease-in-out;
+    opacity: 0.7;
+}
 
 
 
@@ -525,7 +531,7 @@ body {
             background-color: transparent;
         }
         to {
-            background-color: rgba(150, 150, 235, 0.8);
+            background-color: rgba(150, 150, 235, 0.4);
         }
     }
 
