@@ -524,17 +524,20 @@ function ChangeLanguageByCurrent() {
     let ElementsPropertyToChange = 'Titles';
     let TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
 
-    for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
+    if (TitlesArrayByCurrentLanguage) {
 
-        if (!key.toLocaleLowerCase().includes('logedin')) { // skipping the line in Languages.js "SubmitButtonLogedIn" : "Prisijungta"
-            
-            ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+        for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
 
-            if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
-                ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+            if (!key.toLocaleLowerCase().includes('logedin')) { // skipping the line in Languages.js "SubmitButtonLogedIn" : "Prisijungta"
+                
+                ObjectForLanguageChange = document.getElementsByClassName(key)[0];
 
-            } else {
-                ObjectForLanguageChange.innerHTML = value;
+                if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
+                    ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+
+                } else {
+                    ObjectForLanguageChange.innerHTML = value;
+                }
             }
         }
     }

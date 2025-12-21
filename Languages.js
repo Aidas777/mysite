@@ -50,16 +50,16 @@ const LanguagesFullArray =
 
         "AboutUsPage" :
             {
-                "Titles" : 
-                {
-                    "RightSide" : "Amiedra LT is AboutUsPage"
-                }
-            ,
+            //     "Titles" : 
+            //     {
+            //         "RightSide" : "Amiedra LT is AboutUsPage"
+            //     }
+            // ,
 
             "Texts" :
                 {
-                    "CenterTop" : "<p>Mano programavimo kelionė prasidėjo su <b>Microsoft Access</b>. <b>Aštuonerių metų</b> eigoje " +
-                    "kūriau baigtines aplikacijas ir pagalbinius įrankius įvairioms įmonėms. 2021 m. studijavau <b>Baltijos technologijos institute</b> " +
+                    "CenterTop" : "<p>Mano programavimo kelionė prasidėjo su <b>Microsoft Access</b>. <b>Aštuonerius metus</b> " +
+                    "kūriau baigtines aplikacijas ir pagalbinius įrankius įvairioms įmonėms. 2021 m. studijavau <b>Baltijos Technologijos Institute</b> " +
                     "ir įgijau <b>žiniatinklio programuotojo „Full Stack“ diplomą su pagyrimu</b>. Apie ketverius metus dirbau programuotoju " +
                     "UAB „DS Smith Packaging Lithuania“. Vienos iš pagrindinių technologijų ir įrankių, su kuriais dirbau per visą savo karjerą, yra šie:</p>"
                 }
@@ -128,9 +128,18 @@ const LanguagesFullArray =
         ,
 
         "AboutUsPage" :
-            {"Titles" : 
+            {
+                // "Titles" : 
+                // {
+                //     "LeftSide" : "Amiedra LT is AboutUsPage"
+                // }
+            "Texts" :
                 {
-                    "LeftSide" : "Amiedra LT is AboutUsPage"
+                    "CenterTop" : "<p>Мой путь в программировании начался с <b>Microsoft Access</b>. " +
+                    "<b>Восемь лет</b> я создавал полноценные приложения и инструменты для управления рабочими процессами для различных компаний. " +
+                    "В 2021 году я учился в <b>Балтийском Технологическом Институте</b> и получил диплом <b>веб-разработчика Full Stack с отличием</b>. " +
+                    "Около четырех лет я работал программистом в UAB DS Smith Packaging Lithuania. Основные технологий " +
+                    "и инструменты, с которыми я работал на протяжении всей своей карьеры, включают:</p>"
                 }
             }
         ,
@@ -194,9 +203,18 @@ const LanguagesFullArray =
         ,
 
         "AboutUsPage" :
-            {"Titles" : 
+            {
+                // "Titles" : 
+                // {
+                //     "LeftSide" : "Amiedra LT is AboutUsPage"
+                // }
+            "Texts" :
                 {
-                    "LeftSide" : "Amiedra LT is AboutUsPage"
+                    "CenterTop" : "<p>I started my programming journey with <b>Microsoft Access</b> " +
+                "where over <b>eight years</b> I built complete applications and workflow tools for various companies. " +
+                "In 2021 I studied in <b>Baltic Institute of Technology</b> and gained <b>Web Developer Full Stack diploma with honors</b>. " +
+                "For about four years, I worked as a programmer at UAB DS Smith Packaging Lithuania. The majority of the technologies " +
+                "and tools I've worked with in my all career include :</p>"
                 }
             }
         ,
