@@ -1,4 +1,3 @@
-
 // REFRESH PAGE
 window.onresize = () => {
     let MiddleOfPage = document.querySelector('.MiddleOfPage');
@@ -8,23 +7,128 @@ window.onresize = () => {
     }
 }
 
-// window.onload = () => {
-//     // console.log(LoadedMiddlePageName);
+
+/// CONTROLLER /// /// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ///
+function Controller(ControlName, ActionName) {
+
+    const NavigationBarAreaObject  = document.querySelector('.NavigationBarArea');
+    const LabelCenterTopObject = document.querySelector('.LabelCenterTop');
+    const HamburgerControl = document.querySelector('.Hamburger');
+    const MenuLabelObject = document.querySelector('.MenuLabel');
+    const PasswInputObject = document.querySelector('.PasswInput');
+    const MiddleOfPageObject = document.querySelector('.MiddleOfPage');
+
+    // const DemoLabelBottomObject = document.getElementsByClassName('DemoLabelBottom')[0];
+    // const NavigationBarObject = document.getElementsByClassName('NavigationBar')[0];
+
+    const MsgBoxObject = document.getElementById('MsgBox');
+
+    if (ControlName == 'login.html' && ActionName == 'FirstLoad') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
+        LoadPartToPage('login.html', 'FirstLoad');
+        ChangeNavBarElementColorWhenClicked('LoginControl');
+
+    } else if (ControlName == 'bottom.html' && ActionName == 'FirstLoad') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
+        LoadPartToPage('bottom.html', 'FirstLoad');
+        // ChangeNavBarElementColorWhenClicked('LoginControl');
+
+    } else if (ControlName == 'AboutUsControl' && ActionName == 'OpenPage') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['ForDevelopment'], ColorRed);
+        LoadPartToPage('aboutus.html');
+        ChangeNavBarElementColorWhenClicked(ControlName);
+
+    } else if (ControlName == 'LoginControl' && ActionName == 'OpenPage') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
+        LoadPartToPage('login.html');
+        ChangeNavBarElementColorWhenClicked(ControlName);
+        
+    } else if (ControlName == 'OurTeamControl' && ActionName == 'OpenPage') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
+        LoadPartToPage('ourteam.html');
+        ChangeNavBarElementColorWhenClicked(ControlName);
+
+    } else if (ControlName == 'ContactsControl' && ActionName == 'OpenPage') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
+        LoadPartToPage('contacts.html');
+        ChangeNavBarElementColorWhenClicked(ControlName);
+        
+    } else if (ControlName == 'ServicesControl' && ActionName == 'OpenPage') {
+        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
+        LoadPartToPage('services.html');
+        ChangeNavBarElementColorWhenClicked(ControlName);
+
+    } else if (ControlName != 'LoginControl' && ActionName == 'ShowMsg') {
+        ShowMsg(GetTranslationsArrayByCurrentLanguage()['LoginPage']['MsgTexts']['ForDevelopment'], ColorRed);
+
+    } else if (ControlName == 'SubmitButton' && ActionName == 'LoginAction') {
+        LoginAction('LoginPage');
+
+    } else if (ControlName == 'PasswInput' && ActionName == 'ShowPass') {
+            PasswInputObject.type = 'text';
+
+    } else if (ControlName == 'PasswInput' && ActionName == 'HidePass') {
+            PasswInputObject.type = 'password';
+
+    } else if (ControlName == 'login.html' && ActionName == 'GenerateStars') {
+        const StarsQty = 200;
+        GenerateStars(StarsQty);
+
+    // CLICK ON EN OR RU CONTROLS EVENTS
+    } else if (ControlName == 'LT' && ActionName == 'ChangeLanguage') {
+        SwitchLanguageLetters(ControlName);
+        ChangeNavBarElementColorWhenClicked();
+        ChangeLanguageByCurrent();
+        MsgBoxObject.style.display = "none";
+
+    } else if (ControlName == 'RU' && ActionName == 'ChangeLanguage')  {
+        SwitchLanguageLetters(ControlName);
+        ChangeNavBarElementColorWhenClicked();
+        ChangeLanguageByCurrent();
+        MsgBoxObject.style.display = "none";
+
+    // COPY TEXT    
+    } else if (ActionName == 'CopyTxt') {
+        ShowMsg(CopyTxt(ControlName), ColorGreen);
+
+    // SHOW TEL
+    } else if (ControlName.includes('ShowTelBtn') && ActionName == 'ShowTelNr') {
+        // ShowMsg(CopyTxt(ControlName), ColorGreen);
+        ShowDataInElement(GetTelNr('a3ff7k9eoS6rtyw4z#eqr7ufsiwkS7sa35eyk8weyn2riu7kera@ti5f2c1hr4psje76'), ControlName);
+        
+    }
+
     
-//     if (LoadedMiddlePageName == 'login.html') {
-//         const LabelCenterTop = document.getElementsByClassName('LabelCenterTop')[0];
-//         if (LabelCenterTop != undefined) {
-//             setTimeout(function() {
-//                 // const LabelCenterTop = document.getElementsByClassName('LabelCenterTop')[0];
-//                 LabelCenterTop.classList.add('hover-simulated');
-//             }, 300);
-//             setTimeout(function() { 
-//                 // const LabelCenterTop = document.getElementsByClassName('LabelCenterTop')[0];
-//                 LabelCenterTop.classList.remove('hover-simulated');
-//             }, 900);
-//         }
-//     }
-// }
+    // AFTER CLICK ON HAMBURGER MENU ITEM WE CLOSE HAMBURGER MENU IF IT WAS OPEN
+    if ((NavigationBarAreaObject.className == 'NavigationBarArea active')
+        // && (ControlName != 'LT' && ControlName != 'RU' && ControlName != 'EN')
+        ) {
+        NavigationBarAreaObject.classList.remove('active');
+        HamburgerControl.classList.remove('active');
+        MenuLabelObject.classList.remove('active');
+        MiddleOfPageObject.classList.remove('active');
+        
+    }
+
+    //HAMBURGER OPEN MENU
+    if ((ControlName == 'Hamburger' && HamburgerControl.className == 'Hamburger') || (ControlName == 'MenuLabel' && MenuLabelObject.className == 'MenuLabel')) {
+        OpenHamburgerMenu();
+    } else if ((HamburgerControl.className == 'Hamburger active' || MenuLabelObject.className == 'MenuLabel active') && (ControlName != 'LT' && ControlName != 'RU' && ControlName != 'EN')) {
+        HamburgerControl.classList.remove('active');
+        MenuLabelObject.classList.remove('active');
+        MiddleOfPageObject.classList.remove('active');
+        
+        // DemoLabelBottomObject.style.filter = 'none';
+    }
+
+    if (LabelCenterTopObject != undefined) {
+    
+        if (LabelCenterTopObject.className == 'LabelCenterTop active') {
+            LabelCenterTopObject.classList.remove('active');
+        }
+    }
+}
+
 
 function AnimateLabelCenterTop() {
 
@@ -116,120 +220,6 @@ function LoadPartToPage(WhatToLoad, Parameters) {
 }
 
 
-/// CONTROLLER /// /// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ///
-function Controller(ControlName, ActionName) {
-
-    const NavigationBarAreaObject  = document.querySelector('.NavigationBarArea');
-    const LabelCenterTopObject = document.querySelector('.LabelCenterTop');
-    const HamburgerControl = document.querySelector('.Hamburger');
-    const MenuLabelObject = document.querySelector('.MenuLabel');
-    const PasswInputObject = document.querySelector('.PasswInput');
-    const MiddleOfPageObject = document.querySelector('.MiddleOfPage');
-
-    // const DemoLabelBottomObject = document.getElementsByClassName('DemoLabelBottom')[0];
-    // const NavigationBarObject = document.getElementsByClassName('NavigationBar')[0];
-
-    const MsgBoxObject = document.getElementById('MsgBox');
-
-    if (ControlName == 'login.html' && ActionName == 'FirstLoad') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
-        LoadPartToPage('login.html', 'FirstLoad');
-        ChangeNavBarElementColorWhenClicked('LoginControl');
-
-    } else if (ControlName == 'bottom.html' && ActionName == 'FirstLoad') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
-        LoadPartToPage('bottom.html', 'FirstLoad');
-        // ChangeNavBarElementColorWhenClicked('LoginControl');
-
-    } else if (ControlName == 'AboutUsControl' && ActionName == 'OpenPage') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['ForDevelopment'], ColorRed);
-        LoadPartToPage('aboutus.html');
-        ChangeNavBarElementColorWhenClicked(ControlName);
-
-    } else if (ControlName == 'LoginControl' && ActionName == 'OpenPage') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
-        LoadPartToPage('login.html');
-        ChangeNavBarElementColorWhenClicked(ControlName);
-        
-    } else if (ControlName == 'OurTeamControl' && ActionName == 'OpenPage') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
-        LoadPartToPage('ourteam.html');
-        ChangeNavBarElementColorWhenClicked(ControlName);
-
-    } else if (ControlName == 'ContactsControl' && ActionName == 'OpenPage') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
-        LoadPartToPage('contacts.html');
-        ChangeNavBarElementColorWhenClicked(ControlName);
-        
-    } else if (ControlName == 'ServicesControl' && ActionName == 'OpenPage') {
-        // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
-        LoadPartToPage('services.html');
-        ChangeNavBarElementColorWhenClicked(ControlName);
-
-    } else if (ControlName != 'LoginControl' && ActionName == 'ShowMsg') {
-        ShowMsg(GetTranslationsArrayByCurrentLanguage()['LoginPage']['MsgTexts']['ForDevelopment'], ColorRed);
-
-    } else if (ControlName == 'SubmitButton' && ActionName == 'LoginAction') {
-        LoginAction('LoginPage');
-
-    } else if (ControlName == 'PasswInput' && ActionName == 'ShowPass') {
-            PasswInputObject.type = 'text';
-
-    } else if (ControlName == 'PasswInput' && ActionName == 'HidePass') {
-            PasswInputObject.type = 'password';
-
-    } else if (ControlName == 'login.html' && ActionName == 'GenerateStars') {
-        const StarsQty = 200;
-        GenerateStars(StarsQty);
-
-    // CLICK ON EN OR RU CONTROLS EVENTS
-    } else if (ControlName == 'LT' && ActionName == 'ChangeLanguage') {
-        SwitchLanguageLetters(ControlName);
-        ChangeLanguageByCurrent();
-        MsgBoxObject.style.display = "none";
-
-    } else if (ControlName == 'RU' && ActionName == 'ChangeLanguage')  {
-        SwitchLanguageLetters(ControlName);
-        ChangeLanguageByCurrent();
-        MsgBoxObject.style.display = "none";
-
-    // COPY TEXT    
-    } else if (ActionName == 'CopyTxt') {
-        ShowMsg(CopyTxt(ControlName), ColorGreen);
-
-    // SHOW TEL
-    } else if (ControlName.includes('ShowTelBtn') && ActionName == 'ShowTelNr') {
-        // ShowMsg(CopyTxt(ControlName), ColorGreen);
-        ShowDataInElement(GetTelNr('a3ff7k9eoS6rtyw4z#eqr7ufsiwkS7sa35eyk8weyn2riu7kera@ti5f2c1hr4psje76'), ControlName);
-        
-    }
-
-    
-    // AFTER CLICK ON HAMBURGER MENU ITEM WE CLOSE HAMBURGER MENU IF IT WAS OPEN
-    if ((NavigationBarAreaObject.className == 'NavigationBarArea active') && (ControlName != 'LT' && ControlName != 'RU' && ControlName != 'EN')) {
-        NavigationBarAreaObject.classList.remove('active');
-        
-    }
-
-    //HAMBURGER OPEN MENU
-    if ((ControlName == 'Hamburger' && HamburgerControl.className == 'Hamburger') || (ControlName == 'MenuLabel' && MenuLabelObject.className == 'MenuLabel')) {
-        OpenHamburgerMenu();
-    } else if ((HamburgerControl.className == 'Hamburger active' || MenuLabelObject.className == 'MenuLabel active') && (ControlName != 'LT' && ControlName != 'RU' && ControlName != 'EN')) {
-        HamburgerControl.classList.remove('active');
-        MenuLabelObject.classList.remove('active');
-        MiddleOfPageObject.classList.remove('active');
-        // DemoLabelBottomObject.style.filter = 'none';
-    }
-
-    if (LabelCenterTopObject != undefined) {
-    
-        if (LabelCenterTopObject.className == 'LabelCenterTop active') {
-            LabelCenterTopObject.classList.remove('active');
-        }
-    }
-}
-
-
 function GetPageTitle(WhatToLoad) {
     if (WhatToLoad.includes('aboutus')) {
         WhatToLoad = 'About Us';
@@ -291,9 +281,6 @@ function AnimateBlinkWords(OnElement) {
         ElementForAnimation.appendChild(Span);
         
     }
-    
-
-
 }
 
 
@@ -343,6 +330,7 @@ function ShowLabelBottomRightCreator() {
     document.querySelector('.LabelBottomRightCreator')
     .innerHTML = "Created by Aidas (amiedra@gmail.com)"; /*+ new Date().getFullYear();*/
 }
+
 
 // STARS GENERATOR
 function GenerateStars(StarsQty) {
@@ -398,6 +386,7 @@ function GenerateStars(StarsQty) {
     }
 }
 
+
 function GenerateStarsWithoutInnerHoles(MiddleOfPage, OnElement, StarsQty) { //KOLKAS ATJUNGIU (TAIP IR NEAISKU KAIP GAUTA TA SKAICIU 1028)
 
     const ElementForStars = document.querySelector(OnElement);
@@ -435,8 +424,6 @@ function GenerateStarsWithoutInnerHoles(MiddleOfPage, OnElement, StarsQty) { //K
 
         // console.log('ElementForStars: ' + ElementForStars.className +' /// offsetLeft: ' + ElementForStars.offsetLeft + ' // offsetWidth: ' + ElementForStars.innerWidth);
         
-        
-
         if 
         ((RandX > ElementForStars.offsetLeft) && (RandX < (1028))
         // &&
@@ -471,24 +458,45 @@ function OpenHamburgerMenu() {
 }
 
 
-let ClickedElementTempStyle;
 function ChangeNavBarElementColorWhenClicked(ControlName) {
+    let ClickedElementTempStyle;
+    let ActiveNavBarControlName;
+    const AdditionalDivForGlowEffect = "<div class='glow'>";
+  
+    if (!ControlName) {
+        ActiveNavBarControlName = GetCurrentMiddleOfPage().replace('Page', 'Control').trim();
+        ClickedElement = document.getElementsByClassName(ActiveNavBarControlName)[0];
+    } else {
 
-    ClickedElement = document.getElementsByClassName(ControlName)[0];
-    
+        ClickedElement = document.getElementsByClassName(ControlName)[0];
+    }
+
     if (ClickedElement.style.color != "rgba(117, 117, 182, 0.6)") {
         ClickedElementTempStyle = ClickedElement.style.cssText;
 
         const NavigationBarLinksBoxChilds = document.getElementsByClassName('NavigationBarLinksBox')[0].children;
+        // let ActiveNavBarControlName = GetCurrentMiddleOfPage().replace('Page', 'Control').trim();
         for (let index = 0; index < NavigationBarLinksBoxChilds.length; index++) {
 
-            let OneOfOtherElementsClassName = NavigationBarLinksBoxChilds[index].className;
-            document.getElementsByClassName(OneOfOtherElementsClassName)[0].style.cssText = ClickedElementTempStyle;
-            document.getElementsByClassName(OneOfOtherElementsClassName)[0].children[0].classList.add('glow');
+            let OneOfOtherElements = NavigationBarLinksBoxChilds[index];
+
+            // console.log(ClickedElement.className, OneOfOtherElements.className);
+            if (ClickedElement.className != OneOfOtherElements.className) {
+                if ((OneOfOtherElements.children[0])) {
+                    OneOfOtherElements.style = ClickedElementTempStyle;
+                    // document.getElementsByClassName(OneOfOtherElements)[0].children[0].classList.add('glow');
+                    // OneOfOtherElements.children[0].classList.add('glow');
+                   
+                    OneOfOtherElements.children[0].classList.add('glow');
+                } else {
+  
+                    OneOfOtherElements.style = ClickedElement.style;
+                    OneOfOtherElements.innerHTML += AdditionalDivForGlowEffect;
+                }
+            }
         }
 
-        // ClickedElement.style = "color: rgba(117, 117, 182, 0.6);"
-        ClickedElement.style.color = "rgba(117, 117, 182, 0.6)"
+        ClickedElement.style.color = "rgba(117, 117, 182, 0.6)";
         ClickedElement.children[0].classList.remove('glow');
     }
 }
@@ -508,21 +516,90 @@ function SwitchLanguageLetters(ControlName) {
 }
 
 
+function GetCurrentMiddleOfPage() {
+
+    // console.log(document.querySelector('.MiddleOfPage').className);
+    
+    let CurrentMiddleOfPage = document.querySelector('.MiddleOfPage').className;
+
+    if (!CurrentMiddleOfPage) {return}
+
+    MiddleOfPage = CurrentMiddleOfPage
+    .replace('MiddleOfPage ', '')
+    .replace('active', '').trim();
+
+    return MiddleOfPage;
+    
+}
+
+
 // LANGUAGE CHANGE BY CURRENT LANGUAGE
 function ChangeLanguageByCurrent() {
 
-    let CurentMiddleOfPage = document.querySelector('.MiddleOfPage').className;
-    MiddleOfPage = CurentMiddleOfPage.replace('MiddleOfPage ', '');
-    MiddleOfPage = MiddleOfPage.replace('active', '').trim();
-   
     // let MiddleOfPage = 'LoginPage';
-    
+    let MiddleOfPage = GetCurrentMiddleOfPage();
     let ObjectForLanguageChange;
-    const AdditionalDivForGlowEffect = "<div class='glow'>";
+
+    // TRANLSATING NAVBAR
+    ChangeLanguageByCurrentForNavBar();
 
     // TRANLSATING TITLES
-    let ElementsPropertyToChange = 'Titles';
-    let TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
+    TranslateTitles();
+
+    // TRANLSATING PLACEHOLDERS
+    TranslatePlaceHolders();
+
+    // TRANLSATING (SWITCHNG) FONTS
+    SwitchFontByLanguage();
+
+    // TRANLSATING TEXTS
+    TranslateTexts();
+
+    // TRANSLATING DemoLabelBottom
+    TranslateDemoLabelBottom();
+
+    // ANIMATE CENTER TOP LABEL
+    AnimateLabelCenterTop();
+    
+}
+
+
+// TRANLSATING NAVBAR
+function ChangeLanguageByCurrentForNavBar() {
+
+    let ObjectForLanguageChange;
+    const AdditionalDivForGlowEffect = "<div class='glow'>";
+    
+    let ElementsPropertyToChange = 'NavBarControls';
+    let TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()['AllPages'][ElementsPropertyToChange];
+
+    if (TitlesArrayByCurrentLanguage) {
+        for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
+
+            ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+
+            if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
+                // ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+                
+                if (ObjectForLanguageChange.className != (GetCurrentMiddleOfPage().replace('Page', 'Control'))) {
+                    ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+                } else {
+                    ObjectForLanguageChange.innerHTML = value;
+                }
+
+            } else {
+                ObjectForLanguageChange.innerHTML = value;
+            }
+        }
+    }
+}
+
+
+// TRANLSATING TITLES
+function TranslateTitles() {
+
+    ElementsPropertyToChange = 'Titles';
+    TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
 
     if (TitlesArrayByCurrentLanguage) {
 
@@ -532,17 +609,21 @@ function ChangeLanguageByCurrent() {
                 
                 ObjectForLanguageChange = document.getElementsByClassName(key)[0];
 
-                if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
-                    ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+                // if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
+                    // ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
 
-                } else {
+                // } else {
                     ObjectForLanguageChange.innerHTML = value;
-                }
+                // }
             }
         }
     }
+}
 
-    // TRANLSATING PLACEHOLDERS
+
+// TRANLSATING PLACEHOLDERS
+function TranslatePlaceHolders() {
+
     ElementsPropertyToChange = 'PlaceHolders';
     TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
 
@@ -555,8 +636,11 @@ function ChangeLanguageByCurrent() {
             
         }
     }
-        
-    // TRANLSATING (SWITCHNG) FONTS
+}
+
+
+// TRANLSATING (SWITCHNG) FONTS
+function SwitchFontByLanguage() {
     ElementsPropertyToChange = 'Fonts';
     TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
 
@@ -569,20 +653,28 @@ function ChangeLanguageByCurrent() {
 
         }
     }
+}
 
-    // TRANLSATING TEXTS
+
+// TRANLSATING TEXTS
+function TranslateTexts() {
     ElementsPropertyToChange = 'Texts';
     TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
+     
+    if (TitlesArrayByCurrentLanguage) {
 
-    for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
+        for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
 
-        ObjectForLanguageChange = document.getElementsByClassName(key)[0];
-        ObjectForLanguageChange.innerHTML = value;
-        
+            ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+            ObjectForLanguageChange.innerHTML = value;
+            
+        }
     }
+}
 
 
-    // TRANSLATING DemoLabelBottom
+// TRANSLATING DemoLabelBottom
+function TranslateDemoLabelBottom() {
     ElementsPropertyToChange = 'DemoLabelBottom';
     TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()['AllPages'];
     
@@ -594,9 +686,6 @@ function ChangeLanguageByCurrent() {
         ObjectForLanguageChange = document.querySelector('.' + ElementsPropertyToChange);
         ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage[ElementsPropertyToChange];
     }
-
-    AnimateLabelCenterTop();
-    
 }
 
 

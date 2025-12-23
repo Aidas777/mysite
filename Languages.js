@@ -6,12 +6,12 @@ const LanguagesFullArray =
             {"Titles" : 
                 {
                     "LabelCenterTop" : "Prisijunk prie Amiedra",
-                    "MenuLabel" : "Meniu",
-                    "AboutUsControl" : "Apie Mane",
-                    "OurTeamControl" : "Mūsų Komanda",
-                    "ServicesControl" : "Mano Projektai",
-                    "ContactsControl" : "Kontaktai",
-                    "LoginControl" : "Prisijungti",
+                    // "MenuLabel" : "Meniu",
+                    // "AboutUsControl" : "Apie Mane",
+                    // "OurTeamControl" : "Mūsų Komanda",
+                    // "ServicesControl" : "Mano Projektai",
+                    // "ContactsControl" : "Kontaktai",
+                    // "LoginControl" : "Prisijungti",
                     "SubmitButton" : "Jungtis",
                     "SubmitButtonLogedIn" : "Prisijungta",
                     "RegistrateLink" : "Registruotis"
@@ -66,11 +66,27 @@ const LanguagesFullArray =
             }
         ,
 
+        "OurTeamPage" :
+                {
+                    "AAA" : "BBB"
+                }
+            
+        ,
+
         "AllPages" :
             {
-                "DemoLabelBottom" : "Tai demonstracinė svetainė. Adaptyvi ekrano dydžiui." + 
-                    "<br>Pabandykite pakeisti naršyklės lango dydį,<br>išbandykite įvairius mygtukus, nuorodas,<br>perjunkite naršymo puslapius." +
-                    "<br>Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo."
+                "DemoLabelBottom" : "Tai demonstracinė svetainė. Pilnai adaptyvi ekranui." + 
+                    "<br>Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius<br>mygtukus, nuorodas, perjunkite naršymo puslapius." +
+                    "<br>Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo.",
+                "NavBarControls" :
+                {
+                    "MenuLabel" : "Meniu",
+                    "AboutUsControl" : "Apie Mane",
+                    "OurTeamControl" : "Mūsų Komanda",
+                    "ServicesControl" : "Mano Projektai",
+                    "ContactsControl" : "Kontaktai",
+                    "LoginControl" : "Prisijungti",
+                }
             }
         }
     ,
@@ -146,9 +162,9 @@ const LanguagesFullArray =
 
         "AllPages" :
             {
-                "DemoLabelBottom" : "Это демонстрационный сайт. Полностью адаптивный.<br>Попробуйте изменить размер окна браузера," +
-                "<br>изпробуйте различные элементы управления,<br>переключитесь между страницами навигации," +
-                "<br>также попробуйте изменить язык или проверьте на телефоне.<br>Каждый день мы учимся чему-то новому."
+                "DemoLabelBottom" : "Это демонстрационный сайт. Полностью адаптивный. Попробуйте изменить размер окна браузера, " +
+                "изпробуйте различные элементы управления, переключитесь между страницами навигации, " +
+                "также попробуйте изменить язык или проверьте на телефоне.<br>Каждый день мы учимся чему-то новому."
             }
         }
     ,
