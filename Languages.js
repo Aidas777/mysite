@@ -66,7 +66,7 @@ const LanguagesFullArray =
 
                     "RightSideAU" : "Mėgstu kurti efektyvius ir praktiškus sprendimus, bei nuolat mokytis naujų technologijų, kad pagerinčiau savo darbą.",
 
-                    "LeftSideRight" : "5 Linux ir kita." // IF VALUE STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER IS NOT DISPAYED.
+                    "LeftSideRight" : "5 Linux ir kita." // IF VALUE STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
                 }
             }
@@ -81,9 +81,9 @@ const LanguagesFullArray =
 
         "AllPages" :
             {
-                "DemoLabelBottom" : "Tai demonstracinė svetainė. Pilnai adaptyvi ekranui." + 
-                    "<br>Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius<br>mygtukus, nuorodas, perjunkite naršymo puslapius." +
-                    "<br>Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo.",
+                "DemoLabelBottom" : "Tai demonstracinė svetainė. Pilnai adaptyvi ekranui. " + 
+                    "Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius mygtukus, nuorodas, perjunkite naršymo puslapius. " +
+                    "Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo.",
                 "NavBarControls" :
                 {
                     "MenuLabel" : "Meniu",
@@ -243,9 +243,9 @@ const LanguagesFullArray =
 
         "AllPages" :
             {
-                "DemoLabelBottom" : "This is a Demo website. Fully responsive.<br>Try to change browser's window size," +
-                "<br>interact with variuos controls, switch naviagion pages," +
-                "<br>also try to change language or check on phone.<br>Each day we learn something new."
+                "DemoLabelBottom" : "This is a Demo website. Fully responsive. Try to change browser's window size, " +
+                "interact with variuos controls, switch naviagion pages, " +
+                "also try to change language or check on phone.<br>Each day we learn something new."
             }
         
         }

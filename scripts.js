@@ -1,29 +1,11 @@
 // REFRESH PAGE
-// window.onresize = () => {
-//     let MiddleOfPage = document.querySelector('.MiddleOfPage');
-
-//     if (screen.width > 412 && MiddleOfPage.className == 'MiddleOfPage login') {
-//         location.reload();
-//         CheckLang();
-//     }
-// }
-
-// window.onload = (CheckLang) => {
-//     if (window.innerWidth <376) {
-//         const LanguagesDiv = document.querySelector('.Languages');
-//         const NavigationBar = document.querySelector('.NavigationBar');
-//         NavigationBar.append(LanguagesDiv);
-//     }
-// }
-
-
 window.onresize = () => {
     let MiddleOfPage = document.querySelector('.MiddleOfPage');
 
     if (screen.width > 412 && MiddleOfPage.className == 'MiddleOfPage login') {
         location.reload();
     }
-    AdjustLanguageLetters();
+    // AdjustLanguageLetters();
     // if (window.innerWidth <376) {
     //     const LanguagesDiv = document.querySelector('.Languages');
     //     const NavigationBar = document.querySelector('.NavigationBar');
@@ -34,18 +16,18 @@ window.onresize = () => {
     // }
 }
 
-window.onload = AdjustLanguageLetters;
-// window.onload = () => {
+// window.onload = AdjustLanguageLetters;
+// // window.onload = () => {
 
-function AdjustLanguageLetters() {
-    if (window.innerWidth <376) {
-        const LanguagesDiv = document.querySelector('.Languages');
-        const NavigationBar = document.querySelector('.NavigationBar');
-        if (LanguagesDiv && NavigationBar) {
-            NavigationBar.append(LanguagesDiv);
-        }
-    }
-}    
+// function AdjustLanguageLetters() {
+//     if (window.innerWidth <376) {
+//         const LanguagesDiv = document.querySelector('.Languages');
+//         const NavigationBar = document.querySelector('.NavigationBar');
+//         if (LanguagesDiv && NavigationBar) {
+//             NavigationBar.append(LanguagesDiv);
+//         }
+//     }
+// }    
 
 
 /// CONTROLLER /// /// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ///
@@ -542,7 +524,7 @@ function ChangeNavBarElementColorWhenClicked(ControlName) {
                 } else {
   
                     OneOfOtherElements.style = ClickedElement.style;
-                    OneOfOtherElements.innerHTML += AdditionalDivForGlowEffect;
+                    OneOfOtherElements.innerHTML += AdditionalDivForGlowEffect; // THAT IS BECAUSE PRIEVIUOS ACTIVE ELEMENT DOES NOT HAVE CHILD. IT WAS REMOVED ON PREVIOUS CLICK
                 }
             }
         }

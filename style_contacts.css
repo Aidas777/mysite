@@ -29,6 +29,12 @@
     /* text-align: center; */
 }
 
+/* .MyFoto {
+    width: 10%;
+    height: auto;
+    position: absolute;
+} */
+
 .ListLine {
     display: flex;
     justify-content: right;

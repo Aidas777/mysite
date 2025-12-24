@@ -110,7 +110,7 @@ body {
 }
 
 .Languages {
-    width: 10%;
+    width: 8%;
     place-self: center;
     font-size: 1.5rem;
     text-align: center;
@@ -321,7 +321,6 @@ body {
         opacity: 0;
         letter-spacing: 300px;
         overflow: hidden;
-        
     }
 }
 
@@ -390,12 +389,20 @@ body {
         width: 30%;
     }
 
+    .Languages {
+        width: 10%;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
     .NavigationBarLinksBox a {
         font-size: 1.6rem;
     }
+
+    /* .Languages {
+        width: 10%;
+    } */
 }
 
 @media screen and (max-width: 1100px) {

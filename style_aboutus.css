@@ -202,6 +202,128 @@
 }
 
 
+@media screen and (max-width: 1600px) {
+    .CenterBottom2AU {
+        &::after {
+            height: 60px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .CenterTop {
+        font-size: 1.2rem;
+        p {
+            b {
+                font-size: 1.6rem;
+                /* font-style: italic; */
+            }
+        }
+    }
+
+    .LeftSide {
+        font-size: 1.2rem;
+    }
+
+    .RightSideAU {
+        font-size: 1.2rem;
+    }
+
+    .CenterBottomAU {
+        font-size: 1.2rem;
+    }
+    
+    .CenterBottom2AU {
+        &::after {
+            height: 50px;
+             box-shadow: inset -40px -10px 0 rgba(150, 150, 235, 0.3) , inset -50px -10px 0 rgba(94, 94, 165, 0.3);
+        }
+    }
+
+    .DemoLabelBottom {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .CenterTop {
+        font-size: 1.1rem;
+        p {
+            b {
+                font-size: 1.4rem;
+                /* font-style: italic; */
+            }
+        }
+    }
+
+    .CenterMiddle {
+        flex-flow: column;
+    }
+
+    .LeftSide {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .RightSideAU {
+        font-size: 1.1rem;
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+        place-content: center;
+        text-align: center;
+    }
+
+    .CenterBottomAU {
+        font-size: 1.1rem;
+    }
+
+    .CenterBottom2AU {
+        &::after {
+            box-shadow: inset -30px -10px 0 rgba(150, 150, 235, 0.3) , inset -40px -10px 0 rgba(94, 94, 165, 0.3);
+        }
+    }
+
+    .DemoLabelBottom {
+        font-size: 1rem; 
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+
+    .OuterLowerContainer {
+        width: 80%;
+    }
+
+    .CenterBottom2AU {
+        &::after {
+            box-shadow: inset -20px -10px 0 rgba(150, 150, 235, 0.3) , inset -30px -10px 0 rgba(94, 94, 165, 0.3);
+            height: 45px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .CenterBottom2AU {
+        top: 9vh;
+
+        &::after {
+            box-shadow: inset -15px -7px 0 rgba(150, 150, 235, 0.3) , inset -25px -7px 0 rgba(94, 94, 165, 0.3);
+            height: 35px;
+        }
+    }
+
+    .LabelsBottomRightBox {
+        top: unset;
+        bottom: 45px;
+    }
+}
 
 
 @media screen and (max-width: 376px) {
