@@ -381,12 +381,16 @@ body {
         margin-right: 25%;
     }
 
+    .LabelsBottomRightBox {
+        width: 25%;
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
 
     .LabelsBottomRightBox {
-        width: 30%;
+        width: 35%;
     }
 
     .Languages {

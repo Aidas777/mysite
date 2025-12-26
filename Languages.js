@@ -89,7 +89,7 @@ const LanguagesFullArray =
                     "MenuLabel" : "Meniu",
                     "AboutUsControl" : "Apie Mane",
                     "OurTeamControl" : "Mūsų Komanda",
-                    "ServicesControl" : "Mano Projektai",
+                    "ServicesControl" : "Programos",
                     "ContactsControl" : "Kontaktai",
                     "LoginControl" : "Prisijungti",
                 }
