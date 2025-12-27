@@ -111,7 +111,7 @@ const LanguagesFullArray =
                     "0 CenterTopCO" : "<span class='MyLabel'>Vardas :</span><span class='MyData'>Aidas</span>",
                     "2 CenterTopCO" : "<span class='MyLabel'>Miestas :</span><span class='MyData'>Klaipėda, Lietuva</span>",
 
-                    "3 CenterTopCO" : "<span class='MyLabel'>Tel. Nr. :</span><span class='MyData'><button class='ShowTelBtn' " +
+                    "3 CenterTopCO" : "<span class='MyLabel'>Telefonas :</span><span class='MyData'><button class='ShowTelBtn' " +
                     "title='Show phone number' onclick='Controller(this.className, `ShowTelNr`)'>Rodyti</button></span>"
                 }
             }
@@ -259,9 +259,9 @@ const LanguagesFullArray =
                 {
                     "LabelCenterTop" : "Мои\u2000контакты",
                     "0 CenterTopCO" : "<span class='MyLabel'>Имя :</span><span class='MyData'>Aidas</span>",
-                    "2 CenterTopCO" : "<span class='MyLabel'>Местоположение :</span><span class='MyData'>Klaipėda, Lietuva</span>",
+                    "2 CenterTopCO" : "<span class='MyLabel'>Локация :</span><span class='MyData'>Klaipėda, Lietuva</span>",
 
-                    "3 CenterTopCO" : "<span class='MyLabel'>Номер телефона :</span><span class='MyData'><button class='ShowTelBtn' " +
+                    "3 CenterTopCO" : "<span class='MyLabel'>Телефон :</span><span class='MyData'><button class='ShowTelBtn' " +
                     "title='Show phone number' onclick='Controller(this.className, `ShowTelNr`)'>Показать</button></span>"
                 }
             }

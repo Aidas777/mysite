@@ -67,7 +67,7 @@
     border: 2px solid rgb(150, 150, 235, 0.4);
     vertical-align: middle;
     width: 100px;
-    height: 30px;
+    height: 32px;
     font-size: 1.3rem;
     font-weight: 200;
 
@@ -231,6 +231,7 @@
 
     .MyLabel {
         width: 35%;
+        /* font-size: 1.05rem; */
     }
 
     .MyData {
@@ -239,12 +240,13 @@
 
     .CopyBtn, .ShowTelBtn {
         font-size: 1rem;
-        width: 16vw;
+        width: 19vw;
         height: 26px;
     }
 
     .CopyBtn {
-        margin-left: 5px;
+        margin-left: 7px;
+        margin-right: auto;
 
     }
 

@@ -5,29 +5,7 @@ window.onresize = () => {
     if (screen.width > 412 && MiddleOfPage.className == 'MiddleOfPage login') {
         location.reload();
     }
-    // AdjustLanguageLetters();
-    // if (window.innerWidth <376) {
-    //     const LanguagesDiv = document.querySelector('.Languages');
-    //     const NavigationBar = document.querySelector('.NavigationBar');
-
-    //     if (LanguagesDiv && NavigationBar) {
-    //         NavigationBar.append(LanguagesDiv);
-    //     }
-    // }
 }
-
-// window.onload = AdjustLanguageLetters;
-// // window.onload = () => {
-
-// function AdjustLanguageLetters() {
-//     if (window.innerWidth <376) {
-//         const LanguagesDiv = document.querySelector('.Languages');
-//         const NavigationBar = document.querySelector('.NavigationBar');
-//         if (LanguagesDiv && NavigationBar) {
-//             NavigationBar.append(LanguagesDiv);
-//         }
-//     }
-// }    
 
 
 /// CONTROLLER /// /// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ////// CONTROLLER ///
@@ -55,9 +33,12 @@ function Controller(ControlName, ActionName) {
         LoadPartToPage('bottom.html', 'FirstLoad');
         // ChangeNavBarElementColorWhenClicked('LoginControl');
 
+
+
     } else if (ControlName == 'AboutUsControl' && ActionName == 'OpenPage') {
         // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['ForDevelopment'], ColorRed);
         LoadPartToPage('aboutus.html');
+        // ChangeLanguageByCurrent();
         ChangeNavBarElementColorWhenClicked(ControlName);
 
     } else if (ControlName == 'LoginControl' && ActionName == 'OpenPage') {
@@ -79,6 +60,8 @@ function Controller(ControlName, ActionName) {
         // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['AlreadyOnLoginPage'], ColorRed);
         LoadPartToPage('services.html');
         ChangeNavBarElementColorWhenClicked(ControlName);
+
+
 
     } else if (ControlName != 'LoginControl' && ActionName == 'ShowMsg') {
         ShowMsg(GetTranslationsArrayByCurrentLanguage()['LoginPage']['MsgTexts']['ForDevelopment'], ColorRed);
@@ -571,7 +554,7 @@ function ChangeLanguageByCurrent() {
 
     // let MiddleOfPage = 'LoginPage';
     // let MiddleOfPage = GetCurrentMiddleOfPage();
-    let ObjectForLanguageChange;
+    // let ObjectForLanguageChange;
 
     // TRANLSATING NAVBAR
     ChangeLanguageByCurrentForNavBar();
@@ -780,8 +763,10 @@ function GetCurrentLanguageShort() {
 
     if (LTMenuControl.innerHTML == "EN") {
         return 'LT';
+
     } else if (RUMenuControl.innerHTML == "EN") {
         return 'RU';
+
     } else {
         return 'EN';
     }
