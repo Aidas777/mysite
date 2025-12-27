@@ -91,7 +91,6 @@ const LanguagesFullArray =
                     "Kiekvieną dieną sužinome ką nors naujo."
                     // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                 }
-
             }
         ,
 
@@ -102,7 +101,22 @@ const LanguagesFullArray =
                     "LabelCenterTop" : "Mano Programos"
                 }
             }
-            ,
+        ,
+
+        "ContactsPage" :
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "Mano kontaktai",
+                    "0 CenterTopCO" : "<span class='MyLabel'>Vardas :</span><span class='MyData'>Aidas</span>",
+                    "2 CenterTopCO" : "<span class='MyLabel'>Miestas :</span><span class='MyData'>Klaipėda, Lietuva</span>",
+
+                    "3 CenterTopCO" : "<span class='MyLabel'>Tel. Nr. :</span><span class='MyData'><button class='ShowTelBtn' " +
+                    "title='Show phone number' onclick='Controller(this.className, `ShowTelNr`)'>Rodyti</button></span>"
+                }
+                
+            }
+        ,
 
         "AllPages" :
             {
@@ -218,7 +232,7 @@ const LanguagesFullArray =
 
             "Texts" :
                 {
-                    "0 CenterTopOT" : "На самом деле, эта страница создана на будущее, и в настоящее время в команде только я :)",
+                    "0 CenterTopOT" : "Эта страница создана на будущее, и в настоящее время в команде только я :)",
                     // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
                     "1 CenterTopOT" : "Это мой первый опыт создания сайта без использования каких-либо " + 
@@ -228,6 +242,24 @@ const LanguagesFullArray =
                     // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                 }
 
+            }
+        ,
+
+        "ServicesPage" : //Programos / My Apps
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "Мои программы"
+                }
+            }
+        ,
+
+        "ContactsPage" :
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "Мои\u2000контакты"
+                }
             }
         ,
 
@@ -263,12 +295,12 @@ const LanguagesFullArray =
             {"Titles" : 
                 {
                     "LabelCenterTop" : "Login to Amiedra",
-                    "MenuLabel" : "Menu",
-                    "AboutUsControl" : "About Me",
-                    "OurTeamControl" : "Our Team",
-                    "ServicesControl" : "My Projects",
-                    "ContactsControl" : "Contacts",
-                    "LoginControl" : "Login",
+                    // "MenuLabel" : "Menu",
+                    // "AboutUsControl" : "About Me",
+                    // "OurTeamControl" : "Our Team",
+                    // "ServicesControl" : "My Projects",
+                    // "ContactsControl" : "Contacts",
+                    // "LoginControl" : "Login",
                     "SubmitButton" : "Login",
                     "SubmitButtonLogedIn" : "You're loged in",
                     "RegistrateLink" : "or register"
@@ -307,17 +339,65 @@ const LanguagesFullArray =
 
         "AboutUsPage" :
             {
-                // "Titles" : 
-                // {
-                //     "LeftSide" : "Amiedra LT is AboutUsPage"
-                // }
+            "Titles" : 
+                {
+                    "LabelCenterTop" : "Hi, my name is Aidas"
+                }
+                ,
+
             "Texts" :
                 {
                     "CenterTop" : "<p>I started my programming journey with <b>Microsoft Access</b> " +
-                "where over <b>eight years</b> I built complete applications and workflow tools for various companies. " +
-                "In 2021 I studied in <b>Baltic Institute of Technology</b> and gained <b>Web Developer Full Stack diploma with honors</b>. " +
-                "For about four years, I worked as a programmer at UAB DS Smith Packaging Lithuania. The majority of the technologies " +
-                "and tools I've worked with in my all career include :</p>"
+                    "where over <b>eight years</b> I built complete applications and workflow tools for various companies. " +
+                    "In 2021 I studied in <b>Baltic Institute of Technology</b> and gained <b>Web Developer Full Stack diploma with honors</b>. " +
+                    "For about four years, I worked as a programmer at UAB DS Smith Packaging Lithuania. The majority of the technologies " +
+                    "and tools I've worked with in my all career include :</p>",
+
+                    "RightSideAU" : "I enjoy creating efficient, practical solutions and continuously learning new technologies to improve my work.",
+
+                    "5 LeftSideRight" : "Linux and other technologies.", // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "CenterBottomAU" : "I created this website manually to enjoy coding and ideas implementation and to refine my coding skills."
+                }
+            }
+        ,
+
+        "OurTeamPage" :
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "Our Team"
+                }
+            ,
+
+            "Texts" :
+                {
+                    "0 CenterTopOT" : "Actually, this page was created for future use and the only team member at the moment is me :)",
+                    // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "1 CenterTopOT" : "This is my 'first pancake' in creation site manually from scratch not using any additional tools or frameworks. " +
+                    "It's a Demo website. Fully responsive. Try to change browser's window size, interact with variuos controls, switch naviagion pages, " +
+                    "also try to change language or check on phone.<br>Each day we learn something new. "
+                    // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                }
+
+            }
+        ,
+
+        "ServicesPage" : //Programos / My Apps
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "My Applications"
+                }
+            }
+        ,
+
+        "ContactsPage" :
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "My contacts"
                 }
             }
         ,
@@ -326,9 +406,24 @@ const LanguagesFullArray =
             {
                 "DemoLabelBottom" : "This is a Demo website. Fully responsive. Try to change browser's window size, " +
                 "interact with variuos controls, switch naviagion pages, " +
-                "also try to change language or check on phone.<br>Each day we learn something new."
+                "also try to change language or check on phone.<br>Each day we learn something new.",
+
+                "NavBarControls" :
+                    {
+                        "MenuLabel" : "Menu",
+                        "AboutUsControl" : "About Me",
+                        "OurTeamControl" : "Our Team",
+                        "ServicesControl" : "My Apps",
+                        "ContactsControl" : "Contacts",
+                        "LoginControl" : "Login"
+                    }
+                ,
+
+                "Fonts" :
+                    {
+                        "LabelCenterTop" : "'Montez', cursive"
+                    }
             }
-        
         }
 
     

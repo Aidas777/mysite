@@ -253,7 +253,7 @@ function GetPageTitle(WhatToLoad) {
     } else if (WhatToLoad.includes('login')) {
         WhatToLoad = 'Login';
     } else if (WhatToLoad.includes('services')) {
-        WhatToLoad = 'My Projects';
+        WhatToLoad = 'My Applications';
     }
 
     return 'Amiedra - ' + WhatToLoad;
@@ -634,20 +634,32 @@ function TranslateTitles() {
 
     ElementsPropertyToChange = 'Titles';
     TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
-
+    // console.log(TitlesArrayByCurrentLanguage);
+    
     if (TitlesArrayByCurrentLanguage) {
 
         for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
 
             if (!key.toLocaleLowerCase().includes('logedin')) { // skipping the line in Languages.js "SubmitButtonLogedIn" : "Prisijungta"
-                
-                ObjectForLanguageChange = document.getElementsByClassName(key)[0];
 
-                // if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
-                    // ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+                if (!isNaN(key.charAt(0))) { // IF KEY IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
 
-                // } else {
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
+                    ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+
+                } else {
+                    ObjectForLanguageChange = document.getElementsByClassName(key)[0];
                     ObjectForLanguageChange.innerHTML = value;
+
+                }
+                    // ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+
+                    // // if (ObjectForLanguageChange.parentElement.className == 'NavigationBarLinksBox') {
+                    //     // ObjectForLanguageChange.innerHTML = value + AdditionalDivForGlowEffect;
+
+                    // // } else {
+                    //     ObjectForLanguageChange.innerHTML = value;
+                    // // }
                 // }
             }
         }
@@ -758,6 +770,20 @@ function GetTranslationsArrayByCurrentLanguage() {
         // EN');
         return LanguagesFullArray['StringsForLanguageChangeToEN'];
         
+    }
+}
+
+function GetCurrentLanguageShort() {
+
+    const LTMenuControl = document.getElementsByClassName('LT')[0];
+    const RUMenuControl = document.getElementsByClassName('RU')[0];
+
+    if (LTMenuControl.innerHTML == "EN") {
+        return 'LT';
+    } else if (RUMenuControl.innerHTML == "EN") {
+        return 'RU';
+    } else {
+        return 'EN';
     }
 }
 
@@ -891,7 +917,14 @@ function ShowDataInElement(DataToShow, ShowInClassElement) {
         ShowInClassElement = ShowInClassElement.replace('active', '');
         ShowInElement = document.querySelector('.' + ShowInClassElement);
         ShowInElement.classList.remove('active');
-        ShowInElement.innerHTML = 'Show';
+
+        if (GetCurrentLanguageShort() == 'EN') {
+            ShowInElement.innerHTML = 'Show';
+        } else if (GetCurrentLanguageShort() == 'LT') {
+            ShowInElement.innerHTML = 'Rodyti';
+        } else {
+            ShowInElement.innerHTML = 'Показать';
+        }
     }
 
 }
