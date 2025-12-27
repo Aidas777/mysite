@@ -199,8 +199,14 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 // document.querySelector('link[href="style_"' + CurrentdMiddleOfPage + '".css"]').href = "style_" + CurrentdMiddleOfPage + ".css?v=" + Date.now();
 
                 // LoadedMiddlePageName = WhatToLoad;
-                AnimateLabelCenterTop();
+                // ChangeLanguageByCurrent();
+                // AnimateLabelCenterTop();
             }
+
+            if (Parameters != 'FirstLoad') {
+                ChangeLanguageByCurrent();
+            }
+            AnimateLabelCenterTop();
 
             if (!WhatToLoad.includes('bottom')) {
                 document.title = GetPageTitle(WhatToLoad);
@@ -212,13 +218,14 @@ function LoadPartToPage(WhatToLoad, Parameters) {
             // }
             ////////////////////////////////
 
-            if (CurrentdMiddleOfPage.includes('AboutUs')) {
-                // if (window.innerWidth >= 376) {
-                    // AnimateBlinkWaveAllLetters('.CenterBottomAU');
-                    AnimateBlinkWords('.CenterBottomAU');
-                    // AnimateBlinkOneLetter('.CenterBottom');
-                // }
-            }
+            // if (CurrentdMiddleOfPage.includes('AboutUs')) {
+
+            //     // if (window.innerWidth >= 376) {
+            //         // AnimateBlinkWaveAllLetters('.CenterBottomAU');
+            //         AnimateBlinkWords('.CenterBottomAU');
+            //         // AnimateBlinkOneLetter('.CenterBottom');
+            //     // }
+            // }
 
         })
         .catch(error => console.error('Error loading ' + WhatToLoad + ', something is wrong,', error));
