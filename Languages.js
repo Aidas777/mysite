@@ -25,11 +25,11 @@ const LanguagesFullArray =
                 }
             ,
 
-            "Fonts" :
-                {
-                    "LabelCenterTop" : "'Montez', cursive"
-                }
-            ,
+            // "Fonts" :
+            //     {
+            //         "LabelCenterTop" : "'Montez', cursive"
+            //     }
+            // ,
         
             "MsgTexts" : 
                 {
@@ -52,8 +52,7 @@ const LanguagesFullArray =
             {
             "Titles" : 
                 {
-                    "LabelCenterTop" : "Sveiki, aš vardu Aidas",
-                    "CenterBottomAU" : "Šią svetainę sukūriau rankiniu būdu, kad pasimėgauti programavimu ir idėjų įgyvendinimu, bei patobulinti savo programavimo įgūdžius."
+                    "LabelCenterTop" : "Sveiki, aš vardu Aidas"
                 }
             ,
 
@@ -66,33 +65,67 @@ const LanguagesFullArray =
 
                     "RightSideAU" : "Mėgstu kurti efektyvius ir praktiškus sprendimus, bei nuolat mokausi naujų technologijų, kad pagerinčiau savo darbą.",
 
-                    "LeftSideRight" : "5 Linux ir kita." // IF VALUE STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    "5 LeftSideRight" : "Linux ir kita.", // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
+                    "CenterBottomAU" : "Šią svetainę sukūriau rankiniu būdu, kad pasimėgauti programavimu ir idėjų įgyvendinimu, bei patobulinti savo programavimo įgūdžius."
                 }
             }
         ,
 
         "OurTeamPage" :
+            {
+                "Titles" : 
                 {
-                    "AAA" : "BBB"
+                    "LabelCenterTop" : "Mūsų komanda"
                 }
-            
+            ,
+
+            "Texts" :
+                {
+                    "0 CenterTopOT" : "Iš tikro, šis puslapis buvo sukurtas ateičiai ir šiuo metu vienintelis komandos narys esu aš :)",
+                    // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "1 CenterTopOT" : "Tai mano „pirmasis blynas“, kuriant svetainę rankiniu būdu 'nuo nulio', nenaudojant jokių papildomų įrankių ar platformų. " +
+                    "Tai demonstracinė svetainė. Pilnai adaptyvi ekranui. Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius mygtukus, " +
+                    "nuorodas, perjunkite naršymo puslapius. Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>" +
+                    "Kiekvieną dieną sužinome ką nors naujo."
+                    // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                }
+
+            }
         ,
+
+        "ServicesPage" : //Programos / My Apps
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "Mano Programos"
+                }
+            }
+            ,
 
         "AllPages" :
             {
                 "DemoLabelBottom" : "Tai demonstracinė svetainė. Pilnai adaptyvi ekranui. " + 
                     "Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius mygtukus, nuorodas, perjunkite naršymo puslapius. " +
                     "Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo.",
+
                 "NavBarControls" :
-                {
-                    "MenuLabel" : "Meniu",
-                    "AboutUsControl" : "Apie Mane",
-                    "OurTeamControl" : "Mūsų Komanda",
-                    "ServicesControl" : "Programos",
-                    "ContactsControl" : "Kontaktai",
-                    "LoginControl" : "Prisijungti",
-                }
+                    {
+                        "MenuLabel" : "Meniu",
+                        "AboutUsControl" : "Apie Mane",
+                        "OurTeamControl" : "Mūsų Komanda",
+                        "ServicesControl" : "Programos",
+                        "ContactsControl" : "Kontaktai",
+                        "LoginControl" : "Prisijungti"
+                    }
+                ,
+
+                "Fonts" :
+                    {
+                        "LabelCenterTop" : "'Montez', cursive"
+                    }
+                
             }
         }
     ,
@@ -105,12 +138,12 @@ const LanguagesFullArray =
             {"Titles" : 
                 {
                     "LabelCenterTop" : "Вход в\u2000Amiedra",
-                    "MenuLabel" : "Меню",
-                    "AboutUsControl" : "Обо Мне",
-                    "OurTeamControl" : "Наша Команда",
-                    "ServicesControl" : "Мои Проекты",
-                    "ContactsControl" : "Контакты",
-                    "LoginControl" : "Войти",
+                    // "MenuLabel" : "Меню",
+                    // "AboutUsControl" : "Обо Мне",
+                    // "OurTeamControl" : "Наша Команда",
+                    // "ServicesControl" : "Мои Проекты",
+                    // "ContactsControl" : "Контакты",
+                    // "LoginControl" : "Войти",
                     "SubmitButton" : "Войти",
                     "SubmitButtonLogedIn" : "Вы вошли",
                     "RegistrateLink" : "Регистрация"
@@ -124,11 +157,11 @@ const LanguagesFullArray =
                 }
             ,
 
-            "Fonts" :
-                {
-                    "LabelCenterTop" : "'Great Vibes', cursive"
-                }
-            ,
+            // "Fonts" :
+            //     {
+            //         "LabelCenterTop" : "'Great Vibes', cursive"
+            //     }
+            // ,
 
             "MsgTexts" : 
                 {
@@ -151,18 +184,50 @@ const LanguagesFullArray =
 
         "AboutUsPage" :
             {
-                // "Titles" : 
-                // {
-                //     "LeftSide" : "Amiedra LT is AboutUsPage"
-                // }
+            "Titles" : 
+                {
+                    "LabelCenterTop" : "Привет, я Айдас"
+                }
+                ,
+
             "Texts" :
                 {
                     "CenterTop" : "<p>Мой путь в программировании начался с <b>Microsoft Access</b>. " +
                     "<b>Восемь лет</b> я создавал полноценные приложения и инструменты для управления рабочими процессами для различных компаний. " +
                     "В 2021 году я учился в <b>Балтийском Технологическом Институте</b> и получил диплом <b>веб-разработчика Full Stack с отличием</b>. " +
                     "Около четырех лет я работал программистом в UAB DS Smith Packaging Lithuania. Основные технологий " +
-                    "и инструменты, с которыми я работал на протяжении всей своей карьеры, включают:</p>"
+                    "и инструменты, с которыми я работал на протяжении всей своей карьеры включают:</p>",
+
+                    "RightSideAU" : "Мне нравится создавать эффективные и практичные решения и я постоянно изучаю новые технологии, чтобы улучшить свою работу.",
+
+                    "5 LeftSideRight" : "Linux и другие.", // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "CenterBottomAU" : "Я создал этот сайт вручную, чтобы насладиться программированием " +
+                    "и воплощением идей и чтобы усовершенствовать навыки."
                 }
+            }
+        ,
+
+        "OurTeamPage" :
+            {
+                "Titles" : 
+                {
+                    "LabelCenterTop" : "Наша Команда"
+                }
+            ,
+
+            "Texts" :
+                {
+                    "0 CenterTopOT" : "На самом деле, эта страница создана на будущее, и в настоящее время в команде только я :)",
+                    // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "1 CenterTopOT" : "Это мой первый опыт создания сайта без использования каких-либо " + 
+                    "дополнительных инструментов или платформ, вручную 'с нуля'. Это демонстрационный сайт. Полностью адаптивный. " + 
+                    "Попробуйте изменить размер окна браузера, попробуйте  разные кнопки, ссылки, переключить страницы навигации. " +
+                    "Также попробуйте изменить язык или проверить на телефоне.<br>Каждый день мы учимся чему-то новому."
+                    // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                }
+
             }
         ,
 
@@ -170,7 +235,23 @@ const LanguagesFullArray =
             {
                 "DemoLabelBottom" : "Это демонстрационный сайт. Полностью адаптивный. Попробуйте изменить размер окна браузера, " +
                 "изпробуйте различные элементы управления, переключитесь между страницами навигации, " +
-                "также попробуйте изменить язык или проверьте на телефоне.<br>Каждый день мы учимся чему-то новому."
+                "также попробуйте изменить язык или проверьте на телефоне.<br>Каждый день мы учимся чему-то новому.",
+
+                "Fonts" :
+                    {
+                        "LabelCenterTop" : "'Great Vibes', cursive"
+                    }
+                ,
+
+                "NavBarControls" :
+                    {
+                        "MenuLabel" : "Меню",
+                        "AboutUsControl" : "Обо Мне",
+                        "OurTeamControl" : "Наша Команда",
+                        "ServicesControl" : "Программы",
+                        "ContactsControl" : "Контакты",
+                        "LoginControl" : "Войти"
+                    }
             }
         }
     ,

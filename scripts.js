@@ -676,7 +676,7 @@ function TranslatePlaceHolders() {
 // TRANLSATING (SWITCHNG) FONTS
 function SwitchFontByLanguage() {
     ElementsPropertyToChange = 'Fonts';
-    TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()[MiddleOfPage][ElementsPropertyToChange];
+    TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()['AllPages'][ElementsPropertyToChange];
 
     if (TitlesArrayByCurrentLanguage) {
         for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
@@ -699,13 +699,26 @@ function TranslateTexts() {
 
         for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
 
-            ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+            if (!isNaN(key.charAt(0))) { // IF KEY IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
 
-            if (!isNaN(value.charAt(0))) { // IF VALUE IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
-                ObjectForLanguageChange.children[value.charAt(0)].innerHTML = value.substring(2);
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
+                    ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+
+                    
             } else {
-                ObjectForLanguageChange.innerHTML = value;
+                    ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+                    ObjectForLanguageChange.innerHTML = value;
+
             }
+
+            // if (!isNaN(value.charAt(0))) { // IF VALUE IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
+
+            //     ObjectForLanguageChange = document.getElementsByClassName(key)[0];
+            //     ObjectForLanguageChange.children[value.charAt(0)].innerHTML = value.substring(2);
+                
+            // } else {
+            //     ObjectForLanguageChange.innerHTML = value;
+            // }
             
         }
     }
