@@ -38,7 +38,6 @@ function Controller(ControlName, ActionName) {
     } else if (ControlName == 'AboutUsControl' && ActionName == 'OpenPage') {
         // ShowMsg(GetTranslationsArrayByCurrentLanguage()['MsgTexts']['ForDevelopment'], ColorRed);
         LoadPartToPage('aboutus.html');
-        // ChangeLanguageByCurrent();
         ChangeNavBarElementColorWhenClicked(ControlName);
 
     } else if (ControlName == 'LoginControl' && ActionName == 'OpenPage') {
@@ -138,13 +137,15 @@ function Controller(ControlName, ActionName) {
 
 function AnimateLabelCenterTop() {
 
-const LabelCenterTop = document.querySelector('.LabelCenterTop');
-            setTimeout(function() {
-                LabelCenterTop.classList.add('hover-simulated');
-            }, 300);
-            setTimeout(function() { 
-                LabelCenterTop.classList.remove('hover-simulated');
-            }, 900);
+    const LabelCenterTop = document.querySelector('.LabelCenterTop');
+    if (LabelCenterTop) {
+        setTimeout(function() {
+            LabelCenterTop.classList.add('hover-simulated');
+        }, 300);
+        setTimeout(function() { 
+            LabelCenterTop.classList.remove('hover-simulated');
+        }, 900);
+    }
 }
 
 // let LoadedMiddlePageName;
@@ -960,6 +961,4 @@ const ColorGreen = {
 const ColorRed = {
     FontColor : 'rgb(235, 150, 231)',
     BackColor : 'rgba(250, 134, 196, 0.2)'
-
 }
-
