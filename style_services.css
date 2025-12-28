@@ -34,16 +34,21 @@
     /* text-align: center; */
 }
 
-.TextCenterSmall {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.ItemList {
+    position: relative;
 }
 
-.TextCenter {
+.ItemTextCenterUpper {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ItemTextCenterMiddle {
     margin-bottom: 20px;
 }
 
-.FrameTop {
+.ItemPicFrame {
     position: relative;
     display: flex;
     width: 100%;
@@ -71,6 +76,10 @@
     100% {
         opacity: 1;
     }
+}
+
+.ItemTextCenterBottom {
+    margin-top: 15px;
 }
 
 .CenterMiddleSR {
@@ -141,12 +150,12 @@
         }
     }
 
-    .TextCenterSmall {
+    .ItemTextCenterUpper {
         font-size: 1rem;
         margin-bottom: 5px;
     }
 
-    .FrameTop img {
+    .ItemPicFrame img {
         position: relative;
         width: 60vw;
         height: auto;

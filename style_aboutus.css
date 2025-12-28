@@ -24,12 +24,11 @@
     /* background-color: rgb(36, 40, 69); */
     background: linear-gradient(to right, rgb(25, 28, 48), rgb(54, 60, 105));
     /* box-shadow: 0 0 15px inset rgb(0, 0, 0); */
-
    
     background-repeat: no-repeat;
     z-index: 9;
     overflow: hidden;
-
+    
     img {
         width: 100%;
         height: auto;
@@ -39,6 +38,7 @@
         z-index: -9;
     }
 }   
+
 
 .OuterLowerContainer {
     display: flex;

@@ -924,7 +924,7 @@ function ShowDataInElement(DataToShow, ShowInClassElement) {
 }
 
 function CopyTxt(CopyFromElement) {
-    
+
     let text = '';
     let ElementSequenceNr;
     let StringPositionNr;
