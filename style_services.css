@@ -59,6 +59,8 @@
 
 .ItemTextCenterMiddle {
     margin-bottom: 20px;
+    width: 80%;
+    align-self: center;
     text-indent: 4rem;
     text-align: justify;
 }
