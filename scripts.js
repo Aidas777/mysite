@@ -61,8 +61,6 @@ function Controller(ControlName, ActionName) {
         LoadPartToPage('services.html');
         ChangeNavBarElementColorWhenClicked(ControlName);
 
-
-
     } else if (ControlName != 'LoginControl' && ActionName == 'ShowMsg') {
         ShowMsg(GetTranslationsArrayByCurrentLanguage()['LoginPage']['MsgTexts']['ForDevelopment'], ColorRed);
 
@@ -132,6 +130,51 @@ function Controller(ControlName, ActionName) {
             LabelCenterTopObject.classList.remove('active');
         }
     }
+
+    const LabelsBottomRightBoxObject = document.querySelector('.LabelsBottomRightBox');
+    const LabelsBottomLeftBoxObject = document.querySelector('.LabelsBottomLeftBox');
+    if (ControlName == 'ServicesControl') {
+
+        LabelsBottomRightBoxObject.style.display = 'none';
+        LabelsBottomLeftBoxObject.style.display = 'none';
+
+        window.addEventListener('scroll', ShowHideBottomPage);
+
+    } else {
+
+        if (LabelsBottomRightBoxObject != undefined && LabelsBottomLeftBoxObject != undefined)  {
+            LabelsBottomRightBoxObject.style.display = 'flex';
+            LabelsBottomLeftBoxObject.style.display = 'flex';
+        }
+
+        window.removeEventListener('scroll', ShowHideBottomPage);
+    }
+    // alert(ControlName);
+}
+
+
+function ShowHideBottomPage() {
+
+    const LabelsBottomRightBoxObject = document.querySelector('.LabelsBottomRightBox');
+    const LabelsBottomLeftBoxObject = document.querySelector('.LabelsBottomLeftBox');
+    
+    // Height of the visible window
+    const windowHeight = window.innerHeight;
+    // How far the user has scrolled from the top
+    const scrolledFromTop = window.scrollY;
+    // Total height of the entire document
+    const totalPageHeight = document.documentElement.scrollHeight;
+
+    // Check if the sum of visible height + scroll distance reaches the total height
+    if (windowHeight + scrolledFromTop >= totalPageHeight - 1) {
+
+        LabelsBottomRightBoxObject.style.display = 'flex';
+        LabelsBottomLeftBoxObject.style.display = 'flex';
+    } else {
+
+        LabelsBottomRightBoxObject.style.display = 'none';
+        LabelsBottomLeftBoxObject.style.display = 'none';
+    }
 }
 
 
@@ -147,6 +190,7 @@ function AnimateLabelCenterTop() {
         }, 900);
     }
 }
+
 
 // let LoadedMiddlePageName;
 function LoadPartToPage(WhatToLoad, Parameters) {
@@ -251,6 +295,7 @@ function GetPageTitle(WhatToLoad) {
     return 'Amiedra - ' + WhatToLoad;
 }
 
+
 // ANIMATE BLINK ALL LETTERS (NOT USED FOR NOW. USED FOR WORDS ANIMATION INSTEAD TO SAVE CPU LOAD)
 function AnimateBlinkWaveAllLetters(OnElement) {
 
@@ -269,6 +314,7 @@ function AnimateBlinkWaveAllLetters(OnElement) {
         
     }
 }
+
 
 // ANIMATE BLINK WORDS (CURRENTY IN USE)
 function AnimateBlinkWords(OnElement) {
@@ -765,6 +811,7 @@ function GetTranslationsArrayByCurrentLanguage() {
     }
 }
 
+
 function GetCurrentLanguageShort() {
 
     const LTMenuControl = document.getElementsByClassName('LT')[0];
@@ -809,6 +856,7 @@ function LoginAction(CurrentPage)
     }
 }
 
+
 function AreLoginAndPassAccepted() {
 
     const LoginInputObject = document.getElementsByClassName("LoginInput")[0];
@@ -830,6 +878,7 @@ function AreLoginAndPassAccepted() {
 function IsNumberOdd(n) {
     return (n & 1 == 1);
 }
+
 
 function ShowMsg(Msg, MsgColor) {
 
@@ -861,6 +910,7 @@ function ShowMsg(Msg, MsgColor) {
         MsgBoxObject.removeAttribute("class", "FadeAway");
     }, 5100)
 }
+
 
 function GetTelNr(TelNr) {
 
@@ -896,6 +946,7 @@ function GetTelNr(TelNr) {
 
 }   
 
+
 function ShowDataInElement(DataToShow, ShowInClassElement) {
 
     let ShowInElement; 
@@ -922,6 +973,7 @@ function ShowDataInElement(DataToShow, ShowInClassElement) {
     }
 
 }
+
 
 function CopyTxt(CopyFromElement) {
 

@@ -55,12 +55,29 @@
 
 .LabelsBottomRightBox {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 1%;
     bottom: 1%;
-    top: 860px;
+    /* top: 860px; */
     width: 20%;
     height: 42px;
+    bottom: 10px;
+
+    animation-name: Appear;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    /* animation-timeline: view(); */
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
 }
 
 .LabelBottomRightCreator {
@@ -89,15 +106,20 @@
 
 .LabelsBottomLeftBox {
     display: flex;
-    position: absolute;
+    position: fixed;
+    place-items: center;
     left: 1%;
-    bottom: 0;
-    top: 875px;
+    bottom: 10px;
+    /* top: 875px; */
     width: 20%;
-    height: 36px;
+    height: 30px;
     color: rgba(150, 150, 235, 0.6);
     font-style: italic;
     font-size: 0.8rem;
+
+    animation-name: Appear;
+    animation-timing-function: linear;
+    animation-duration: 1s;
 }
 
 

@@ -1,5 +1,6 @@
 .MiddleOfPage.ServicesPage {
     margin-top: 10px;
+    height: auto;
 }
 
 .OuterLowerContainerSR {
@@ -127,7 +128,7 @@
 }
 
 .LabelsBottomRightBox, .LabelsBottomLeftBox {
-    position: fixed !important;
+    bottom: 20px;
     /* top: 1000px; */
 }
 
