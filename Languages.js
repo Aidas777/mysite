@@ -266,9 +266,21 @@ const LanguagesFullArray =
 
         "ServicesPage" : //Programos / My Apps
             {
-                "Titles" : 
+            "Titles" : 
                 {
                     "LabelCenterTop" : "Mои программы"
+                }
+            ,
+            "Texts" :
+                {
+                    "ItemTextCenterMiddle" : 
+                    "<b><i>Aimer</i></b> — это удобный инструмент для международных транспортных компаний, оптимизирующий процессы пассажирских " +
+                    "и посылочных перевозок. Система разработана для облегчения работы менеджеров и водителей, обеспечивая лучшее качество обслуживания ваших клиентов.<br><br>" +
+                    "Программа позволяет быстро и безошибочно планировать маршруты, управлять информацией, вести финансовый учет и генерировать отчеты. " +
+                    "Ручной ввод адресов, поиск регионов и управление бумажными данными заменяются автоматизированными решениями — вся необходимая информация и визуализация " +
+                    "на картах доступны одним щелчком мыши.<br><br>" +
+                    "Избавьтесь от постоянного стресса, связанного с потоком информации. С Aimer управление адресами и координация маршрутов станут удобной, " +
+                    "простой и спокойной частью вашей повседневной жизни."
                 }
             }
         ,
@@ -412,23 +424,23 @@ const LanguagesFullArray =
 
         "ServicesPage" : //Programos / My Apps
             {
-                "Titles" : 
-                    {
-                        "LabelCenterTop" : "My Applications"
-                    }
-                ,
-                "Texts" :
-                    {
-                        "ItemTextCenterMiddle" : 
-                        "<b><i>Aimer</i></b> is a smart tool for international transportation businesses that optimizes " +
-                        "passenger and parcel transportation processes. The system is designed to make work easier for managers and drivers, " +
-                        "ensuring the highest quality of service for your customers.<br><br>" +
-                        "The program allows you to quickly and without errors plan routes, manage information, keep financial records and generate reports. " +
-                        "Manual address entry, region searches and paper data management are replaced by automated solutions - all relevant information and "+
-                        "visualization on maps are available with one click.<br><br>" +
-                        "Get rid of the constant stress due to the flow of information. With Aimer, address management and route coordination become a smooth, " +
-                        "simple and secure part of your everyday life."
-                    }
+            "Titles" : 
+                {
+                    "LabelCenterTop" : "My Applications"
+                }
+            ,
+            "Texts" :
+                {
+                    "ItemTextCenterMiddle" : 
+                    "<b><i>Aimer</i></b> is a smart tool for international transportation businesses that optimizes " +
+                    "passenger and parcel transportation processes. The system is designed to make work easier for managers and drivers, " +
+                    "ensuring the highest quality of service for your customers.<br><br>" +
+                    "The program allows you to quickly and without errors plan routes, manage information, keep financial records and generate reports. " +
+                    "Manual address entry, region searches and paper data management are replaced by automated solutions - all relevant information and "+
+                    "visualization on maps are available with one click.<br><br>" +
+                    "Get rid of the constant stress due to the flow of information. With Aimer, address management and route coordination become a smooth, " +
+                    "simple and easy part of your everyday life."
+                }
             }
         ,
 

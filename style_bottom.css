@@ -25,7 +25,7 @@
     text-align: center;
     opacity: 1; 
 
-    /* animation-name: DemoBlow; */
+    animation-name: DemoBlow;
     animation-delay: 15s;
     animation-iteration-count: 1;
     animation-duration: 5s;
