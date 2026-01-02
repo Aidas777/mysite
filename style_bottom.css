@@ -253,7 +253,8 @@
     
     .LabelsBottomRightBox {
         height: 22px;
-        top: 470px;
+        /* top: 470px; */
+        bottom: 25px;
     }
 
     .LabelsBottomLeftBox {
