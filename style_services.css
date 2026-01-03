@@ -37,6 +37,7 @@
 
 .ItemList {
     position: relative;
+    width: 100%;
 }
 
 .ItemDetails_1 {
@@ -94,6 +95,10 @@
     100% {
         opacity: 1;
     }
+}
+
+.ItemDetails_2 .ItemPicFrame img {
+    width: 50vw;
 }
 
 .ItemTextCenterBottom {
@@ -191,6 +196,7 @@
     }
 
     .CenterTopSR {
+        width: 90%;
         font-size: 1.2rem;
         /* height: 84px; */
         margin-top: 5px;
@@ -207,7 +213,7 @@
         margin-bottom: 15px;
     }
 
-    .ItemTextCenterMiddle {
+    .ItemTextCenterMiddle, .ItemTextCenterBottom {
         font-size: 0.9rem;
     }
 
