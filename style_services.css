@@ -19,7 +19,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 80%;
     /* height: 120px; */
     display: flex;
@@ -43,13 +43,14 @@
 .ItemDetails_1 {
     display: flex;
     flex-flow: column;
+    position: relative;
 }
 
-.ItemTextCenterUpper {
+.ItemDetails_1 .ItemTextCenterUpper {
     font-size: 1.8rem;
     font-weight: 700;
     font-style: italic;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: center;
     /* border-bottom: 2px solid rgb(150, 150, 235); */
     width: 30%;
@@ -58,10 +59,29 @@
     color: rgb(235, 150, 231);
 }
 
-.ItemTextCenterMiddle {
-    margin-bottom: 20px;
+.ItemDetails_2 .ItemTextCenterUpper {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-indent: 4rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    /* color: rgb(235, 150, 231); */
+}
+
+.ItemDetails_1 .ItemTextCenterMiddle {
+    margin-bottom: 30px;
     width: 100%;
     align-self: center;
+    text-align: justify;
+}
+
+.ItemDetails_1 .ItemTextCenterMiddle {
+    text-indent: 4rem;
+}
+
+.ItemDetails_2 .ItemTextCenterMiddle {
+    margin-bottom: 20px;
     text-indent: 4rem;
     text-align: justify;
 }
@@ -72,12 +92,14 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     justify-content: center;
     opacity: 0.7;
     
+}
 
-    img {
+
+.ItemDetails_1 .ItemPicFrame img {
         position: relative;
         width: 40vw;
         height: auto;
@@ -85,8 +107,8 @@
         object-fit: contain;
 
         animation: ImgFadeIn 1s ease-in-out forwards;
-    }
 }
+
 
 @keyframes ImgFadeIn {
     0% {
@@ -101,8 +123,9 @@
     width: 50vw;
 }
 
-.ItemTextCenterBottom {
+.ItemDetails_1 .ItemTextCenterBottom {
     margin-top: 0;
+    margin-bottom: 30px;
     text-indent: 4rem;
     text-align: justify;
 }
@@ -208,18 +231,48 @@
         }
     }
 
-    .ItemTextCenterUpper {
-        font-size: 1rem;
-        margin-bottom: 15px;
+    .ItemDetails_1 {
+        margin-bottom: 10px;
     }
 
-    .ItemTextCenterMiddle, .ItemTextCenterBottom {
+    .ItemDetails_2 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .ItemDetails_1 .ItemTextCenterMiddle, .ItemDetails_1 .ItemTextCenterBottom {
+        font-size: 0.9rem;
+        text-indent: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .ItemDetails_2 .ItemTextCenterMiddle, .ItemDetails_2 .ItemTextCenterBottom {
         font-size: 0.9rem;
     }
 
-    .ItemPicFrame img {
+    .ItemDetails_2 .ItemTextCenterMiddle {
+        text-indent: 1rem;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    .ItemDetails_2 .ItemTextCenterBottom {
+        text-indent: 2rem;
+    }
+
+    .ItemDetails_1 .ItemPicFrame img {
         position: relative;
-        width: 80vw;
+        width: 100%;
+        height: auto;
+        /* image-rendering: optimizeQuality; */
+
+    }
+
+    .ItemDetails_2 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
         height: auto;
         /* image-rendering: optimizeQuality; */
 

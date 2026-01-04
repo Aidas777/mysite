@@ -757,11 +757,22 @@ function TranslateTexts() {
 
         for (const [key, value] of Object.entries(TitlesArrayByCurrentLanguage)) {
 
-            if (!isNaN(key.charAt(0))) { // IF KEY IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
+            // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+            // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER ON HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
+            if (!isNaN(key.charAt(0))) {
+
+                if (key.charAt(1) == '-') {
                     ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
                     ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
 
+                } else if (key.charAt(1) == ' ') {
+
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[key.charAt(0)]
+                    if (ObjectForLanguageChange) {
+                        ObjectForLanguageChange.innerHTML = value;
+                    }
+                }
                     
             } else {
                     ObjectForLanguageChange = document.getElementsByClassName(key)[0];

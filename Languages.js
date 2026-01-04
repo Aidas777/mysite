@@ -65,7 +65,9 @@ const LanguagesFullArray =
 
                     "RightSideAU" : "Mėgstu kurti efektyvius ir praktiškus sprendimus, bei nuolat mokausi naujų technologijų, kad pagerinčiau savo darbą.",
 
-                    "5 LeftSideRight" : "Linux ir kita.", // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    "5-LeftSideRight" : "Linux ir kita.",
 
                     "CenterBottomAU" : "Šią svetainę sukūriau rankiniu būdu, kad pasimėgauti programavimu ir idėjų įgyvendinimu, bei patobulinti savo programavimo įgūdžius."
                 }
@@ -103,28 +105,27 @@ const LanguagesFullArray =
             ,
             "Texts" :
                 {
-                "ItemTextCenterMiddle" : 
-                //     "<b><i>Aimer</i></b> – tai įrankis skirtas daugiausia įmonėms, gabenančioms keleivius ir siuntinius " +
-                // "mikroautobusais tarptautiniais maršrutais. Ši programa - tai pagalba tiek asmenims planuojantiems reisus, tiek vairuotojams, " +
-                // "o reiškia ir klientams. Ji skirta greitai, paprastai ir efektyviai sudarinėti maršrutus, išvengti reiso planavimo klaidų. " +
-                // "Ji apima ir tokias užduotis kaip informacijos valdymas ir pasidalinimas, pinigų apskaita, ataskaitų kūrimas, asmeniniai priminimai, " +
-                // "kitos svarbios užduotys.<br>" +
-
-                // "Rankinį adresų vedimą, regionų paieškas bei popierinį duomenų tvarkymą keičia išmanūs sprendimai " +
-                // "– visa reikalinga informacija kartu su atvaizdavimu žemėlapiuose dabar pasiekiama akimirksniu, vieno mygtuko paspaudimu. " +
-                // "Pamirškite nerimą siekiant nepamiršti svarbios informacijos. Adresų valdymas ir maršrutų derinimas tampa sklandžia ir lengva kasdienybės dalimi."
-                
-                // "Varginantys adresų suvedinėjimai į žemėlapių svetaines, regionų paieška jose, " +
-                // "duomenų “perrašinėjimai iš lapų į lapus“ ar pan., įtampa siekiant nepamiršti svarbios informacijos, " +
-                // "“galų suvedinėjimai“ prieš ar po reiso taps praeitimi."
-
+                "0 ItemTextCenterMiddle" : 
                 "<b><i>Aimer</i></b> – tai įrankis, skirtas tarptautinių pervežimų verslui, optimizuojantis keleivių ir siuntų gabenimo procesus. " +
                 "Sistema sukurta siekiant palengvinti darbą vadybininkams ir vairuotojams, užtikrinant aukščiausią paslaugų kokybę jūsų klientams.<br><br>" +
                 "Programa leidžia greitai ir be klaidų planuoti maršrutus, valdyti informaciją, vesti pinigų apskaitą bei generuoti ataskaitas. " +
                 "Rankinį adresų vedimą, regionų paieškas bei popierinį duomenų tvarkymą keičia automatizuoti sprendimai – " +
                 "visa aktuali informacija ir vizualizacija žemėlapiuose pasiekiama vienu mygtuko paspaudimu.<br><br>" +
                 "Atsikratykite nuolatinės įtampos dėl informacijos srauto. Su Aimer adresų valdymas ir maršrutų derinimas tampa sklandžia, "+
-                "paprasta ir užtikrinta jūsų kasdienybės dalimi."
+                "paprasta ir užtikrinta jūsų kasdienybės dalimi.",
+
+                "1 ItemTextCenterUpper" : "1. Informacijos rinkimas planuojamam reisui.",
+
+                "ItemTextCenterBottom" : 
+                "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
+                "žemėlapiai ir net priminimai dėl artėjančio prie pabaigos „technikinio“ ar draudimo. Maršruto išplanavimą sudaro trys pagrindiniai procesai:",
+
+                "1 ItemTextCenterMiddle" : 
+                "Programoje per visą laikotarpį iki išvykimo yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
+                "sutartas kainas ir t.t.). Prieš reiso pradžą bet kurią akimirką yra atliekamas galutinis ar pakartotinis išplanavimas. " +
+                "Programa automatiškai sugrupuoja adresus ir remiantis atstumais atlieka pirminį rikiavimą. Visas mašršutas atvaizduojamas žemėlapyje. " +
+                "Esant poreikiui (jei pvz.: klientas nusprendė vykti vėliau ar anksčiau), duomenys gali būti perkialiami į kitus reisus:"
+                
                 }
             }
         ,
@@ -233,7 +234,9 @@ const LanguagesFullArray =
 
                     "RightSideAU" : "Мне нравится создавать эффективные и практичные решения и я постоянно изучаю новые технологии, чтобы улучшить свою работу.",
 
-                    "5 LeftSideRight" : "Linux и другие.", // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    "5-LeftSideRight" : "Linux и другие.", 
 
                     "CenterBottomAU" : "Я создал этот сайт вручную, чтобы насладиться программированием " +
                     "и воплощением идей и чтобы усовершенствовать навыки."
@@ -279,7 +282,7 @@ const LanguagesFullArray =
                     "Программа позволяет быстро и безошибочно планировать маршруты, управлять информацией, вести финансовый учет и генерировать отчеты. " +
                     "Ручной ввод адресов, поиск регионов и управление бумажными данными заменяются автоматизированными решениями — вся необходимая информация и визуализация " +
                     "на картах доступны одним щелчком мыши.<br><br>" +
-                    "Избавьтесь от постоянного стресса, связанного с потоком информации. С Aimer управление адресами и координация маршрутов станут удобной, " +
+                    "Избавьтесь от постоянного стресса, связанного с потоком информации. С Aimer управление адресами и маршрутами станут удобной, " +
                     "простой и спокойной частью вашей повседневной жизни."
                 }
             }
@@ -393,7 +396,9 @@ const LanguagesFullArray =
 
                     "RightSideAU" : "I enjoy creating efficient, practical solutions and continuously learning new technologies to improve my work.",
 
-                    "5 LeftSideRight" : "Linux and other technologies.", // IF KEY STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    "5-LeftSideRight" : "Linux and other technologies.",
 
                     "CenterBottomAU" : "I created this website manually to enjoy coding and ideas implementation and to refine my coding skills."
                 }
@@ -431,15 +436,27 @@ const LanguagesFullArray =
             ,
             "Texts" :
                 {
-                    "ItemTextCenterMiddle" : 
+                    "0 ItemTextCenterMiddle" : 
                     "<b><i>Aimer</i></b> is a tool for international transportation businesses that optimizes " +
                     "passenger and parcel transportation processes. The system is designed to make work easier for managers and drivers, " +
                     "ensuring the highest quality of service for your customers.<br><br>" +
-                    "The program allows you to quickly and without errors plan routes, manage information, keep financial records and generate reports. " +
+                    "The program allows you quickly and without errors plan routes, manage information, keep financial records and generate reports. " +
                     "Manual address entry, region searches and paper data management are replaced by automated solutions - all relevant information and "+
                     "visualization on maps are available with one click.<br><br>" +
                     "Get rid of the constant stress due to the flow of information. With Aimer, address management and route coordination become a smooth, " +
-                    "simple and easy part of your everyday life."
+                    "simple and easy part of your everyday life.",
+
+                    "1 ItemTextCenterUpper" : "1. Gathering information for the charter (trip).",
+
+                    "1 ItemTextCenterMiddle" :
+                    "Manager collects and inputs all information about charter (trip) (passengers, parcels, pickup and delivery addresses, agreed prices, etc.) " +
+                    "into application throughout the entire period before departure. At any time before departure the final arrangement or re-arrangement should be performed. " +
+                    "Addresses are grouped and arrangements relating on distance are done automatically by application. If necessary (for example, if the client decides to leave later or earlier), " +
+                    "data can be moved to another charters:",
+
+                    "0 ItemTextCenterBottom" : 
+                    "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
+                    "reports, maps and even reminders before ending of technical inspection or insurance. Route planning consists of three main processes :"
                 }
             }
         ,
