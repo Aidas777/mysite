@@ -273,6 +273,13 @@
         margin-bottom: 10px;
     }
 
+    .ItemDetails_3 .ItemTextCenterMiddle {
+        text-indent: 1rem;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
     .ItemDetails_2 .ItemTextCenterBottom {
         text-indent: 2rem;
     }
@@ -291,6 +298,12 @@
         height: auto;
         /* image-rendering: optimizeQuality; */
 
+    }
+
+    .ItemDetails_3 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
     }
 
     .CenterMiddleSR {
