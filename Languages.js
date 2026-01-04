@@ -121,10 +121,17 @@ const LanguagesFullArray =
                 "žemėlapiai ir net priminimai dėl artėjančio prie pabaigos „technikinio“ ar draudimo. Maršruto išplanavimą sudaro trys pagrindiniai procesai:",
 
                 "1 ItemTextCenterMiddle" : 
-                "Programoje per visą laikotarpį iki išvykimo yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
+                "Per visą laikotarpį iki išvykimo programoje yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
                 "sutartas kainas ir t.t.). Prieš reiso pradžą bet kurią akimirką yra atliekamas galutinis ar pakartotinis išplanavimas. " +
                 "Programa automatiškai sugrupuoja adresus ir remiantis atstumais atlieka pirminį rikiavimą. Visas mašršutas atvaizduojamas žemėlapyje. " +
-                "Esant poreikiui (jei pvz.: klientas nusprendė vykti vėliau ar anksčiau), duomenys gali būti perkialiami į kitus reisus:"
+                "Esant poreikiui (jei pvz.: klientas nusprendė vykti vėliau ar anksčiau), duomenys gali būti perkialiami į kitus reisus:",
+
+                "2 ItemTextCenterMiddle" :
+                "Daugkartiniam naudojimui programoje nuolat yra kaupiami visi duomenis apie klientus, jų adresus ir pan., o taip pat patogumui kaupiama informacija " +
+                "ir apie surinkimo-pristatymo punktus (vadinamus “Bendruosius taškus“ – kuomet vienoje vietoje yra paimama daugiau nei vienas siuntinys ar keleivis). " +
+                "Visa informacija randama akimirskniu pagal pageidaujamus jos (kriterijų) fragmentus. Kriterijai yra sumuojami. " +
+                "(Pvz.: jau kalbant telefonu užtenka įvesti kelis paskutinius skambinančiojo tel. numerio skaičius ir programa “atrinks“ visus atitinkamus klientus. " +
+                "Papildomai įvedus miesto pavadinimo fragmentą (ar betkurį kitą kriterijų) “atrenkama“ dar tikslesnė informacija)."
                 
                 }
             }
@@ -450,9 +457,17 @@ const LanguagesFullArray =
 
                     "1 ItemTextCenterMiddle" :
                     "Manager collects and inputs all information about charter (trip) (passengers, parcels, pickup and delivery addresses, agreed prices, etc.) " +
-                    "into application throughout the entire period before departure. At any time before departure the final arrangement or re-arrangement should be performed. " +
+                    "into application during entire period before departure. At any time before departure the final arrangement or re-arrangement should be performed. " +
                     "Addresses are grouped and arrangements relating on distance are done automatically by application. If necessary (for example, if the client decides to leave later or earlier), " +
                     "data can be moved to another charters:",
+
+                    "2 ItemTextCenterMiddle" :
+                    "For multiple use, the program constantly stores all data about customers, their addresses, etc., and also, for convenience, " +
+                    "information about collection-delivery points (called 'Collection Points' - when more than one parcel or passenger is picked up at one place). " +
+                    "All information is found instantly according to the desired fragments of it (criteria). The criteria are summed up. " +
+                    "(For example: while talking on the phone, it is enough to enter the last few digits of the caller's phone number and " +
+                    "the program will 'select' all relevant customers. By additionally entering a fragment of the city name (or any other criterion), " +
+                    "even more accurate information is 'selected').",
 
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
