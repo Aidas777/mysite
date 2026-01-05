@@ -325,7 +325,7 @@ body {
     }
 
     .CenterTopOT {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         max-height: 150px;
         height: 140px;
         margin-top: 5px;
@@ -335,9 +335,9 @@ body {
             font-size: 1.4rem;
         }
 
-        p:nth-child(2) {
+        /* p:nth-child(2) {
             font-size: 0.9rem;
-        }
+        } */
     }
 
     .CenterMiddleOT {
