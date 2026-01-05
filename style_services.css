@@ -107,7 +107,7 @@
 
 .ItemDetails_1 .ItemPicFrame img {
         position: relative;
-        width: 40vw;
+        width: 70%;
         height: auto;
         /* image-rendering: optimizeQuality; */
         object-fit: contain;
@@ -127,10 +127,12 @@
 
 .ItemDetails_2 .ItemPicFrame img {
     width: 80%;
+    height: auto;
 }
 
 .ItemDetails_3 .ItemPicFrame img {
     width: 90%;
+    height: auto;
 }
 
 .ItemDetails_1 .ItemTextCenterBottom {
