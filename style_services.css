@@ -112,18 +112,18 @@
         /* image-rendering: optimizeQuality; */
         object-fit: contain;
 
-        /* animation: ImgFadeIn 1s ease-in-out forwards; */
+        animation: ImgFadeIn 1s ease-in-out forwards;
 }
 
 
-/* @keyframes ImgFadeIn {
+@keyframes ImgFadeIn {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-} */
+}
 
 .ItemDetails_2 .ItemPicFrame img {
     width: 80%;
