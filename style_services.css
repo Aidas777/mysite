@@ -142,6 +142,11 @@
     text-align: justify;
 }
 
+.ItemDetails_3 .ItemTextCenterBottom {
+    text-indent: 4rem;
+    text-align: justify;
+}
+
 .CenterMiddleSR {
     width: 100%;
     height: 160px;

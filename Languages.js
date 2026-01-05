@@ -118,10 +118,6 @@ const LanguagesFullArray =
 
                 "1 ItemTextCenterUpper" : "1. Informacijos rinkimas planuojamam reisui.",
 
-                "ItemTextCenterBottom" : 
-                "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
-                "žemėlapiai ir net priminimai dėl artėjančio prie pabaigos „technikinio“ ar draudimo. Maršruto išplanavimą sudaro trys pagrindiniai procesai:",
-
                 "1 ItemTextCenterMiddle" : 
                 "Per visą laikotarpį iki išvykimo programoje yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
                 "sutartas kainas ir t.t.). Prieš reiso pradžą bet kurią akimirką yra atliekamas galutinis ar pakartotinis išplanavimas. " +
@@ -133,8 +129,16 @@ const LanguagesFullArray =
                 "ir apie surinkimo-pristatymo punktus (vadinamus “Bendruosius taškus“ – kuomet vienoje vietoje yra paimama daugiau nei vienas siuntinys ar keleivis). " +
                 "Visa informacija randama akimirskniu pagal pageidaujamus jos (kriterijų) fragmentus. Kriterijai yra sumuojami. " +
                 "(Pvz.: jau kalbant telefonu užtenka įvesti kelis paskutinius skambinančiojo tel. numerio skaičius ir programa “atrinks“ visus atitinkamus klientus. " +
-                "Papildomai įvedus miesto pavadinimo fragmentą (ar betkurį kitą kriterijų) “atrenkama“ dar tikslesnė informacija)."
+                "Papildomai įvedus miesto pavadinimo fragmentą (ar betkurį kitą kriterijų) “atrenkama“ dar tikslesnė informacija).",
                 
+                "0 ItemTextCenterBottom" : 
+                "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
+                "žemėlapiai ir net priminimai dėl artėjančio prie pabaigos „technikinio“ ar draudimo. Maršruto išplanavimą sudaro trys pagrindiniai procesai:",
+
+                "2 ItemTextCenterBottom" :
+                "Aimer siekiant patogumo ir tikslumo yra integruoti dveji plačiai pasaulyje naudojami žemėlapiai. " +
+                "Programa apdoroja ir adresų, ir koordinačių duomenis (koordinatės yra ypač patogios nesant tiksliam adresui – pvz. degalinės ir pan.). " +
+                "Adreso, koordinačių ar atstumo radimas žemėlapyje atliekamas vos vienu mygtuko paspaudimu."
                 }
             }
         ,
@@ -287,14 +291,36 @@ const LanguagesFullArray =
             ,
             "Texts" :
                 {
-                    "ItemTextCenterMiddle" : 
+                    "0 ItemTextCenterMiddle" : 
                     "<b><i>Aimer</i></b> — это инструмент для международных транспортных компаний, оптимизирующий процессы пассажирских " +
                     "и посылочных перевозок. Система разработана для облегчения работы менеджеров и водителей, обеспечивая лучшее качество обслуживания ваших клиентов.<br><br>" +
                     "Программа позволяет быстро и безошибочно планировать маршруты, управлять информацией, вести финансовый учет и генерировать отчеты. " +
                     "Ручной ввод адресов, поиск регионов и управление бумажными данными заменяются автоматизированными решениями — вся необходимая информация и визуализация " +
                     "на картах доступны одним щелчком мыши.<br><br>" +
                     "Избавьтесь от постоянного стресса, связанного с потоком информации. С Aimer управление адресами и маршрутами станут удобной, " +
-                    "простой и спокойной частью вашей повседневной жизни."
+                    "простой и спокойной частью вашей повседневной жизни.",
+
+                    "1 ItemTextCenterUpper" : "1. Сбор информации для запланированного рейса.",
+
+                    "1 ItemTextCenterMiddle" : "В течение всего периода до отправления программа сохраняет всю информацию о поездке (пассажиры, груз, адреса посадки и высадки, " +
+                    "согласованные цены и т. д.). Окончательное планирование или перепланирование осуществляется в любое время до начала рейса. " +
+                    "Программа автоматически группирует адреса и выполняет предварительную сортировку по расстояниям. Весь маршрут отображается на карте. " +
+                    "При необходимости (например, если клиент решил выехать позже или раньше) данные могут быть перенесены на другие рейсы :",
+
+                    "2 ItemTextCenterMiddle" : "Для многоцелевого использования программа постоянно хранит все данные о клиентах, их адресах и т. д., а также, для удобства, " +
+                    "информацию о пунктах выдачи и получения (так называемые «Пункты сбора» — когда в одном месте забирается более одной посылки или пассажира). " +
+                    "Вся информация мгновенно находится по нужным ее фрагментам (критериям). Критерии суммируются. (Например: во время телефонного разговора достаточно ввести последние " +
+                    "несколько цифр номера телефона звонящего, и программа «выберет» всех соответствующих клиентов. При дополнительном вводе фрагмента названия города " +
+                    "(или любого другого критерия) «выбирается» еще более точная информация).",
+
+                    "0 ItemTextCenterBottom" : 
+                    "Здесь всё в одном месте: информация о клиентах, посылках, адресах и т. д., управление, финансовый учёт, отчёты, " +
+                    "карты и даже напоминания перед завершением технического осмотра или страхования. Планирование маршрута состоит из трёх основных процессов :",
+
+                    "2 ItemTextCenterBottom" :
+                    "Aimer объединяет две широко используемые в мире карты для удобства и точности. Программа обрабатывает как адресные, так и координатные данные " +
+                    "(координаты особенно удобны, когда точный адрес неизвестен — например, для автозаправочных станций и т. д.). " +
+                    "Найти адрес, координаты или расстояние на карте можно одним щелчком мыши."
                 }
             }
         ,
@@ -477,7 +503,12 @@ const LanguagesFullArray =
 
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
-                    "reports, maps and even reminders before ending of technical inspection or insurance. Route planning consists of three main processes :"
+                    "reports, maps and even reminders before ending of technical inspection or insurance. Route planning consists of three main processes :",
+
+                    "2 ItemTextCenterBottom" :
+                    "For convenience and accuracy Aimer integrates two widely in the world known maps. The program processes both address and coordinate data " +
+                    "(coordinates are especially convenient when there is no exact address - e.g. gas stations, etc.). Finding address, " +
+                    "coordinates or distance on the map is done with just one click."
                 }
             }
         ,
