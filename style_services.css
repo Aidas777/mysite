@@ -112,7 +112,7 @@
         /* image-rendering: optimizeQuality; */
         object-fit: contain;
 
-        animation: ImgFadeIn 1s ease-in-out forwards;
+        /* animation: ImgFadeIn 1s ease-in-out forwards; */
 }
 
 
