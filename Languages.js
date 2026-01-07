@@ -118,6 +118,8 @@ const LanguagesFullArray =
 
                 "1 ItemTextCenterUpper" : "1. Informacijos rinkimas planuojamam reisui.",
 
+                "3 ItemTextCenterUpper" : "2. Automatizuotas maršruto išrikiavimas (su galimybe koreguoti).",
+
                 "1 ItemTextCenterMiddle" : 
                 "Per visą laikotarpį iki išvykimo programoje yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
                 "sutartas kainas ir t.t.). Prieš reiso pradžą bet kurią akimirką yra atliekamas galutinis ar pakartotinis išplanavimas. " +
@@ -476,16 +478,20 @@ const LanguagesFullArray =
             "Texts" :
                 {
                     "0 ItemTextCenterMiddle" : 
-                    "<b><i>Aimer</i></b> is a tool for international transportation businesses that optimizes " +
+                    "<b><i>Aimer</i></b> is a desktop application, a tool for international transportation businesses that optimizes " +
                     "passenger and parcel transportation processes. The system is designed to make work easier for managers and drivers, " +
                     "ensuring the highest quality of service for your customers.<br><br>" +
-                    "The program allows you quickly and without errors plan routes, manage information, keep financial records and generate reports. " +
-                    "Manual address entry, region searches and paper data management are replaced by automated solutions - all relevant information and "+
+                    "The program allows you quickly and without errors to plan routes, manage information, keep financial records and generate reports. " +
+                    "Manual address entry, region searches and paper data management are replaced by automated solutions - all required information and "+
                     "visualization on maps are available with one click.<br><br>" +
-                    "Get rid of the constant stress due to the flow of information. With Aimer, address management and route coordination become a smooth, " +
+                    "Get rid of the constant stress due to the flow of information. With Aimer, address management and route planning become a smooth, " +
                     "simple and easy part of your everyday life.",
 
                     "1 ItemTextCenterUpper" : "1. Gathering information for the charter (trip).",
+
+                    "3 ItemTextCenterUpper" : "2. Automated route alignment (with adjustment possibility).",
+
+                    "4 ItemTextCenterUpper" : "3. Providing information to drivers.",
 
                     "1 ItemTextCenterMiddle" :
                     "Manager collects and inputs all information about charter (trip) (passengers, parcels, pickup and delivery addresses, agreed prices, etc.) " +
@@ -501,12 +507,22 @@ const LanguagesFullArray =
                     "the program will 'select' all relevant customers. By additionally entering a fragment of the city name (or any other criterion), " +
                     "even more accurate information is 'selected').",
 
+                    "3 ItemTextCenterMiddle" :
+                    "At any time before departure the final alignment or re-alignment should be performed. Addressess are grouped and alignments " +
+                    "relating on distance are done automatically by application. The entire route creation (queuing) process is fully automated " +
+                    "and takes just a few minutes including review (and corrections if needed). It is displayed on the map. After drawing up, " +
+                    "it is possible to adjust the route with one or more button presses (adjustments are also instantly displayed on the map).",
+
+                    "4 ItemTextCenterMiddle" : 
+                    "Aligned and adjusted charter (trip) information can be provided to drivers in exported (pdf) paper version or sent by e-mail or by other tools like " +
+                    "WhatsApp, Messenger and etc.).",
+
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
                     "reports, maps and even reminders before ending of technical inspection or insurance. Route planning consists of three main processes :",
 
                     "2 ItemTextCenterBottom" :
-                    "For convenience and accuracy Aimer integrates two widely in the world known maps. The program processes both address and coordinate data " +
+                    "For convenience and accuracy in Aimer are integrated two widely in the world known maps. The program processes both address and coordinate data " +
                     "(coordinates are especially convenient when there is no exact address - e.g. gas stations, etc.). Finding address, " +
                     "coordinates or distance on the map is done with just one click."
                 }
