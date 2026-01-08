@@ -110,7 +110,7 @@ const LanguagesFullArray =
 
                 "CenterVeryFirstTop" :
                 "Pagal įmonių poreikį projektuoju ir kuriu įvairias darbalaukio ir žiniatinklio programas, taip pat įvairius įrankius, " +
-                "kurie padeda įmonėms pasiekti jų verslo tikslus ir patenkina poreikius. Kai kurios programos, kurias jau esu įgyvendinęs:",
+                "kurie padeda įmonėms pasiekti jų verslo tikslus ir patenkina poreikius. Kai kurios programos, kurias jau esu įgyvendinęs :",
 
                 "0 ItemTextCenterMiddle" : 
                 "<b><i>Aimer</i></b> – tai įrankis, skirtas tarptautinių pervežimų verslui, optimizuojantis keleivių ir siuntų gabenimo procesus. " +
@@ -341,7 +341,8 @@ const LanguagesFullArray =
             "Texts" :
                 {
                     "CenterVeryFirstTop" :
-                    "Rus",
+                    "Я занимаюсь проектированием и разработкой настольных программ и веб-приложений, а также различных инструментов, помогающих компаниям достигать своих бизнес-целей " +
+                    "и удовлетворять свои потребности. Некоторые из приложений, которые я уже разработал :",
 
                     "0 ItemTextCenterMiddle" : 
                     "<b><i>Aimer</i></b> — это инструмент для международных транспортных компаний, оптимизирующий процессы пассажирских " +
@@ -354,6 +355,12 @@ const LanguagesFullArray =
 
                     "1 ItemTextCenterUpper" : "1. Сбор информации для запланированного рейса.",
 
+                    "3 ItemTextCenterUpper" : "2. Автоматизированное построение маршрута (с возможностью корректировки).",
+
+                    "4 ItemTextCenterUpper" : "3. Предоставление информации водителям.",
+
+                    "5 ItemTextCenterUpper" : "Основные параметры приложения:",
+
                     "1 ItemTextCenterMiddle" : "В течение всего периода до отправления программа сохраняет всю информацию о поездке (пассажиры, груз, адреса посадки и высадки, " +
                     "согласованные цены и т. д.). Окончательное планирование или перепланирование осуществляется в любое время до начала рейса. " +
                     "Программа автоматически группирует адреса и выполняет предварительную сортировку по расстояниям. Весь маршрут отображается на карте. " +
@@ -365,6 +372,22 @@ const LanguagesFullArray =
                     "несколько цифр номера телефона звонящего, и программа «выберет» всех соответствующих клиентов. При дополнительном вводе фрагмента названия города " +
                     "(или любого другого критерия) «выбирается» еще более точная информация).",
 
+                    "3 ItemTextCenterMiddle" :
+                    "Перед рейсом необходимо выполнить окончательное или повторное построение маршрута. Адреса группируются, " +
+                    "и корректировки по расстоянию выполняются автоматически приложением. Весь процесс создания маршрута (построение) полностью автоматизирован " +
+                    "и занимает всего несколько минут, включая проверку (и корректировки при необходимости). Маршрут отображается на карте. " +
+                    "После составления маршрута его можно скорректировать одним или несколькими нажатиями кнопок (корректировки также мгновенно отображаются на карте). " +
+                    "Пример карты маршрута:",
+
+                    "4 ItemTextCenterMiddle" : 
+                    "Упорядоченная и скорректированная информация о поездке может быть предоставлена ​​водителям в экспортированном PDF бумажном виде, " +
+                    "отправлена ​​по электронной почте или переслана с помощью других инструментов, таких как WhatsApp, Messenger и т. д. " +
+                    "Пример плана маршрута (доступны различные варианты таблиц данных):",
+
+                    "5 ItemTextCenterMiddle" :
+                    "Оба направления (отправление, возвращение) могут быть оформлены в рамках одного рейса, или же для каждого направления может быть создан отдельный рейс. " +
+                    "Максимальное количество различных адресов (различных точек на карте) — неограниченное.",
+
                     "0 ItemTextCenterBottom" : 
                     "Здесь всё в одном месте: информация о клиентах, посылках, адресах и т. д., управление, финансовый учёт, отчёты, " +
                     "карты и даже напоминания перед завершением технического осмотра или страхования. Планирование маршрута состоит из трёх основных процессов :",
@@ -372,7 +395,12 @@ const LanguagesFullArray =
                     "2 ItemTextCenterBottom" :
                     "Для удобства и точности в Aimer интегрированные две широко используемые в мире карты. Программа обрабатывает как адресные, так и координатные данные " +
                     "(координаты особенно удобны, когда точный адрес неизвестен — например, для автозаправочных станций и т. д.). " +
-                    "Найти адрес, координаты или расстояние на карте можно одним щелчком мыши."
+                    "Найти адрес, координаты или расстояние на карте можно одним щелчком мыши.",
+
+                    "4 ItemTextCenterBottom" :
+                    "Данное приложение может быть дополнено другими необходимыми модулями (формирование счетов-фактур, посылок, " +
+                    "формирование документа на получение наличных, учет топлива или другие необходимые модули. Их технические возможности, " +
+                    "необходимые функции и цена обсуждаются отдельно).",
                 }
             }
         ,
@@ -543,7 +571,7 @@ const LanguagesFullArray =
 
                     "1 ItemTextCenterUpper" : "1. Gathering information for the charter (trip).",
 
-                    "3 ItemTextCenterUpper" : "2. Automated route alignment (with adjustment possibility).",
+                    "3 ItemTextCenterUpper" : "2. Automated route arrangement (with adjustment possibility).",
 
                     "4 ItemTextCenterUpper" : "3. Providing information to drivers.",
 
@@ -573,10 +601,11 @@ const LanguagesFullArray =
                     "Example of a route plan map :",
 
                     "4 ItemTextCenterMiddle" : 
-                    "Arranged and adjusted charter (trip) information can be provided to drivers in exported (pdf) paper version or sent by e-mail or by other tools like " +
-                    "WhatsApp, Messenger and etc.).",
+                    "Arranged and adjusted charter (trip) information can be provided to drivers in exported PDF paper version or sent by e-mail or by other tools like " +
+                    "WhatsApp, Messenger and etc.). Example of a route plan (various datasheet options are available):",
 
-                    "5 ItemTextCenterMiddle" : "Both directions (outgoing, return) can be processed in one charter (trip) at once, or a separate trip can be created " +
+                    "5 ItemTextCenterMiddle" :
+                    "Both directions (outgoing, return) can be processed in one charter (trip) at once, or a separate trip can be created " +
                     "for each direction. Maximum number of different addresses (different points of interest) - unlimited. ",
 
                     "0 ItemTextCenterBottom" : 
