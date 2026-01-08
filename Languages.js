@@ -107,6 +107,11 @@ const LanguagesFullArray =
             ,
             "Texts" :
                 {
+
+                "CenterVeryFirstTop" :
+                "Pagal įmonių poreikį projektuoju ir kuriu įvairias darbalaukio ir žiniatinklio programas, taip pat įvairius įrankius, " +
+                "kurie padeda įmonėms pasiekti jų verslo tikslus ir patenkina poreikius. Kai kurios programos, kurias jau esu įgyvendinęs:",
+
                 "0 ItemTextCenterMiddle" : 
                 "<b><i>Aimer</i></b> – tai įrankis, skirtas tarptautinių pervežimų verslui, optimizuojantis keleivių ir siuntų gabenimo procesus. " +
                 "Sistema sukurta siekiant palengvinti darbą vadybininkams ir vairuotojams, užtikrinant aukščiausią paslaugų kokybę jūsų klientams.<br><br>" +
@@ -120,6 +125,12 @@ const LanguagesFullArray =
 
                 "3 ItemTextCenterUpper" : "2. Automatizuotas maršruto išrikiavimas (su galimybe koreguoti).",
 
+                "4 ItemTextCenterUpper" : "3. Informacijos pateikimas vairuotojams.",
+
+                "5 ItemTextCenterUpper" : "Pagrindiniai programos parametrai:",
+
+                "6 ItemTextCenterUpper" : "Reikalavimai kompiuteriui ir vartotojui:",
+
                 "1 ItemTextCenterMiddle" : 
                 "Per visą laikotarpį iki išvykimo programoje yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
                 "sutartas kainas ir t.t.). Prieš reiso pradžą bet kurią akimirką yra atliekamas galutinis ar pakartotinis išplanavimas. " +
@@ -131,7 +142,21 @@ const LanguagesFullArray =
                 "ir apie surinkimo-pristatymo punktus (vadinamus “Bendruosius taškus“ – kuomet vienoje vietoje yra paimama daugiau nei vienas siuntinys ar keleivis). " +
                 "Visa informacija randama akimirskniu pagal pageidaujamus jos (kriterijų) fragmentus. Kriterijai yra sumuojami. " +
                 "(Pvz.: jau kalbant telefonu užtenka įvesti kelis paskutinius skambinančiojo tel. numerio skaičius ir programa “atrinks“ visus atitinkamus klientus. " +
-                "Papildomai įvedus miesto pavadinimo fragmentą (ar betkurį kitą kriterijų) “atrenkama“ dar tikslesnė informacija).",
+                "Papildomai įvedus miesto pavadinimo fragmentą (ar betkurį kitą kriterijų) “atrenkama“ dar tikslesnė informacija). Klientų adresų lentelės pavyzdys :",
+
+                "3 ItemTextCenterMiddle" :
+                "Bet kuriuo metu prieš išvykimą yra atliekamas galutinis arba pakartotinis išplanavimas. Programa automatiškai sugrupuoja adresus " +
+                "ir remiantis atstumais išrikiuoja maršrutą. " +
+                "Visas maršruto sudarymo procesas yra maksimaliai automatizuotas ir su peržiūra trunka vos kelias minutes. Jis atvaizduojamas žemėlapyje. " +
+                "Po sudarymo yra galimas maršruto koregavimas vienu ar keliais mygtuko paspaudimais (koregavimai taip pat akimirksniu yra atvaizduojami žemėlapyje). " +
+                "Maršuto plano žemėlapio pavyzdys :",
+
+                "4 ItemTextCenterMiddle" : 
+                "Sutvarkyta, galutinė reiso informacija vairuotojams gali būti pateikta PDF popieriniu formatu arba išsiųsta el. paštu ar kitomis priemonėmis, " +
+                "tokiomis kaip „WhatsApp“, „Messenger“ ir kt. Maršruto plano (yra galimi įvairūs duomenų lapų variantai) pavyzdys :",
+
+                "5 ItemTextCenterMiddle" : "Viename reise gali būti apdorojamos abi kryptys (išvykimas, grįžimas) iškart, arba kiekvienai krypčiai gali būti kuriama po atskirą reisą. " +
+                "Maksimalus skirtingų adresų (skirtingų aplankomų taškų) skaičius reisui - neribotas. ",
                 
                 "0 ItemTextCenterBottom" : 
                 "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
@@ -140,7 +165,29 @@ const LanguagesFullArray =
                 "2 ItemTextCenterBottom" :
                 "Aimer siekiant patogumo ir tikslumo yra integruoti dveji plačiai pasaulyje naudojami žemėlapiai. " +
                 "Programa apdoroja ir adresų, ir koordinačių duomenis (koordinatės yra ypač patogios nesant tiksliam adresui – pvz. degalinės ir pan.). " +
-                "Adreso, koordinačių ar atstumo radimas žemėlapyje atliekamas vos vienu mygtuko paspaudimu."
+                "Adreso, koordinačių ar atstumo radimas žemėlapyje atliekamas vos vienu mygtuko paspaudimu.",
+
+                "4 ItemTextCenterBottom" :
+                "Šią programą galima papildyti ir kitais pageidaujamais moduliais (SF išrašymai, siuntimai, Kasos pajamų orderių išrašymai, kuro apskaita ar kiti pageidaujami moduliai. " +
+                "Jų techninės galimybės, pageidaujamos funkcijos ir kaina yra aptariami atskirai).",
+
+                "5 ItemTextCenterBottom" :
+                "<ul>" +
+                    "<li>Maksimalus vartotojų skaičius (pvz.: vadybininkų) - neribojamas</li>" +
+                    "<li>Maksimalus vairuotojų skaičius:</li>" +
+                        "<dl>" +
+                            "<dd> - duomenų bazėje - neribojamas</dd>" +
+                            "<dd> - reise - 2 vairuotojai</dd>" +
+                        "</dl>" +
+                "</ul>",
+
+                "6 ItemTextCenterBottom" :
+                    "<ul>" +
+                        "<li>Windows: 64 bit</li>" +
+                        "<li>Ms Office 64 bit paketas su Access (pageidautina, bet ne būtina)</li>" +
+                        "<li>Vartotojo patirtis dirbant su  Windows nuo 1 metų</li>" +
+                    "</ul>" +
+                    "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
                 }
             }
         ,
@@ -293,6 +340,9 @@ const LanguagesFullArray =
             ,
             "Texts" :
                 {
+                    "CenterVeryFirstTop" :
+                    "Rus",
+
                     "0 ItemTextCenterMiddle" : 
                     "<b><i>Aimer</i></b> — это инструмент для международных транспортных компаний, оптимизирующий процессы пассажирских " +
                     "и посылочных перевозок. Система разработана для облегчения работы менеджеров и водителей, обеспечивая лучшее качество обслуживания ваших клиентов.<br><br>" +
@@ -477,6 +527,10 @@ const LanguagesFullArray =
             ,
             "Texts" :
                 {
+                    "CenterVeryFirstTop" :
+                    "I design and develop desktop and web applications, as well as various tools that help companies achieve their business goals and fulfill their needs. " +
+                    "Some of the applications that I have already completed : ",
+
                     "0 ItemTextCenterMiddle" : 
                     "<b><i>Aimer</i></b> is a desktop application, a tool for international transportation businesses that optimizes " +
                     "passenger and parcel transportation processes. The system is designed to make work easier for managers and drivers, " +
@@ -493,6 +547,10 @@ const LanguagesFullArray =
 
                     "4 ItemTextCenterUpper" : "3. Providing information to drivers.",
 
+                    "5 ItemTextCenterUpper" : "Main application parameters:",
+
+                    "6 ItemTextCenterUpper" : "Computer and user requirements:",
+
                     "1 ItemTextCenterMiddle" :
                     "Manager collects and inputs all information about charter (trip) (passengers, parcels, pickup and delivery addresses, agreed prices, etc.) " +
                     "into application during entire period before departure. At any time before departure the final arrangement or re-arrangement should be performed. " +
@@ -508,14 +566,18 @@ const LanguagesFullArray =
                     "even more accurate information is 'selected').",
 
                     "3 ItemTextCenterMiddle" :
-                    "At any time before departure the final alignment or re-alignment should be performed. Addressess are grouped and alignments " +
+                    "At any time before departure the final arrangement or re-arrangement should be performed. Addressess are grouped and arrangement " +
                     "relating on distance are done automatically by application. The entire route creation (queuing) process is fully automated " +
                     "and takes just a few minutes including review (and corrections if needed). It is displayed on the map. After drawing up, " +
-                    "it is possible to adjust the route with one or more button presses (adjustments are also instantly displayed on the map).",
+                    "it is possible to adjust the route with one or more button presses (adjustments are also instantly displayed on the map). " +
+                    "Example of a route plan map :",
 
                     "4 ItemTextCenterMiddle" : 
-                    "Aligned and adjusted charter (trip) information can be provided to drivers in exported (pdf) paper version or sent by e-mail or by other tools like " +
+                    "Arranged and adjusted charter (trip) information can be provided to drivers in exported (pdf) paper version or sent by e-mail or by other tools like " +
                     "WhatsApp, Messenger and etc.).",
+
+                    "5 ItemTextCenterMiddle" : "Both directions (outgoing, return) can be processed in one charter (trip) at once, or a separate trip can be created " +
+                    "for each direction. Maximum number of different addresses (different points of interest) - unlimited. ",
 
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
@@ -524,7 +586,29 @@ const LanguagesFullArray =
                     "2 ItemTextCenterBottom" :
                     "For convenience and accuracy in Aimer are integrated two widely in the world known maps. The program processes both address and coordinate data " +
                     "(coordinates are especially convenient when there is no exact address - e.g. gas stations, etc.). Finding address, " +
-                    "coordinates or distance on the map is done with just one click."
+                    "coordinates or distance on the map is done with just one click.",
+
+                    "4 ItemTextCenterBottom" :
+                    "This application can be supplemented with other desired modules (Invoice generation, shipments, cash receipt order generation, " +
+                    "fuel accounting or other desired modules. Their technical capabilities, desired functions and price are discussed separately).",
+
+                    "5 ItemTextCenterBottom" :
+                    "<ul>" +
+                        "<li>Maximum number of users (e.g.: managers) - unlimited</li>" +
+                        "<li>Maximum number of drivers:</li>" +
+                            "<dl>" +
+                                "<dd> - in database - unlimited</dd>" +
+                                "<dd> - per charter (trip) - 2 drivers</dd>" +
+                            "</dl>" +
+                    "</ul>",
+
+                    "6 ItemTextCenterBottom" :
+                    "<ul>" +
+                        "<li>Windows: 64 bit</li>" +
+                        "<li>Ms Office 64 bit pack with Access included (preferable , but not necessary)</li>" +
+                        "<li>User experience with Windows from 1 year</li>" +
+                    "</ul>" +
+                    "For more details, please contact me."
                 }
             }
         ,

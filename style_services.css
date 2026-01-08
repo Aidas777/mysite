@@ -15,6 +15,19 @@
     flex-flow: column;
 }
 
+.CenterVeryFirstTop {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgb(150, 150, 235);
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-self: center;
+    text-align: justify;
+    text-indent: 4rem;
+}
+
 .CenterTopSR {
     margin-left: auto;
     margin-right: auto;
@@ -207,7 +220,7 @@
 }
 
 .ItemDetails_4 .ItemPicFrame img {
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 
