@@ -160,7 +160,7 @@ const LanguagesFullArray =
                 
                 "0 ItemTextCenterBottom" : 
                 "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
-                "žemėlapiai ir net priminimai dėl artėjančio prie pabaigos „technikinio“ ar draudimo. Maršruto išplanavimą sudaro trys pagrindiniai procesai:",
+                "žemėlapiai, o taip pat priminimai dėl artėjančio prie pabaigos 'technikinio' ar draudimo. Maršruto išplanavimą sudaro trys pagrindiniai procesai :",
 
                 "2 ItemTextCenterBottom" :
                 "Aimer siekiant patogumo ir tikslumo yra integruoti dveji plačiai pasaulyje naudojami žemėlapiai. " +
@@ -168,8 +168,8 @@ const LanguagesFullArray =
                 "Adreso, koordinačių ar atstumo radimas žemėlapyje atliekamas vos vienu mygtuko paspaudimu.",
 
                 "4 ItemTextCenterBottom" :
-                "Šią programą galima papildyti ir kitais pageidaujamais moduliais (SF išrašymai, siuntimai, Kasos pajamų orderių išrašymai, kuro apskaita ar kiti pageidaujami moduliai. " +
-                "Jų techninės galimybės, pageidaujamos funkcijos ir kaina yra aptariami atskirai).",
+                "Šią programą galima papildyti ir kitais pageidaujamais moduliais (SF išrašymai, siuntimai, kasos pajamų orderių išrašymai, kuro apskaita ar kiti pageidaujami moduliai. " +
+                "Jų techninės galimybės, pageidaujamos funkcijos, programos vertimas į kitas kalbas ir kaina yra aptariami atskirai).",
 
                 "5 ItemTextCenterBottom" :
                 "<ul>" +
@@ -390,7 +390,7 @@ const LanguagesFullArray =
 
                     "0 ItemTextCenterBottom" : 
                     "Здесь всё в одном месте: информация о клиентах, посылках, адресах и т. д., управление, финансовый учёт, отчёты, " +
-                    "карты и даже напоминания перед завершением технического осмотра или страхования. Планирование маршрута состоит из трёх основных процессов :",
+                    "карты, а также напоминания перед завершением технического осмотра или страхования. Планирование маршрута состоит из трёх основных процессов :",
 
                     "2 ItemTextCenterBottom" :
                     "Для удобства и точности в Aimer интегрированные две широко используемые в мире карты. Программа обрабатывает как адресные, так и координатные данные " +
@@ -400,7 +400,25 @@ const LanguagesFullArray =
                     "4 ItemTextCenterBottom" :
                     "Данное приложение может быть дополнено другими необходимыми модулями (формирование счетов-фактур, посылок, " +
                     "формирование документа на получение наличных, учет топлива или другие необходимые модули. Их технические возможности, " +
-                    "необходимые функции и цена обсуждаются отдельно).",
+                    "необходимые функции, перевод программы на другие языки и цена обсуждаются отдельно).",
+                    
+                    "5 ItemTextCenterBottom" :
+                    "<ul>" +
+                        "<li>Максимальное количество пользователей (например, менеджеров) — неограниченное</li>" +
+                        "<li>Максимальное количество водителей:</li>" +
+                            "<dl>" +
+                                "<dd> - в базе данных - неограниченное</dd>" +
+                                "<dd> - за рейс (поездку) - 2 водителя</dd>" +
+                            "</dl>" +
+                    "</ul>",
+
+                    "6 ItemTextCenterBottom" :
+                    "<ul>" +
+                        "<li>Windows: 64 bit</li>" +
+                        "<li>Пакет Microsoft Office 64-бит с включенным Access (желательно, но не обязательно).</li>" +
+                        "<li>Опыт работы с Windows более 1 года.</li>" +
+                    "</ul>" +
+                    "Для более подробной информации, пожалуйста, свяжитесь со мной."
                 }
             }
         ,
@@ -610,7 +628,7 @@ const LanguagesFullArray =
 
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
-                    "reports, maps and even reminders before ending of technical inspection or insurance. Route planning consists of three main processes :",
+                    "reports, maps and also reminders before ending of technical inspection or insurance. Route planning consists of three main processes :",
 
                     "2 ItemTextCenterBottom" :
                     "For convenience and accuracy in Aimer are integrated two widely in the world known maps. The program processes both address and coordinate data " +
@@ -619,11 +637,12 @@ const LanguagesFullArray =
 
                     "4 ItemTextCenterBottom" :
                     "This application can be supplemented with other desired modules (Invoice generation, shipments, cash receipt order generation, " +
-                    "fuel accounting or other desired modules. Their technical capabilities, desired functions and price are discussed separately).",
+                    "fuel accounting or other desired modules. Their technical capabilities, desired functions, application translation into other languages " +
+                    "and price are discussed separately).",
 
                     "5 ItemTextCenterBottom" :
                     "<ul>" +
-                        "<li>Maximum number of users (e.g.: managers) - unlimited</li>" +
+                        "<li>Maximum number of users (e.g. managers) - unlimited</li>" +
                         "<li>Maximum number of drivers:</li>" +
                             "<dl>" +
                                 "<dd> - in database - unlimited</dd>" +

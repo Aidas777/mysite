@@ -18,7 +18,9 @@
 .CenterVeryFirstTop {
     font-size: 1.4rem;
     font-style: italic;
-    color: rgb(150, 150, 235);
+    color: rgb(165, 165, 255);
+    /* color: rgb(150, 195, 235); */
+    /* color: rgb(150, 187, 235); */
     width: 80%;
     height: auto;
     margin-top: 30px;
@@ -78,7 +80,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-indent: 4rem;
-
+    color: rgb(162, 162, 233);
     margin-left: auto;
     margin-right: auto;
     /* color: rgb(235, 150, 231); */
@@ -90,7 +92,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-indent: 4rem;  
-
+    color: rgb(162, 162, 233);
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,7 +103,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-indent: 4rem;  
-
+    color: rgb(162, 162, 233);
     margin-left: auto;
     margin-right: auto;
     /* color: rgb(235, 150, 231); */
@@ -113,10 +115,9 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-indent: 4rem;  
-
+    color: rgb(162, 162, 233);
     margin-left: auto;
     margin-right: auto;
-    /* color: rgb(235, 150, 231); */
 }
 
 .ItemDetails_7 .ItemTextCenterUpper {
@@ -125,7 +126,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-indent: 4rem;  
-
+    color: rgb(162, 162, 233);
     margin-left: auto;
     margin-right: auto;
     /* color: rgb(235, 150, 231); */
@@ -356,6 +357,13 @@ dl {
         margin-top: 10px;
     }
 
+    .CenterVeryFirstTop {
+        font-size: 0.9rem;
+        text-indent: 2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
     .CenterTopSR {
         width: 90%;
         font-size: 1.2rem;
@@ -399,7 +407,22 @@ dl {
         text-align: left;
     }
 
-    .ItemDetails_1 .ItemTextCenterMiddle, .ItemDetails_1 .ItemTextCenterBottom {
+    .ItemDetails_6 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .ItemDetails_7 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .ItemDetails_1 .ItemTextCenterMiddle,
+    .ItemDetails_1 .ItemTextCenterBottom {
         font-size: 0.9rem;
         text-indent: 2rem;
         margin-bottom: 10px;
@@ -412,35 +435,60 @@ dl {
     }
 
     .ItemDetails_2 .ItemTextCenterMiddle {
-        text-indent: 1rem;
+        text-indent: 2rem;
         font-size: 0.9rem;
         text-align: justify;
         margin-bottom: 10px;
     }
 
     .ItemDetails_3 .ItemTextCenterMiddle {
-        text-indent: 1rem;
+        text-indent: 2rem;
         text-align: justify;
         margin-bottom: 10px;
         font-size: 0.9rem;
     }
 
     .ItemDetails_4 .ItemTextCenterMiddle {
-        text-indent: 1rem;
+        text-indent: 2rem;
         text-align: justify;
         margin-bottom: 10px;
         font-size: 0.9rem;
     }
     .ItemDetails_5 .ItemTextCenterMiddle {
-        text-indent: 1rem;
+        text-indent: 2rem;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .ItemDetails_6 .ItemTextCenterMiddle {
+        text-indent: 2rem;
         text-align: justify;
         margin-bottom: 10px;
         font-size: 0.9rem;
     }
 
     .ItemDetails_2 .ItemTextCenterBottom,
+    .ItemDetails_3 .ItemTextCenterBottom,
     .ItemDetails_5 .ItemTextCenterBottom {
         text-indent: 2rem;
+    }
+
+    .ItemDetails_6 .ItemTextCenterBottom {
+        font-size: 0.9rem;
+    }
+
+    .ItemDetails_7 .ItemTextCenterBottom {
+        font-size: 0.9rem;
+    }
+
+    .ItemTextCenterBottom ul {
+        padding-left: 10px;
+        text-align: justify;
+    }
+
+    .ItemTextCenterBottom dd {
+        margin-left: 10px;
     }
 
     /* .ItemPicFrame {
@@ -502,6 +550,10 @@ dl {
     .CenterBottomSR {
         top: 0px;
         font-size: 0.8rem;
+    }
+
+    .CenterMiddleSR {
+        height: 0;
     }
 
     /* .LabelsBottomRightBox {
