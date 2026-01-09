@@ -317,7 +317,7 @@ function AnimateBlinkWaveAllLetters(OnElement) {
         const Span = document.createElement('span');
         
         Span.textContent = (ElementForAnimationText[index] == ' ' ? '\u00A0' : ElementForAnimationText[index]);
-        Span.style.animationDelay = (index * 0.03) + 's';
+        Span.style.animationDelay = (index * 0.3) + 's';
         ElementForAnimation.appendChild(Span);
         
     }
@@ -399,6 +399,13 @@ function AnimateElementsAfterPageOrLangChange() {
     
     if (ElementForAnimationByClass) {
         AnimateBlinkWords(ElementForAnimation);
+    }
+
+    ElementForAnimation = 'ItemTextCenterUpper'; // MY APPS PAGE (APP NAME)
+    ElementForAnimationByClass = document.getElementsByClassName(ElementForAnimation)[0];
+
+    if (ElementForAnimationByClass) {
+        AnimateBlinkWaveAllLetters('.' + ElementForAnimationByClass.className);
     }
 }
 

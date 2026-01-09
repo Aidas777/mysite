@@ -72,6 +72,45 @@
     margin-left: auto;
     margin-right: auto;
     color: rgb(235, 150, 231);
+
+        span {
+        animation-name: BlinkAllLetters;
+        animation-duration: 6s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        /* animation-timing-function: steps(30); */
+    }
+}
+
+@keyframes BlinkAllLetters {
+    0% {
+        /* color: rgb(150, 150, 235); */
+        color: rgb(235, 150, 231);
+        /* transform: translateY(0); */
+        /* text-shadow: 10px 0px 10px rgb(235, 150, 231); */
+
+        /* font-size: 1.4rem; */
+    }
+    50% {
+        /* color: rgb(226, 226, 255); */
+        /* color: rgb(226, 226, 255); */
+        /* letter-spacing:  1.2px; */
+        /* color: rgb(15, 16, 27); */
+        color: transparent;
+        /* transform: translateY(-6px); */
+        /* font-size: 1.41rem; */
+        filter: blur(6px);
+        letter-spacing: 10px;
+        /* text-shadow: 0 0 15px rgb(180, 150, 235); */
+        text-shadow: -30px 0px 10px rgb(235, 150, 231), 70px 0px 10px rgb(235, 150, 231);
+        
+    }
+    100% {
+        /* color: rgb(150, 150, 235); */
+        color: rgb(235, 150, 231);
+
+    }
+    
 }
 
 .ItemDetails_2 .ItemTextCenterUpper {
