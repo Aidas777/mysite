@@ -87,8 +87,8 @@
     font-style: italic;
     right: 0;
     bottom: 50%;
+    transition: all 0.2s linear;
     &:hover {
-        transition: all 0.2s linear;
         text-shadow: 0 0 20px rgb(211, 211, 255);
         font-size: 1.4rem;
     }
