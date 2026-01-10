@@ -74,7 +74,7 @@
     color: rgb(235, 150, 231);
 
         span {
-        animation-name: BlinkAllLetters;
+        animation-name: BlinkAllLetters2;
         animation-duration: 6s;
         animation-direction: alternate-reverse;
         animation-iteration-count: infinite;
@@ -82,7 +82,7 @@
     }
 }
 
-@keyframes BlinkAllLetters {
+@keyframes BlinkAllLetters2 {
     0% {
         /* color: rgb(150, 150, 235); */
         color: rgb(235, 150, 231);
@@ -235,8 +235,8 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        /* width: 74%; */
-        box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7);
+        /* box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7); */
+        box-shadow: 0 0 15px 50px transparent;
     }
 
 }
@@ -259,7 +259,8 @@
 
     &:hover {
         /* width: 74%; */
-        box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7);
+        /* box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7); */
+        box-shadow: 0 0 15px 50px transparent;
     }
 }
 
@@ -272,7 +273,7 @@
 
     &:hover {
         /* width: 74%; */
-        box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7);
+        box-shadow: 0 0 15px 50px transparent;
     }
 }
 
@@ -285,7 +286,7 @@
 
     &:hover {
         /* width: 74%; */
-        box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7);
+        box-shadow: 0 0 15px 50px transparent;
     }
 }
 
@@ -298,7 +299,7 @@
 
     &:hover {
         /* width: 74%; */
-        box-shadow: 0 0 15px 50px rgba(24, 24, 44, 0.7);
+        box-shadow: 0 0 15px 50px transparent;
     }
 }
 

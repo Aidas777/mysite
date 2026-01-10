@@ -89,6 +89,7 @@
     bottom: 50%;
     transition: all 0.2s linear;
     &:hover {
+        /* text-shadow: 0 0 20px rgb(211, 211, 255); */
         text-shadow: 0 0 20px rgb(211, 211, 255);
         font-size: 1.4rem;
     }

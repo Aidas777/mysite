@@ -17,7 +17,7 @@
     margin-top: 6vh;
     margin-bottom: 10px;
     width: 100%;
-    height: 220px;
+    height: 280px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -71,11 +71,11 @@
     margin-top: 0;
     padding-top: 0;
 
-    border-radius: 1.2rem;
+    border-radius: 1.4rem;
     border: 2px solid rgb(150, 150, 235, 0.4);
     vertical-align: middle;
     width: 100px;
-    height: 32px;
+    height: 40px;
     font-size: 1.3rem;
     font-weight: 200;
 
@@ -132,8 +132,8 @@
 
 .CenterMiddleCO {
     width: 100%;
-    height: 70px;
-    margin-top: 40px;
+    /* height: 70px; */
+    /* margin-top: 40px; */
     display: flex;
     position: relative;
 }
@@ -208,6 +208,58 @@
             b {
                 font-size: 1.8rem;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .ListLine {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .CenterBottomCO {
+        font-size: 3.5rem;
+        &::after {
+            top: 33px;
+            height: 50px;
+            box-shadow: inset -40px -10px 0 rgba(150, 150, 235, 0.3) , inset -50px -10px 0 rgba(94, 94, 165, 0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .ListLine {
+        width: 100%;
+    }
+
+    .CopyBtn, .ShowTelBtn {
+        /* font-size: 1rem; */
+        width: 12vw;
+        height: 36px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .OuterLowerContainerCO {
+        width: 90%;
+    }
+
+    .CenterBottomCO::after {
+        top: 35px;
+        box-shadow: inset -20px -10px 0 rgba(150, 150, 235, 0.3) , inset -30px -10px 0 rgba(94, 94, 165, 0.3);
+        height: 48px;   
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .CenterBottomCO {
+        font-size: 3rem;
+        &::after {
+            top: 38px;
         }
     }
 }
@@ -315,7 +367,7 @@
     position: absolute;
     box-shadow: inset -15px -3px 0 rgba(150, 150, 235, 0.3) , inset -25px -5px 0 rgba(94, 94, 165, 0.3);
     border-radius: 50%;
-    top: -9%;
+    top: 0%;
     z-index: -1;
 }
 

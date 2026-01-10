@@ -308,6 +308,7 @@ function GetPageTitle(WhatToLoad) {
 function AnimateBlinkWaveAllLetters(OnElement) {
 
     const ElementForAnimation = document.querySelector(OnElement);
+    
     if (!ElementForAnimation) return;
 
     const ElementForAnimationText = ElementForAnimation.textContent.trim();
@@ -399,13 +400,14 @@ function AnimateElementsAfterPageOrLangChange() {
     
     if (ElementForAnimationByClass) {
         AnimateBlinkWords(ElementForAnimation);
+        return;
     }
 
     ElementForAnimation = 'ItemTextCenterUpper'; // MY APPS PAGE (APP NAME)
     ElementForAnimationByClass = document.getElementsByClassName(ElementForAnimation)[0];
 
     if (ElementForAnimationByClass) {
-        AnimateBlinkWaveAllLetters('.' + ElementForAnimationByClass.className);
+        AnimateBlinkWaveAllLetters('.' + (ElementForAnimationByClass.className));
     }
 }
 
@@ -999,7 +1001,6 @@ function ShowDataInElement(DataToShow, ShowInClassElement) {
     }
 
 }
-
 
 function CopyTxt(CopyFromElement) {
 
