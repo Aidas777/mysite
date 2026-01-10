@@ -71,7 +71,7 @@
     margin-top: 0;
     padding-top: 0;
 
-    border-radius: 1.4rem;
+    border-radius: 1.6rem;
     border: 2px solid rgb(150, 150, 235, 0.4);
     vertical-align: middle;
     width: 100px;
@@ -256,11 +256,38 @@
 }
 
 @media screen and (max-width: 660px) {
+    .OuterLowerContainerCO {
+        width: 96%;
+    }
+
     .CenterBottomCO {
         font-size: 3rem;
         &::after {
             top: 38px;
         }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .CenterTopCO {
+        font-size: 1.2rem;
+    }
+
+    .MyLabel {
+        width: 10%;
+    }
+
+    .MyLabel img {
+        width: 28px;
+    }
+
+    .MyData {
+        width: 70%;
+    }
+
+    .CopyBtn, .ShowTelBtn {
+        font-size: 1.2rem;
+        width: 70px;
     }
 }
 
