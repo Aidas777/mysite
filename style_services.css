@@ -410,6 +410,25 @@ dl {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .OuterLowerContainerSR {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .CenterTopSR {
+        width: 96%;
+    }
+
+    .CenterVeryFirstTop, .CenterTopSR,
+    :is(.ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
+        .ItemDetails_6, .ItemDetails_7) .ItemTextCenterUpper { 
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width: 376px) {
 
     /* @layer unused {

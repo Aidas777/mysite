@@ -316,6 +316,18 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .CenterBottomOT {
+        /* top: 4vh; */
+
+        &::after {
+            box-shadow: inset -15px -7px 0 rgba(150, 150, 235, 0.3) , inset -25px -7px 0 rgba(94, 94, 165, 0.3);
+            height: 35px;
+            top: 4vh;
+        }
+    }
+}
+
 @media screen and (max-width: 376px) {
 
     .OuterLowerContainerOT {
