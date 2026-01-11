@@ -815,6 +815,15 @@ body {
         margin-top: 8px;
     }
 
+    .CenterBottomLN {
+
+        &::after {
+        height: 28px;
+        bottom: 15px;
+        box-shadow: inset -20px -5px 0 rgba(150, 150, 235, 0.3) , inset -30px -5px 0 rgba(94, 94, 165, 0.3);
+        }
+    }
+
 }
 
 @media screen and (max-width: 376px) {
