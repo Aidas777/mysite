@@ -240,7 +240,7 @@
     position: absolute;
     box-shadow: inset -50px -10px 0 rgba(150, 150, 235, 0.3) , inset -60px -10px 0 rgba(94, 94, 165, 0.3);
     border-radius: 50%;
-    top: -3.3vh;
+    top: -30px;
     /* bottom: 23px; */
     z-index: -1;
 }
@@ -297,11 +297,11 @@
     }
 }
 
-@media screen and (max-width: 1510px) {
+@media screen and (max-width: 1505px) {
     .CenterBottom2AU {
         &::after {
             height: 60px;
-            top: -2vh;
+            top: -17px;
         }
     }
 }
@@ -320,6 +320,14 @@
         right: 27%;
     }
 
+}
+
+@media screen and (max-width: 1260px) {
+    .CenterBottom2AU {
+        &::after {
+            top: -17px;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -360,9 +368,9 @@
     .CenterBottom2AU {
         &::after {
             height: 50px;
-             box-shadow: inset -40px -10px 0 rgba(150, 150, 235, 0.3) , inset -50px -10px 0 rgba(94, 94, 165, 0.3);
-             top: 1%;
-             bottom: unset;
+            box-shadow: inset -40px -10px 0 rgba(150, 150, 235, 0.3) , inset -50px -10px 0 rgba(94, 94, 165, 0.3);
+            top: 2px;
+            bottom: unset;
         }
     }
 
@@ -510,7 +518,7 @@
     }
 
     .CenterBottom2AU {
-        top: 9vh;
+        top: 5vh;
 
         &::after {
             box-shadow: inset -15px -7px 0 rgba(150, 150, 235, 0.3) , inset -25px -7px 0 rgba(94, 94, 165, 0.3);

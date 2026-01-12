@@ -110,7 +110,7 @@ const LanguagesFullArray =
 
                 "CenterVeryFirstTop" :
                 "Pagal įmonių poreikį projektuoju ir kuriu įvairias darbalaukio ir žiniatinklio programas, taip pat įvairius įrankius, " +
-                "kurie padeda įmonėms pasiekti jų verslo tikslus ir patenkina poreikius. Kai kurios programos, kurias jau esu įgyvendinęs :",
+                "kurie padeda įmonėms pasiekti jų verslo tikslus ir patenkina poreikius. Keletas iš aplikacijų, kurias jau esu įgyvendinęs :",
 
                 "0 ItemTextCenterMiddle" : 
                 "<b><i>Aimer</i></b> – tai įrankis, skirtas tarptautinių pervežimų verslui, optimizuojantis keleivių ir siuntų gabenimo procesus. " +
@@ -418,7 +418,7 @@ const LanguagesFullArray =
                         "<li>Пакет Microsoft Office 64-бит с включенным Access (желательно, но не обязательно).</li>" +
                         "<li>Опыт работы с Windows более 1 года.</li>" +
                     "</ul>" +
-                    "Для более подробной информации, пожалуйста, свяжитесь со мной."
+                    "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
                 }
             }
         ,

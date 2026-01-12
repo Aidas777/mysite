@@ -418,6 +418,10 @@ dl {
 
 @media screen and (max-width: 660px) {
 
+    .ServicesPage .LabelCenterTop {
+        margin-top: 7vh;
+    }
+
     .CenterTopSR {
         width: 96%;
     }
@@ -426,6 +430,20 @@ dl {
     :is(.ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
         .ItemDetails_6, .ItemDetails_7) .ItemTextCenterUpper { 
         font-size: 1.2rem;
+    }
+
+    :is(.ItemDetails_1, .ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
+        .ItemDetails_6, .ItemDetails_7) .ItemPicFrame img { 
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .CenterVeryFirstTop, .CenterTopSR,
+    :is(.ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
+    .ItemDetails_6, .ItemDetails_7) .ItemTextCenterUpper { 
+        font-size: 1rem;
     }
 }
 
@@ -441,6 +459,10 @@ dl {
 
     .MiddleOfPage.ServicesPage {
         margin-top: 50px;
+    }
+
+    .ServicesPage .LabelCenterTop {
+        margin-top: 4vh;
     }
 
     .OuterLowerContainerSR {
