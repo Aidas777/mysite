@@ -326,9 +326,10 @@ function AnimateBlinkWaveAllLetters(OnElement) {
 
 
 // ANIMATE BLINK WORDS (CURRENTY IN USE)
-function AnimateBlinkWords(OnElement) {
+function AnimateBlinkWords(OnElement, ElementNumberOnPage) {
 
-    const ElementForAnimation = document.querySelector(OnElement);
+    if (!ElementNumberOnPage) {ElementNumberOnPage = 0;}
+    const ElementForAnimation = document.querySelectorAll(OnElement)[ElementNumberOnPage];
     if (!ElementForAnimation) return;
 
     // let WindowWidth = window.innerWidth;
@@ -403,12 +404,19 @@ function AnimateElementsAfterPageOrLangChange() {
         return;
     }
 
-    ElementForAnimation = 'ItemTextCenterUpper'; // MY APPS PAGE (APP NAME)
+    ElementForAnimation = 'ItemTextCenterUpper'; // MY APPS PAGE (APP NAME AIMER)
     ElementForAnimationByClass = document.getElementsByClassName(ElementForAnimation)[0];
 
     if (ElementForAnimationByClass) {
         AnimateBlinkWaveAllLetters('.' + (ElementForAnimationByClass.className));
     }
+
+    // ElementForAnimation = 'ItemTextCenterUpper'; // MY APPS PAGE (APP NAME Truck orders and containers management application)
+    // ElementForAnimationByClass = document.getElementsByClassName(ElementForAnimation)[7];
+
+    // if (ElementForAnimationByClass) {
+    //     AnimateBlinkWords('.' + (ElementForAnimationByClass.className), 7);
+    // }
 }
 
 
@@ -699,8 +707,11 @@ function TranslateTitles() {
 
                 if (!isNaN(key.charAt(0))) { // IF KEY IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
 
-                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
-                    ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+                    // ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
+                    // ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[key.charAt(0)];
+                    ObjectForLanguageChange.innerHTML = value;
 
                 } else {
                     ObjectForLanguageChange = document.getElementsByClassName(key)[0];

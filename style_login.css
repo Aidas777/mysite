@@ -188,8 +188,8 @@ body {
     display: flex;
     position: relative;
     flex-flow: column;
-    height: 45%;
-    max-height: 45%;
+    height: 380px;
+    max-height: 400px;
     width: 50%;
     max-width: 40%;
     background-color: rgb(24, 26, 44);

@@ -102,7 +102,8 @@ const LanguagesFullArray =
             {
             "Titles" : 
                 {
-                    "LabelCenterTop" : "Mano Programos"
+                    "LabelCenterTop" : "Mano Programos",
+                    "7 ItemTextCenterUpper" : "Transporto užsakymų ir Konteinerių valdymo programa"
                 }
             ,
             "Texts" :
@@ -113,7 +114,7 @@ const LanguagesFullArray =
                 "kurie padeda įmonėms pasiekti jų verslo tikslus ir patenkina poreikius. Keletas iš aplikacijų, kurias jau esu įgyvendinęs :",
 
                 "0 ItemTextCenterMiddle" : 
-                "<b><i>Aimer</i></b> – tai įrankis, skirtas tarptautinių pervežimų verslui, optimizuojantis keleivių ir siuntų gabenimo procesus. " +
+                "<b><i style='color: rgb(157, 185, 221);'>Aimer</i></b> tai įrankis, skirtas tarptautinių pervežimų verslui, optimizuojantis keleivių ir siuntų gabenimo procesus. " +
                 "Sistema sukurta siekiant palengvinti darbą vadybininkams ir vairuotojams, užtikrinant aukščiausią paslaugų kokybę jūsų klientams.<br><br>" +
                 "Programa leidžia greitai ir be klaidų planuoti maršrutus, valdyti informaciją, vesti pinigų apskaitą bei generuoti ataskaitas. " +
                 "Rankinį adresų vedimą, regionų paieškas bei popierinį duomenų tvarkymą keičia automatizuoti sprendimai – " +
@@ -157,6 +158,15 @@ const LanguagesFullArray =
 
                 "5 ItemTextCenterMiddle" : "Viename reise gali būti apdorojamos abi kryptys (išvykimas, grįžimas) iškart, arba kiekvienai krypčiai gali būti kuriama po atskirą reisą. " +
                 "Maksimalus skirtingų adresų (skirtingų aplankomų taškų) skaičius reisui - neribotas. ",
+
+                "7 ItemTextCenterMiddle" : 
+                "<b><i style='color: rgb(157, 185, 221);'>Transporto užsakymų ir Konteinerių valdymo programa</i></b> yra programa, skirta gamykloms ir įmonėms, " +
+                "kurios naudojasi transporto paslaugomis. Ji supaprastina sunkvežimių užsakymų valdymą. Joje taip pat yra integruotas konteinerių duomenų valdymo modulis.<br><br>" +
+                "Sistema supaprastina kasdienius logistikos komandos, pardavimų vadybininkų ir planuotojų darbus, centralizuodama ir automatizuodama pagrindinius procesus. " +
+                "Tokios užduotys kaip pasikartojantis duomenų įvedimas, laiškų siuntimai el. paštu, užsakymai, sąskaitų faktūrų valdymas, ataskaitos, " +
+                "priminimai ir popieriniai dokumentai pakeičiami efektyviomiu, automatizuotu funkcionalumu. Atsikratykite duomenų kontrolės streso.<br><br>" +
+                "Naudojant šią programą, duomenų valdymas, užsakymai, transporto planavimas tampa sklandus, saugus ir lengvas, " +
+                "todėl jūsų komandos gali sutelkti dėmesį į tai, kas svarbiausia.",
                 
                 "0 ItemTextCenterBottom" : 
                 "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
@@ -186,9 +196,12 @@ const LanguagesFullArray =
                         "<li>Windows: 64 bit</li>" +
                         "<li>Ms Office 64 bit paketas su Access (pageidautina, bet ne būtina)</li>" +
                         "<li>Vartotojo patirtis dirbant su  Windows nuo 1 metų</li>" +
-                    "</ul>" +
-                    "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
+                    "</ul>",
+                    // +
+                    // "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
+                "LeftSideSR" : "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
                 }
+
             }
         ,
 
@@ -335,7 +348,8 @@ const LanguagesFullArray =
             {
             "Titles" : 
                 {
-                    "LabelCenterTop" : "Mои программы"
+                    "LabelCenterTop" : "Mои программы",
+                    "7 ItemTextCenterUpper" : "Приложение для управления Транспортными Заказами и Контейнерами"
                 }
             ,
             "Texts" :
@@ -345,7 +359,7 @@ const LanguagesFullArray =
                     "и удовлетворять свои потребности. Некоторые из приложений, которые я уже разработал :",
 
                     "0 ItemTextCenterMiddle" : 
-                    "<b><i>Aimer</i></b> — это инструмент для международных транспортных компаний, оптимизирующий процессы пассажирских " +
+                    "<b><i style='color: rgb(157, 185, 221);'>Aimer</i></b> это инструмент для международных транспортных компаний, оптимизирующий процессы пассажирских " +
                     "и посылочных перевозок. Система разработана для облегчения работы менеджеров и водителей, обеспечивая лучшее качество обслуживания ваших клиентов.<br><br>" +
                     "Программа позволяет быстро и безошибочно планировать маршруты, управлять информацией, вести финансовый учет и генерировать отчеты. " +
                     "Ручной ввод адресов, поиск регионов и управление бумажными данными заменяются автоматизированными решениями — вся необходимая информация и визуализация " +
@@ -360,6 +374,8 @@ const LanguagesFullArray =
                     "4 ItemTextCenterUpper" : "3. Предоставление информации водителям.",
 
                     "5 ItemTextCenterUpper" : "Основные параметры приложения:",
+
+                    "6 ItemTextCenterUpper" : "Требования к компьютеру и пользователю:",
 
                     "1 ItemTextCenterMiddle" : "В течение всего периода до отправления программа сохраняет всю информацию о поездке (пассажиры, груз, адреса посадки и высадки, " +
                     "согласованные цены и т. д.). Окончательное планирование или перепланирование осуществляется в любое время до начала рейса. " +
@@ -387,6 +403,16 @@ const LanguagesFullArray =
                     "5 ItemTextCenterMiddle" :
                     "Оба направления (отправление, возвращение) могут быть оформлены в рамках одного рейса, или же для каждого направления может быть создан отдельный рейс. " +
                     "Максимальное количество различных адресов (различных точек на карте) — неограниченное.",
+
+                    "7 ItemTextCenterMiddle" : 
+                    "<b><i style='color: rgb(157, 185, 221);'>Приложение для управления Транспортными Заказами и данными о Контейнерах</i></b> — это решение, " +
+                    "разработанное для заводов и компаний, которые пользуются транспортными услугами. Приложение оптимизирует управление заказами на грузоперевозки и включает в себя " +
+                    "полностью интегрированный модуль управления данными о контейнерах.<br><br>" +
+                    "Система упрощает повседневные операции для логистических команд, менеджеров по продажам и планировщиков, централизуя и автоматизируя ключевые процессы. " +
+                    "Такие задачи, как повторяющийся ввод данных, отправление заказов и другой информаций по электронной почте, бронирование, отслеживание счетов-фактур, отчеты, напоминания и бумажные записи, " +
+                    "заменяются эффективными автоматизированными рабочими процессами. Избавьтесь от стресса, связанного с постоянным контролем данных.<br><br>" +
+                    "С помощью этого приложения управление данными, оформление заказов и планирование перевозок становятся бесперебойными, безопасными и простыми, " +
+                    "позволяя вашим командам сосредоточиться на самом важном.",
 
                     "0 ItemTextCenterBottom" : 
                     "Здесь всё в одном месте: информация о клиентах, посылках, адресах и т. д., управление, финансовый учёт, отчёты, " +
@@ -417,8 +443,11 @@ const LanguagesFullArray =
                         "<li>Windows: 64 bit</li>" +
                         "<li>Пакет Microsoft Office 64-бит с включенным Access (желательно, но не обязательно).</li>" +
                         "<li>Опыт работы с Windows более 1 года.</li>" +
-                    "</ul>" +
-                    "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
+                    "</ul>",
+                    // +
+                    // "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
+
+                    "LeftSideSR" : "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
                 }
             }
         ,
@@ -568,7 +597,8 @@ const LanguagesFullArray =
             {
             "Titles" : 
                 {
-                    "LabelCenterTop" : "My Applications"
+                    "LabelCenterTop" : "My Applications",
+                    "7 ItemTextCenterUpper" : "Transport orders and Containers management application"
                 }
             ,
             "Texts" :
@@ -578,10 +608,10 @@ const LanguagesFullArray =
                     "Some of the applications that I have already completed : ",
 
                     "0 ItemTextCenterMiddle" : 
-                    "<b><i>Aimer</i></b> is a desktop application, a tool for international transportation businesses that optimizes " +
+                    "<b><i style='color: rgb(157, 185, 221);'>Aimer</i></b> is a desktop application, a tool for international transportation businesses that optimizes " +
                     "passenger and parcel transportation processes. The system is designed to make work easier for managers and drivers, " +
                     "ensuring the highest quality of service for your customers.<br><br>" +
-                    "The program allows you quickly and without errors to plan routes, manage information, keep financial records and generate reports. " +
+                    "The program allows quickly and without errors to plan routes, manage information, keep financial records and generate reports. " +
                     "Manual address entry, region searches and paper data management are replaced by automated solutions - all required information and "+
                     "visualization on maps are available with one click.<br><br>" +
                     "Get rid of the constant stress due to the flow of information. With Aimer, address management and route planning become a smooth, " +
@@ -626,6 +656,14 @@ const LanguagesFullArray =
                     "Both directions (outgoing, return) can be processed in one charter (trip) at once, or a separate trip can be created " +
                     "for each direction. Maximum number of different addresses (different points of interest) - unlimited. ",
 
+                    "7 ItemTextCenterMiddle" : 
+                    "<b><i style='color: rgb(157, 185, 221);'>Transport orders and Containers management application </i></b> is a desktop solution designed for factories and " +
+                    "companies that rely on transportation services. It streamlines the management of truck orders and includes a fully integrated container management module.<br><br>" +
+                    "The system simplifies daily operations for logistics teams, sales managers, and planners by centralizing and automating key processes. " +
+                    "Tasks such as repetitive data entry, email communication, bookings, invoice tracking, reporting, reminders, and paper-based records " +
+                    "are replaced with efficient, automated workflows. Eliminate the stress of constant data controls.<br><br>" +
+                    "With this application, data management, ordering, transport planning become seamless, secure, and effortless, allowing your teams to focus on what matters most.",
+
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
                     "reports, maps and also reminders before ending of technical inspection or insurance. Route planning consists of three main processes :",
@@ -655,8 +693,11 @@ const LanguagesFullArray =
                         "<li>Windows: 64 bit</li>" +
                         "<li>Ms Office 64 bit pack with Access included (preferable , but not necessary)</li>" +
                         "<li>User experience with Windows from 1 year</li>" +
-                    "</ul>" +
-                    "For more details, please contact me."
+                    "</ul>",
+                    //  +
+                    // "For more details, please contact me."
+
+                    "LeftSideSR" : "For more details, please contact me."
                 }
             }
         ,
