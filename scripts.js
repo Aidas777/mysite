@@ -780,17 +780,41 @@ function TranslateTexts() {
             // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
             // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER ON HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
+            // let FirstTwoCharsOfKey = key.slice(0, 2);
+            // console.log(key + ' ' + FirstTwoCharsOfKey);
+
+            let SpacePos = key.indexOf(' ');
+            let MinusPos = key.indexOf('-');
+            
+
             if (!isNaN(key.charAt(0))) {
 
-                if (key.charAt(1) == '-') {
-                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
-                    ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
-
-                } else if (key.charAt(1) == ' ') {
+                if (SpacePos == 1) {
 
                     ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[key.charAt(0)]
                     if (ObjectForLanguageChange) {
                         ObjectForLanguageChange.innerHTML = value;
+                    }
+
+                } else if (MinusPos == 1 ) {
+
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
+                    if (ObjectForLanguageChange) {
+                        ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+                    }
+                    
+                } else if (SpacePos == 2) {
+
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(3))[key.slice(0, 2)]
+                    if (ObjectForLanguageChange) {
+                        ObjectForLanguageChange.innerHTML = value;
+                    }
+
+                } else if (MinusPos == 2 ) {
+
+                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(3))[0];
+                    if (ObjectForLanguageChange) {
+                        ObjectForLanguageChange.children[key.slice(0, 2)].innerHTML = value;
                     }
                 }
                     
@@ -800,15 +824,6 @@ function TranslateTexts() {
 
             }
 
-            // if (!isNaN(value.charAt(0))) { // IF VALUE IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
-
-            //     ObjectForLanguageChange = document.getElementsByClassName(key)[0];
-            //     ObjectForLanguageChange.children[value.charAt(0)].innerHTML = value.substring(2);
-                
-            // } else {
-            //     ObjectForLanguageChange.innerHTML = value;
-            // }
-            
         }
     }
 }

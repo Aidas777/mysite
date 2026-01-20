@@ -167,6 +167,17 @@ const LanguagesFullArray =
                 "priminimai ir popieriniai dokumentai pakeičiami efektyviomiu, automatizuotu funkcionalumu. Atsikratykite duomenų kontrolės streso.<br><br>" +
                 "Naudojant šią programą, duomenų valdymas, užsakymai, transporto planavimas tampa sklandus, saugus ir lengvas, " +
                 "todėl jūsų komandos gali sutelkti dėmesį į tai, kas svarbiausia.",
+
+                "8 ItemTextCenterMiddle" : "Transporto užsakymų formoje integruoti visi būtini duomenų laukai ir funkciniai sprendimai, užtikrinantys efektyvų užsakymų valdymą. " +
+                "Papildomai realizuota ataskaitų generavimo ir jų eksportavimo funkcija.<br>" +
+                "Transporto Užsakymų lango pavyzdys :",
+
+                "9 ItemTextCenterMiddle" : "Programos sugeneruoti užsakymai gali būti siunčiami automatiškai el. paštu, naudojant kitas priemones arba atspausdinti.<br>" +
+                "Transporto Užsakymo Dokumento pavyzdys :",
+
+                "10 ItemTextCenterMiddle" : "Visi konteinerių duomenys tvarkomi vienoje, centralizuotoje formoje. Šioje formoje taip pat yra ataskaitų teikimo " +
+                "ir eksportavimo į „Excel“ funkcijos.<br>" +
+                "Konteinerių Informacijos lango pavyzdys :",   
                 
                 "0 ItemTextCenterBottom" : 
                 "Čia viskas vienoje vietoje: klientų, krovinių, adresų ir kt. informacija, jos valdymas, finansų apskaita, ataskaitos, " +
@@ -192,13 +203,16 @@ const LanguagesFullArray =
                 "</ul>",
 
                 "6 ItemTextCenterBottom" :
-                    "<ul>" +
-                        "<li>Windows: 64 bit</li>" +
-                        "<li>Ms Office 64 bit paketas su Access (pageidautina, bet ne būtina)</li>" +
-                        "<li>Vartotojo patirtis dirbant su  Windows nuo 1 metų</li>" +
-                    "</ul>",
-                    // +
-                    // "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
+                "<ul>" +
+                    "<li>Windows: 64 bit</li>" +
+                    "<li>Ms Office 64 bit paketas su Access (pageidautina, bet ne būtina)</li>" +
+                    "<li>Vartotojo patirtis dirbant su  Windows nuo 1 metų</li>" +
+                "</ul>",
+
+                "10 ItemTextCenterBottom" : "Be pademonstruotų funkcijų, programoje yra kur kas daugiau išplėstinių galimybių, tokių kaip sąskaitų faktūrų valdymas, rezervacijų valdymas, " +
+                "kainoraščių importas ir eksportas, kasdienių atkrovimų ataskaitų generavimas su eksportavimo parinktimis ir kt. Šios funkcijos šioje trumpoje apžvalgoje nėra " +
+                "detaliai pristatomos ir gali būti aptartos susiekus.",
+
                 "LeftSideSR" : "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
                 }
 
@@ -409,10 +423,21 @@ const LanguagesFullArray =
                     "разработанное для заводов и компаний, которые пользуются транспортными услугами. Приложение оптимизирует управление заказами на грузоперевозки и включает в себя " +
                     "полностью интегрированный модуль управления данными о контейнерах.<br><br>" +
                     "Система упрощает повседневные операции для логистических команд, менеджеров по продажам и планировщиков, централизуя и автоматизируя ключевые процессы. " +
-                    "Такие задачи, как повторяющийся ввод данных, отправление заказов и другой информаций по электронной почте, бронирование, отслеживание счетов-фактур, отчеты, напоминания и бумажные записи, " +
-                    "заменяются эффективными автоматизированными рабочими процессами. Избавьтесь от стресса, связанного с постоянным контролем данных.<br><br>" +
+                    "Такие задачи, как повторяющийся ввод данных, отправление заказов и другой информаций по электронной почте, бронирование, отслеживание счетов-фактур, отчеты, " +
+                    "напоминания и бумажные записи, заменяются эффективными автоматизированными рабочими процессами. Избавьтесь от стресса, связанного с постоянным контролем данных.<br><br>" +
                     "С помощью этого приложения управление данными, оформление заказов и планирование перевозок становятся бесперебойными, безопасными и простыми, " +
                     "позволяя вашим командам сосредоточиться на самом важном.",
+
+                    "8 ItemTextCenterMiddle" : "Форма Транспортных Заказов содержит все необходимые поля и функции, включая создание отчетов и экспорта.<br>" +
+                    "Пример формы Транспортных Заказов : ",
+
+                    "9 ItemTextCenterMiddle" : "Заказы, сгенерированные приложением, могут быть отправлены автоматически по электронной почте, " +
+                    "с помощью других инструментов или распечатаны.<br>" +
+                    "Пример документа транспортного заказа :",
+
+                    "10 ItemTextCenterMiddle" : "Все данные о контейнерах управляются в единой централизованной форме. Эта форма также включает в себя функции " +
+                    "создания отчетов и экспорта в Excel.<br>" +
+                    "Пример окна данных контейнеров :",   
 
                     "0 ItemTextCenterBottom" : 
                     "Здесь всё в одном месте: информация о клиентах, посылках, адресах и т. д., управление, финансовый учёт, отчёты, " +
@@ -444,8 +469,10 @@ const LanguagesFullArray =
                         "<li>Пакет Microsoft Office 64-бит с включенным Access (желательно, но не обязательно).</li>" +
                         "<li>Опыт работы с Windows более 1 года.</li>" +
                     "</ul>",
-                    // +
-                    // "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
+
+                    "10 ItemTextCenterBottom" : "Помимо перечисленных функций, приложение предоставляет расширенный функционал, включая контроль счет-фактур, " +
+                    "бронирование, импорт и экспорт прайс-листов, моментальные отчеты о сегодняшней загрузке с возможностью экспорта и т. д. Эти функции не показаны в данном кратком обзоре " +
+                    "и могут быть обсуждены при беседе.",
 
                     "LeftSideSR" : "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
                 }
@@ -664,6 +691,15 @@ const LanguagesFullArray =
                     "are replaced with efficient, automated workflows. Eliminate the stress of constant data controls.<br><br>" +
                     "With this application, data management, ordering, transport planning become seamless, secure, and effortless, allowing your teams to focus on what matters most.",
 
+                    "8 ItemTextCenterMiddle" : "The Transport Orders form provides all required fields and functionality, with support for report generation and export.<br>" +
+                    "Transport Orders Form preview : ",
+
+                    "9 ItemTextCenterMiddle" : "Orders generated by application can be sent automatically by email, by other tools or printed.<br>" +
+                    "Transport Order Document preview : ",
+
+                    "10 ItemTextCenterMiddle" : "All container data is managed in a single, centralized form. This form also includes reporting and Excel export functionality.<br>" +
+                    "Containers Form preview :",                    
+
                     "0 ItemTextCenterBottom" : 
                     "Here everything is in one place: information about customers, parcels, addresses, etc., its management, financial accounting, " +
                     "reports, maps and also reminders before ending of technical inspection or insurance. Route planning consists of three main processes :",
@@ -694,8 +730,10 @@ const LanguagesFullArray =
                         "<li>Ms Office 64 bit pack with Access included (preferable , but not necessary)</li>" +
                         "<li>User experience with Windows from 1 year</li>" +
                     "</ul>",
-                    //  +
-                    // "For more details, please contact me."
+
+                    "10 ItemTextCenterBottom" : "In addition to the features shown, the application provides extended functionality, including invoice tracking, " +
+                    "bookings, price list import and export, daily load reporting with export options and etc. These features are not displayed in this short overview " +
+                    "and can be discussed upon request. ",
 
                     "LeftSideSR" : "For more details, please contact me."
                 }
