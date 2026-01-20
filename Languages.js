@@ -132,6 +132,8 @@ const LanguagesFullArray =
 
                 "6 ItemTextCenterUpper" : "Reikalavimai kompiuteriui ir vartotojui:",
 
+                "11 ItemTextCenterUpper" : "Pagrindiniai programos parametrai:",
+
                 "1 ItemTextCenterMiddle" : 
                 "Per visą laikotarpį iki išvykimo programoje yra kaupiama visą informaciją apie reisą (apie keleivius, krovinius, paėmimo ir pristatymo adresus, " +
                 "sutartas kainas ir t.t.). Prieš reiso pradžą bet kurią akimirką yra atliekamas galutinis ar pakartotinis išplanavimas. " +
@@ -212,6 +214,11 @@ const LanguagesFullArray =
                 "10 ItemTextCenterBottom" : "Be pademonstruotų funkcijų, programoje yra kur kas daugiau išplėstinių galimybių, tokių kaip sąskaitų faktūrų valdymas, rezervacijų valdymas, " +
                 "kainoraščių importas ir eksportas, kasdienių atkrovimų ataskaitų generavimas su eksportavimo parinktimis ir kt. Šios funkcijos šioje trumpoje apžvalgoje nėra " +
                 "detaliai pristatomos ir gali būti aptartos susiekus.",
+
+                "11 ItemTextCenterBottom" : 
+                    "<ul>" +
+                        "<li>Maksimalus vartotojų skaičius (pvz.: vadybininkų) - neribojamas</li>" +
+                    "</ul>",
 
                 "LeftSideSR" : "Dėl detalesnės informacijos prašome kreiptis nurodytais kontaktais."
                 }
@@ -391,6 +398,8 @@ const LanguagesFullArray =
 
                     "6 ItemTextCenterUpper" : "Требования к компьютеру и пользователю:",
 
+                    "11 ItemTextCenterUpper" : "Основные параметры приложения:",
+
                     "1 ItemTextCenterMiddle" : "В течение всего периода до отправления программа сохраняет всю информацию о поездке (пассажиры, груз, адреса посадки и высадки, " +
                     "согласованные цены и т. д.). Окончательное планирование или перепланирование осуществляется в любое время до начала рейса. " +
                     "Программа автоматически группирует адреса и выполняет предварительную сортировку по расстояниям. Весь маршрут отображается на карте. " +
@@ -473,6 +482,12 @@ const LanguagesFullArray =
                     "10 ItemTextCenterBottom" : "Помимо перечисленных функций, приложение предоставляет расширенный функционал, включая контроль счет-фактур, " +
                     "бронирование, импорт и экспорт прайс-листов, моментальные отчеты о сегодняшней загрузке с возможностью экспорта и т. д. Эти функции не показаны в данном кратком обзоре " +
                     "и могут быть обсуждены при беседе.",
+
+                    
+                    "11 ItemTextCenterBottom" : 
+                        "<ul>" +
+                            "<li>Максимальное количество пользователей (например, менеджеров) — неограниченное</li>" +
+                        "</ul>",
 
                     "LeftSideSR" : "Для более подробной информации, пожалуйста, свяжитесь по указанным контактам."
                 }
@@ -654,6 +669,8 @@ const LanguagesFullArray =
 
                     "6 ItemTextCenterUpper" : "Computer and user requirements:",
 
+                    "11 ItemTextCenterUpper" : "Main application parameters:",
+
                     "1 ItemTextCenterMiddle" :
                     "Manager collects and inputs all information about charter (trip) (passengers, parcels, pickup and delivery addresses, agreed prices, etc.) " +
                     "into application during entire period before departure. At any time before departure the final arrangement or re-arrangement should be performed. " +
@@ -731,9 +748,15 @@ const LanguagesFullArray =
                         "<li>User experience with Windows from 1 year</li>" +
                     "</ul>",
 
-                    "10 ItemTextCenterBottom" : "In addition to the features shown, the application provides extended functionality, including invoice tracking, " +
+                    "10 ItemTextCenterBottom" : 
+                    "In addition to the features shown, the application provides extended functionality, including invoice tracking, " +
                     "bookings, price list import and export, daily load reporting with export options and etc. These features are not displayed in this short overview " +
                     "and can be discussed upon request. ",
+
+                    "11 ItemTextCenterBottom" : 
+                    "<ul>" +
+                        "<li>Maximum number of users (e.g. managers) - unlimited</li>" +
+                    "</ul>",
 
                     "LeftSideSR" : "For more details, please contact me."
                 }
