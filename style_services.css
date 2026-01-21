@@ -34,7 +34,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 80%;
     /* height: 120px; */
     display: flex;
@@ -431,16 +431,21 @@ hr {
 
 .CenterMiddleSR {
     width: 100%;
-    height: 0;
+    height: auto;
     display: flex;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .RightSideSR, .LeftSideSR {
-    width: 50%;
-    margin: 10px;
+    width: 100%;
+    /* margin: 10px; */
+    /* margin-left: auto;
+    margin-right: auto; */
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.4rem;
     color: rgb(150, 150, 235);
 }
