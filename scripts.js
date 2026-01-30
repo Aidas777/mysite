@@ -707,11 +707,26 @@ function TranslateTitles() {
 
                 if (!isNaN(key.charAt(0))) { // IF KEY IN LANGUAGES STARTS WITH A NUMBER, THEN NUMBER MEANS NTH ELEMENT NUMBER ON HTML
 
-                    // ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
-                    // ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+                    // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER ON HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    // CURRENT FUNCTION IS UP TO MAX FIRST POSSIBLE DIGIT 9 (FOR MORE WE NEED ADD SIMILAR AS IT IS IN TranslateTexts())
 
-                    ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[key.charAt(0)];
-                    ObjectForLanguageChange.innerHTML = value;
+                    let SpacePos = key.indexOf(' ');
+                    let MinusPos = key.indexOf('-');
+
+                    if (SpacePos == 1) {
+                        ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[key.charAt(0)];
+                        if (ObjectForLanguageChange) {
+                            ObjectForLanguageChange.innerHTML = value;
+                        }
+
+                    } else if (MinusPos == 1 ) { 
+
+                        ObjectForLanguageChange = document.getElementsByClassName(key.substring(2))[0];
+                        if (ObjectForLanguageChange) {
+                            ObjectForLanguageChange.children[key.charAt(0)].innerHTML = value;
+                        }
+                    }
 
                 } else {
                     ObjectForLanguageChange = document.getElementsByClassName(key)[0];
@@ -783,11 +798,10 @@ function TranslateTexts() {
             // let FirstTwoCharsOfKey = key.slice(0, 2);
             // console.log(key + ' ' + FirstTwoCharsOfKey);
 
-            let SpacePos = key.indexOf(' ');
-            let MinusPos = key.indexOf('-');
-            
-
             if (!isNaN(key.charAt(0))) {
+
+                let SpacePos = key.indexOf(' ');
+                let MinusPos = key.indexOf('-');
 
                 if (SpacePos == 1) {
 

@@ -67,7 +67,7 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
-                    "5-LeftSideRight" : "Linux ir kita.",
+                    "4-LeftSideRight" : "Linux ir kita.",
 
                     "CenterBottomAU" : "Šią svetainę sukūriau rankiniu būdu, kad pasimėgauti programavimu ir idėjų įgyvendinimu, bei patobulinti savo programavimo įgūdžius."
                 }
@@ -162,7 +162,7 @@ const LanguagesFullArray =
                 "Maksimalus skirtingų adresų (skirtingų aplankomų taškų) skaičius reisui - neribotas. ",
 
                 "7 ItemTextCenterMiddle" : 
-                "<b><i style='color: rgb(157, 185, 221);'>Transporto užsakymų ir Konteinerių valdymo programa</i></b> yra programa, skirta gamykloms ir įmonėms, " +
+                "<b><i style='color: rgb(157, 185, 221);'>Transporto užsakymų ir Konteinerių valdymo programa</i></b> yra skirta gamykloms ir įmonėms, " +
                 "kurios naudojasi transporto paslaugomis. Ji supaprastina sunkvežimių užsakymų valdymą. Joje taip pat yra integruotas konteinerių duomenų valdymo modulis.<br><br>" +
                 "Sistema supaprastina kasdienius logistikos komandos, pardavimų vadybininkų ir planuotojų darbus, centralizuodama ir automatizuodama pagrindinius procesus. " +
                 "Tokios užduotys kaip pasikartojantis duomenų įvedimas, laiškų siuntimai el. paštu, užsakymai, sąskaitų faktūrų valdymas, ataskaitos, " +
@@ -234,7 +234,7 @@ const LanguagesFullArray =
                     // "0 CenterTopCO" : "<span class='MyLabel'>Vardas :</span><span class='MyData'>Aidas</span>",
                     // "2 CenterTopCO" : "<span class='MyLabel'>Miestas :</span><span class='MyData'>Klaipėda, Lietuva</span>",
 
-                    "4 CenterTopCO" : "<span class='MyLabel'><img src='phone100.png' alt='phone icon'></span><span class='MyData'><button class='ShowTelBtn' " +
+                    "4-CenterTopCO" : "<span class='MyLabel'><img src='phone100.png' alt='phone icon'></span><span class='MyData'><button class='ShowTelBtn' " +
                     "title='Show phone number' onclick='Controller(this.className, `ShowTelNr`)'>Rodyti</button></span>"
                 }
             }
@@ -332,7 +332,7 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
-                    "5-LeftSideRight" : "Linux и другие.", 
+                    "4-LeftSideRight" : "Linux и другие.", 
 
                     "CenterBottomAU" : "Я создал этот сайт вручную, чтобы насладиться программированием " +
                     "и воплощением идей и чтобы усовершенствовать навыки."
@@ -502,7 +502,7 @@ const LanguagesFullArray =
                     // "0 CenterTopCO" : "<span class='MyLabel'>Имя :</span><span class='MyData'>Aidas</span>",
                     // "2 CenterTopCO" : "<span class='MyLabel'>Локация :</span><span class='MyData'>Klaipėda, Lietuva</span>",
 
-                    "4 CenterTopCO" : "<span class='MyLabel'><img src='phone100.png' alt='phone icon'></span><span class='MyData'><button class='ShowTelBtn' " +
+                    "4-CenterTopCO" : "<span class='MyLabel'><img src='phone100.png' alt='phone icon'></span><span class='MyData'><button class='ShowTelBtn' " +
                     "title='Show phone number' onclick='Controller(this.className, `ShowTelNr`)'>Показать</button></span>"
 
                     
@@ -604,7 +604,7 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
-                    "5-LeftSideRight" : "Linux and other technologies.",
+                    "4-LeftSideRight" : "Linux and other technologies.",
 
                     "CenterBottomAU" : "I created this website manually to enjoy coding and ideas implementation and to refine my coding skills."
                 }
@@ -772,7 +772,7 @@ const LanguagesFullArray =
                     // "2 CenterTopCO" : "<span class='MyLabel'>Location :</span><span class='MyData'>Klaipėda, Lietuva</span>",
                     // "2 CenterTopCO" : "<span class='MyLabel'><img src='home100.png' alt='home icon'></span><span class='MyData'>Klaipėda, Lietuva</span>",
 
-                    "4 CenterTopCO" : "<span class='MyLabel'><img src='phone100.png' alt='phone icon'></span><span class='MyData'><button class='ShowTelBtn' " +
+                    "4-CenterTopCO" : "<span class='MyLabel'><img src='phone100.png' alt='phone icon'></span><span class='MyData'><button class='ShowTelBtn' " +
                     "title='Show phone number' onclick='Controller(this.className, `ShowTelNr`)'>Show</button></span>"
                 }
             }
