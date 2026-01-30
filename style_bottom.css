@@ -12,8 +12,7 @@
     opacity: 1; 
 
     animation-name: ShadowGrow, DemoBlow;
-    /* animation-delay: 15s; */
-    animation-delay: 3s;
+    animation-delay: 15s;
     animation-iteration-count: 1;
     animation-duration: 5s;
     animation-fill-mode: forwards;
