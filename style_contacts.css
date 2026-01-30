@@ -114,16 +114,10 @@
         background-color: rgb(78, 57, 196);
     }
 
+    transition: width 0.2s;
     &.active {
         width: 50%;
-        transition: all 0.1s;
     }
-    /* &:active {
-        width: 160px !important;
-    } */
-    /* &:not(:focus) {
-        width: 100px;
-    } */
 }
 
 /* .ShowTelBtn:active {
