@@ -1,0 +1,366 @@
+.OuterLowerContainerCO {
+    display: flex;
+    position: relative;
+    width: 80%;
+    top: 160px;
+    height: 78%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.CenterTopCO {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    font-size: 1.6rem;
+    color: rgb(150, 150, 235);
+    justify-content: center;
+    place-items: center;
+}
+
+.ListLine {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 55%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 28px;
+}
+.MyLabel {
+    width: 30%;
+    text-align: right;
+}
+
+.MyLabel img{
+    width: 35px;
+    margin-right: 10%;
+    vertical-align: middle;
+}
+
+.MyData {
+    display: flex;
+    width: 60%;
+    text-align: left;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.CopyBtn, .ShowTelBtn {
+    margin-right: 10px; 
+    margin-top: 0;
+    padding-top: 0;
+
+    border-radius: 1.6rem;
+    border: 2px solid rgb(150, 150, 235, 0.4);
+    vertical-align: middle;
+    width: 100px;
+    height: 40px;
+    font-size: 1.3rem;
+    font-weight: 200;
+
+    color: rgb(150, 150, 235);
+    background-color: rgb(32, 34, 58);
+    box-shadow: 10px 10px 10px rgb(15, 16, 27);
+
+    cursor: pointer;
+
+}
+
+.CopyBtn {
+    margin-left: auto;
+    margin-right: 0;
+
+    &:hover {
+        background-color: rgb(58, 62, 110);
+    }
+
+    &:active {
+        background-color: rgb(78, 57, 196)
+    }
+}
+ 
+.ShowTelBtn {
+    margin-left: 0;
+    
+    &:hover {
+        background-color: rgb(58, 62, 110);
+    }
+
+    &:active {
+        background-color: rgb(78, 57, 196);
+    }
+
+    transition: width 0.2s;
+    &.active {
+        width: 50%;
+    }
+}
+
+.CenterMiddleCO {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.RightSideCO, .LeftSideCO {
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: rgb(150, 150, 235);
+}
+
+.CenterBottomCO {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    position: relative;
+
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Montez", cursive;
+    color: rgb(150, 150, 235, 0.8);
+    justify-content: center;
+    align-items: self-end;
+    text-shadow: 0 0 50px rgb(150, 150, 235), 10px 3px 9px rgb(0, 0, 0);
+}
+
+.CenterBottomCO::after {
+    content: '';
+    border-radius: 50%;
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    box-shadow: inset -50px -10px 0 rgba(150, 150, 235, 0.3) , inset -60px -10px 0 rgba(94, 94, 165, 0.3);
+    border-radius: 50%;
+    top: -3%;
+    z-index: -1;
+}
+
+.DemoLabelBottom {
+    top: 85vh;
+}
+
+
+
+/*/// MEDIA ///   /// MEDIA ///   MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   */
+@media screen and (max-width: 1900px) {
+    .CenterTopCO {
+        font-size: 1.4rem;
+        p {
+            margin-top: 3px;    
+            margin-bottom: 3px;
+            b {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .ListLine {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .CenterBottomCO {
+        font-size: 3.5rem;
+        &::after {
+            top: 33px;
+            height: 50px;
+            box-shadow: inset -40px -10px 0 rgba(150, 150, 235, 0.3) , inset -50px -10px 0 rgba(94, 94, 165, 0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .ListLine {
+        width: 100%;
+    }
+
+    .CopyBtn, .ShowTelBtn {
+        width: 12vw;
+        height: 36px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .OuterLowerContainerCO {
+        width: 90%;
+    }
+
+    .CenterBottomCO::after {
+        top: 35px;
+        box-shadow: inset -20px -10px 0 rgba(150, 150, 235, 0.3) , inset -30px -10px 0 rgba(94, 94, 165, 0.3);
+        height: 48px;   
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .OuterLowerContainerCO {
+        width: 96%;
+    }
+
+    .CenterBottomCO {
+        font-size: 3rem;
+        &::after {
+            top: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .CenterTopCO {
+        font-size: 1.2rem;
+    }
+
+    .MyLabel {
+        width: 10%;
+    }
+
+    .MyLabel img {
+        width: 28px;
+    }
+
+    .MyData {
+        width: 70%;
+    }
+
+    .CopyBtn, .ShowTelBtn {
+        font-size: 1.2rem;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .OuterLowerContainerCO {
+        width: 96%;
+        top: 60px;
+        margin-top: 10px;
+        height: 245px;
+    }
+
+    .ContactsPage .CenterTopCO {
+        font-size: 1.1rem;
+        height: 185px;
+        margin-top: 2vh;    
+        margin-bottom: 0;
+        text-align: center;
+
+        p > b {
+            font-size: 0.9rem;
+        }
+    }
+
+    .ListLine {
+        width: 100%;
+        height: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .MyLabel {
+        width: 12%;
+        margin-right: 5%;
+    }
+
+    .MyLabel img{
+        width: 25px;
+    }
+
+    .MyData {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-flow: row;
+        place-items: center;
+    }
+
+    .CopyBtn, .ShowTelBtn {
+        font-size: 1rem;
+        width: 19vw;
+        height: 26px;
+    }
+
+    .CopyBtn {
+        margin-left: auto;
+        margin-right: 0;
+
+    }
+
+    .ShowTelBtn {
+        &.active {
+            width: 36vw;
+        }
+    }
+
+    .CenterMiddleCO {
+        height: 0;
+        margin-top: 15px;
+        flex-flow: column;
+    }
+
+    .LeftSideCO {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 10px 0;
+        place-content: center;
+    }
+
+    .RightSideCO {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 10px 0;
+        place-content: center;
+    }
+
+    .CenterBottomCO {
+        top: 0px;
+        margin-top: 0;
+        font-size: 1.8rem;
+        height: 32px;
+        text-shadow: 0 0 50px rgb(150, 150, 235), 10px 3px 9px rgb(0, 0, 0);
+    }
+
+    .CenterBottomCO::after {
+    content: '';
+    border-radius: 50%;
+    height: 21px;
+    width: 100%;
+    position: absolute;
+    box-shadow: inset -15px -3px 0 rgba(150, 150, 235, 0.3) , inset -25px -5px 0 rgba(94, 94, 165, 0.3);
+    border-radius: 50%;
+    top: 0%;
+    z-index: -1;
+}
+
+    .DemoLabelBottom {
+        top: 408px;
+        font-size: 0.75rem;
+    }
+
+    .LabelsBottomRightBox {
+        top: 470px;
+    }
+}

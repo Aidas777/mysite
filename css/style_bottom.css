@@ -1,0 +1,245 @@
+.DemoLabelBottom {
+    position: absolute;
+    width: 30%;
+    height: 85px;
+    bottom: 12%;
+    top: 775px;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: rgb(235, 150, 231);
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: 1; 
+
+    animation-name: ShadowGrow, DemoBlow;
+    animation-delay: 15s;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes DemoBlow {
+    0% {    
+        opacity: 1;
+        letter-spacing: normal;
+        overflow: hidden;
+        font-size: 100%;
+    }
+
+    30% {
+        opacity: 0;
+        transform: scaleX(1.1);
+        overflow: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        letter-spacing: 300px;
+        overflow: hidden;
+    }
+}
+
+.LabelsBottomRightBox {
+    display: flex;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    width: 20%;
+    height: 42px;
+    bottom: 10px;
+
+    animation-name: Appear;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.LabelBottomRightCreator {
+    display: flex;
+    position: absolute;
+    color: rgb(150, 150, 235);
+    font-style: italic;
+    right: 0;
+    bottom: 50%;
+    transition: all 0.2s linear;
+    &:hover {
+        text-shadow: 0 0 20px rgb(211, 211, 255);
+        font-size: 1.4rem;
+    }
+}
+
+.LabelBottomRightVersion {
+    display: flex;
+    position: absolute;
+    color: rgb(150, 150, 235);
+    font-size: 0.9rem;
+    font-style: italic;
+    right: 0;
+    bottom: 5%;
+}
+
+.LabelsBottomLeftBox {
+    display: flex;
+    position: fixed;
+    place-items: center;
+    left: 1%;
+    bottom: 10px;
+    width: 20%;
+    height: 30px;
+    color: rgba(150, 150, 235, 0.6);
+    font-style: italic;
+    font-size: 0.8rem;
+
+    animation-name: Appear;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+
+
+
+/*/// MEDIA ///   /// MEDIA ///   MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   */
+
+@media screen and (max-width: 1600px) {
+
+    .LabelsBottomRightBox {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .LabelsBottomRightBox {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .DemoLabelBottom {
+        font-size: 1rem;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .LabelsBottomLeftBox {
+        bottom: 12px;
+        width: 30%;
+    }
+
+    .LabelsBottomRightBox {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .DemoLabelBottom {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .DemoLabelBottom {
+        width: 80%;
+        bottom: 10%;
+        top: unset;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .LabelsBottomLeftBox {
+        font-size: 0.7rem;
+        text-align: center;
+        place-items: center;
+        justify-content: center;
+        left: unset;
+
+        height: 25px;
+        width: 100%;
+        top: unset;
+        bottom: 5px;
+    }
+
+    .LabelsBottomRightBox {
+        width: 100%;
+        right: unset;
+        justify-content: center;
+        top: unset;
+        bottom: 35px;
+    }
+
+    .LabelBottomRightCreator, .LabelBottomRightVersion {
+        width: 100%;
+        right: unset;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .DemoLabelBottom {
+        width: 80%;
+        bottom: 90px;
+        top: unset;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .LabelsBottomLeftBox {
+        justify-content: center;
+        width: 100%;
+        left: unset;
+        text-align: center;
+    }
+
+    .LabelsBottomRightBox {
+        top: unset;
+        bottom: 35px;
+        height: 26px;
+    }
+
+    .LabelBottomRightCreator {
+        font-size: 0.8rem;
+    }
+
+    .LabelBottomRightVersion {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .DemoLabelBottom {
+        top: 408px;
+        height: 65px;
+        font-size: 0.75rem;
+    }
+    
+    .LabelsBottomRightBox {
+        height: 22px;
+        bottom: 25px;
+    }
+
+    .LabelsBottomLeftBox {
+        height: 28px;
+        bottom: -3px;
+        font-size: 0.6rem;
+    }
+}

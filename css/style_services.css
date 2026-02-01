@@ -1,0 +1,779 @@
+.MiddleOfPage.ServicesPage {
+    margin-top: 10px;
+    height: auto;
+}
+
+.OuterLowerContainerSR {
+    display: flex;
+    position: relative;
+    width: 80%;
+    top: 160px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.CenterVeryFirstTop {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgb(165, 165, 255);
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-self: center;
+    text-align: justify;
+    text-indent: 4rem;
+}
+
+.CenterTopSR {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+
+    font-size: 1.4rem;
+    color: rgb(150, 150, 235);
+    justify-content: center;
+    place-items: center;
+}
+
+.ItemList {
+    position: relative;
+    width: 100%;
+}
+
+.Item_1 {
+    margin-bottom: 40px;
+}
+
+.ItemDetails_1 {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.Item_1 .ItemDetails_1 .ItemTextCenterUpper {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(235, 150, 231);
+
+        span {
+        animation-name: BlinkAllLetters2;
+        animation-duration: 6s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes BlinkAllLetters2 {
+    0% {
+        color: rgb(235, 150, 231);
+    }
+    
+    50% {
+        color: transparent;
+        filter: blur(6px);
+        letter-spacing: 10px;
+        text-shadow: -30px 0px 10px rgb(235, 150, 231), 70px 0px 10px rgb(235, 150, 231);
+    }
+
+    100% {
+        color: rgb(235, 150, 231);
+
+    }
+    
+}
+
+.Item_2 .ItemDetails_1 .ItemTextCenterUpper {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(235, 150, 231);
+
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+
+        span {
+        animation-name: BlinkWords;
+        animation-duration: 6s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes BlinkWords {
+    0% {
+        color: rgb(235, 150, 231);
+    }
+
+    50% {
+        color: transparent;
+        filter: blur(6px);
+    }
+    100% {
+        color: rgb(235, 150, 231);
+    }
+    
+}
+
+.ItemDetails_2 .ItemTextCenterUpper {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-indent: 4rem;
+    color: rgb(162, 162, 233);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ItemDetails_4 .ItemTextCenterUpper {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-indent: 4rem;  
+    color: rgb(162, 162, 233);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ItemDetails_5 .ItemTextCenterUpper {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-indent: 4rem;  
+    color: rgb(162, 162, 233);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ItemDetails_6 .ItemTextCenterUpper {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-indent: 4rem;  
+    color: rgb(162, 162, 233);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ItemDetails_7 .ItemTextCenterUpper {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-indent: 4rem;  
+    color: rgb(162, 162, 233);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ItemDetails_1 .ItemTextCenterMiddle {
+    margin-bottom: 30px;
+    width: 100%;
+    align-self: center;
+    text-align: justify;
+}
+
+.ItemDetails_1 .ItemTextCenterMiddle {
+    text-indent: 4rem;
+}
+
+.ItemDetails_2 .ItemTextCenterMiddle {
+    margin-bottom: 20px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.ItemDetails_3 .ItemTextCenterMiddle {
+    margin-bottom: 20px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.ItemDetails_4 .ItemTextCenterMiddle {
+    margin-bottom: 20px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.ItemDetails_5 .ItemTextCenterMiddle {
+    margin-bottom: 20px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.ItemDetails_6 .ItemTextCenterMiddle {
+    margin-bottom: 20px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.ItemPicFrame {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+    
+}
+
+
+.ItemDetails_1 .ItemPicFrame img {
+    position: relative;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+
+    animation: ImgFadeIn 1s ease-in-out forwards;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+
+}
+
+@keyframes ImgFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Item_1 .ItemDetails_2 .ItemPicFrame img {
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+}
+
+.Item_2 .ItemDetails_2 .ItemPicFrame img {
+    width: 96%;
+    height: auto;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+}
+
+.Item_1 .ItemDetails_3 .ItemPicFrame img {
+    width: 86%;
+    height: auto;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+}
+
+.Item_2 .ItemDetails_3 .ItemPicFrame img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+}
+
+.Item_2 .ItemDetails_5 .ItemPicFrame {
+    min-height: 0;
+}
+
+.ItemDetails_4 .ItemPicFrame img {
+    width: 96%;
+    height: auto;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+}
+
+.ItemDetails_5 .ItemPicFrame img {
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 0px 15px 15px rgba(77, 77, 138, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 15px 50px transparent;
+    }
+}
+
+.ItemDetails_6 .ItemPicFrame,
+.ItemDetails_7 .ItemPicFrame {
+    width: 30%;
+    height: 0;
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+.ItemDetails_1 .ItemTextCenterBottom {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.ItemDetails_3 .ItemTextCenterBottom {
+    text-indent: 4rem;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.ItemDetails_4 .ItemTextCenterBottom {
+    text-indent: 4rem;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.ItemDetails_5 .ItemTextCenterBottom {
+    text-indent: 4rem;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.Item_2 .ItemDetails_5 .ItemTextCenterBottom {
+    text-indent: unset;
+}
+
+dl {
+    margin-top: 10px;
+}
+
+hr {
+    color: rgb(150, 150, 235);
+}
+
+.CenterMiddleSR {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.RightSideSR, .LeftSideSR {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: rgb(150, 150, 235);
+}
+
+.CenterBottomSR {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+
+    font-size: 1.4rem;
+    color: rgb(150, 150, 235);
+    justify-content: center;
+    text-align: center;
+}
+
+.LabelsBottomRightBox, .LabelsBottomLeftBox {
+    bottom: 20px;
+}
+
+.DemoLabelBottom {
+    display: none;
+}
+
+
+/*/// MEDIA ///   /// MEDIA ///   MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   */
+@media screen and (max-width: 1900px) {
+
+    html, body {
+        height: 100%;
+    }
+        
+    body {
+        min-height: 100vh;
+        overflow: visible;
+        background-attachment: fixed;
+        
+    }
+
+    .CenterTopSR {
+        font-size: 1.4rem;
+        p {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            b {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .OuterLowerContainerSR {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .OuterLowerContainerSR {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .ServicesPage .LabelCenterTop {
+        margin-top: 7vh;
+    }
+
+    .CenterTopSR {
+        width: 96%;
+    }
+
+    .CenterVeryFirstTop, .CenterTopSR,
+    :is(.ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
+        .ItemDetails_6, .ItemDetails_7) .ItemTextCenterUpper { 
+        font-size: 1.2rem;
+    }
+
+    :is(.ItemDetails_1, .ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
+        .ItemDetails_6, .ItemDetails_7) .ItemPicFrame img { 
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .CenterVeryFirstTop, .CenterTopSR,
+    :is(.ItemDetails_2, .ItemDetails_3, .ItemDetails_4, .ItemDetails_5,
+    .ItemDetails_6, .ItemDetails_7) .ItemTextCenterUpper { 
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .MiddleOfPage.ServicesPage {
+        margin-top: 50px;
+    }
+
+    .ServicesPage .LabelCenterTop {
+        margin-top: 4vh;
+    }
+
+    .OuterLowerContainerSR {
+        width: 90%;
+        top: 60px;
+        margin-top: 10px;
+    }
+
+    .CenterVeryFirstTop {
+        width: 90%;
+        font-size: 0.9rem;
+        text-indent: 2rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .CenterTopSR {
+        width: 96%;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-bottom: 0;
+        text-align: center;
+
+        p > b {
+            font-size: 0.9rem;
+        }
+    }
+
+    .Item_1 .ItemDetails_1 .ItemTextCenterUpper {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .Item_2 .ItemDetails_1 .ItemTextCenterUpper {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .ItemDetails_2 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .Item_1 .ItemDetails_2 .ItemTextCenterUpper {
+        margin-bottom: 10px;
+    }
+
+    .ItemDetails_4 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .ItemDetails_5 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .ItemDetails_6 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .ItemDetails_7 .ItemTextCenterUpper {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .Item_1 .ItemDetails_1 .ItemTextCenterMiddle {
+        font-size: 0.9rem;
+        text-indent: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .Item_2 .ItemDetails_1 .ItemTextCenterMiddle {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .Item_2 .ItemDetails_1 .ItemTextCenterBottom {
+        font-size: 0.9rem;
+        text-indent: 2rem;
+        margin-bottom: 0;
+    }
+
+    .ItemDetails_1 .ItemTextCenterBottom,
+    .ItemDetails_2 .ItemTextCenterBottom,
+    .ItemDetails_3 .ItemTextCenterBottom,
+    .ItemDetails_5 .ItemTextCenterBottom {
+        font-size: 0.9rem;
+    }
+
+    .Item_2 .ItemDetails_3 .ItemTextCenterBottom {
+        margin: 0;
+    }
+
+    .ItemDetails_2 .ItemTextCenterMiddle {
+        text-indent: 2rem;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    .ItemDetails_3 .ItemTextCenterMiddle {
+        text-indent: 2rem;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .ItemDetails_4 .ItemTextCenterMiddle {
+        text-indent: 2rem;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    .ItemDetails_5 .ItemTextCenterMiddle {
+        text-indent: 2rem;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .ItemDetails_6 .ItemTextCenterMiddle {
+        text-indent: 2rem;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .ItemDetails_2 .ItemTextCenterBottom,
+    .ItemDetails_3 .ItemTextCenterBottom,
+    .ItemDetails_5 .ItemTextCenterBottom {
+        text-indent: 2rem;
+    }
+
+    .Item_2 .ItemDetails_5 .ItemTextCenterBottom {
+        text-indent: 0;
+        margin-bottom: 10px;
+    }
+
+    .ItemDetails_6 .ItemTextCenterBottom,
+    .ItemDetails_7 .ItemTextCenterBottom
+    {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .ItemDetails_4 .ItemTextCenterBottom {
+        text-indent: 2rem;
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .ItemTextCenterBottom ul {
+        padding-left: 10px;
+        text-align: justify;
+        text-indent: unset;
+    }
+
+    .ItemTextCenterBottom dd {
+        margin-left: 10px;
+    }
+
+    .Item_1 .ItemDetails_1 .ItemPicFrame, 
+    .Item_1 .ItemDetails_2 .ItemPicFrame,
+    .Item_1 .ItemDetails_3 .ItemPicFrame,
+    .Item_1 .ItemDetails_4 .ItemPicFrame,
+    .Item_1 .ItemDetails_5 .ItemPicFrame,
+    
+    .Item_2 .ItemDetails_1 .ItemPicFrame,
+    .Item_2 .ItemDetails_4 .ItemPicFrame
+    {
+        margin-bottom: 20px;
+    }
+
+    .ItemDetails_1 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .Item_1 .ItemDetails_2 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .Item_2 .ItemDetails_2 .ItemPicFrame {
+        margin-bottom: 10px;
+    }
+
+    .Item_2 .ItemDetails_2 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .Item_1 .ItemDetails_3 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .Item_2 .ItemDetails_3 .ItemPicFrame {
+        margin-bottom: 20px;
+    }
+
+    .Item_2 .ItemDetails_3 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .Item_2 .ItemDetails_5 .ItemPicFrame {
+        margin-bottom: 0;
+        min-height: 0;
+    }
+
+    .Item_1 .ItemDetails_4 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .ItemDetails_5 .ItemPicFrame img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .CenterMiddleSR {
+        height: 10vh;
+        flex-flow: column;
+    }
+
+    .LeftSideSR {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 20px 0 30px 0;
+        place-content: center;
+        text-align: center;
+    }
+
+    .RightSideSR {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 5px 0;
+        place-content: center;
+    }
+
+    .CenterBottomSR {
+        top: 0px;
+        font-size: 0.8rem;
+    }
+
+    .CenterMiddleSR {
+        height: 0;
+    }
+
+}

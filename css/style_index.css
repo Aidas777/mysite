@@ -1,0 +1,426 @@
+html {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, rgb(15, 16, 27), rgb(32, 34, 58));
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+.NavigationBar {
+    margin-top: 3px;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 30px rgb(79, 86, 146);
+    display: flex;
+    z-index: 5;
+
+}
+.NavigationBarArea {
+    display: flex;
+    width: 100%;
+}
+
+.MenuLabel {
+    width: 50px;
+    font-size: 1.4rem;
+    color: rgba(150, 150, 235, 0.6);
+    text-decoration: none;
+    place-content: center;
+    position: absolute;
+    cursor: pointer;
+
+    display: none;
+
+    &:hover {
+        color: rgb(191, 191, 253);
+            transition: all 0.3s ease;
+            text-shadow: 0 0 20px rgb(211, 211, 255);
+    }
+}
+
+.MenuLabel.active {
+    color: rgb(191, 191, 253);
+    filter: blur(1px);
+    opacity: 50%;
+    transition: all 0.4s linear;
+}
+
+.NavigationBarLinksBox {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-weight: 700;
+}
+
+
+.NavigationBarLinksBox a {
+    position: relative;
+    font-size: 2rem;
+    color: rgb(150, 150, 235);
+    text-decoration: none;
+
+    &:hover {
+        color: rgb(191, 191, 253);
+        .glow {
+            transition: all 0.3s ease;
+            background-color: rgb(99, 108, 207);
+            width: 120%;
+        }
+    }
+}
+
+.glow {
+    content: '';
+    width: 10px;
+    height: 100%;
+    border-radius: 10px;
+    
+    opacity: 1;
+    position: absolute;
+    display: inline-flex;
+    background-color: rgba(222, 223, 240, 0);
+    filter: blur(10px);
+    left: -10%;
+    z-index: -3;
+
+}
+
+.Languages {
+    width: 8%;
+    place-self: center;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(150, 150, 235);
+    font-weight: 700;
+    cursor: pointer ;
+    .RU {
+        color: rgb(150, 150, 235, 0.6);
+    }
+    .LT, .RU {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    span:hover {
+        color: rgb(191, 191, 253);
+        text-shadow: 0 0 10px rgb(191, 191, 253);
+        z-index: 99;
+    }
+}
+
+.Hamburger {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    margin-top: -2px;
+    display: none;
+    position: fixed;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(150, 150, 235);
+    right: 5px;
+    z-index: 99;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.rod, .rod:before, .rod:after {
+    width: 22px;
+    height: 4px;
+    display: block;
+    background-color: rgb(15, 16, 27);
+    border-radius: 5px;
+    content: "";
+    transition: 0.4s linear;
+}
+
+.rod {
+    position: relative;
+}
+
+.rod:before {
+    top: -6px;
+    position: absolute;
+}
+
+.rod:after {
+    top: 6px;
+    position: absolute;
+}
+
+.Hamburger.active .rod {
+    background-color: transparent;
+}
+
+.Hamburger.active .rod:before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.Hamburger.active .rod:after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.NavigationBarArea.active {
+    width: 60%;
+    height: 300px;  
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: rgba(150, 150, 235, 0.4);
+    z-index: 2;
+}
+
+#MsgBox {
+    width: 80%;
+    height: 46px;
+    top: 76px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1rem;
+    text-align: center;
+    place-content: center;
+    font-size: 1.3rem;
+    color: rgb(235, 150, 231);
+    background-color: rgba(250, 134, 196, 0.2);
+    position: absolute;     
+    display: none;
+    &.FadeAway {
+        animation: fade-away 1s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards ;
+    }
+}
+
+@keyframes fade-away {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.MiddleOfPage { /* CAN BE IN MAIN STYLES FILE BECAUSE THIS EFFECT IS SAME FOR ALL PAGES  */
+
+    filter: blur(0);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+
+    &.active {
+        filter: blur(3px);
+        transition: all 0.4s ease-in-out;
+        opacity: 0.7;
+    }
+}
+
+/*/// MEDIA ///   /// MEDIA ///   MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   /// MEDIA ///   */
+
+
+@media screen and (max-width: 1600px) {
+    .LabelCenterTop {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .Languages {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .NavigationBarLinksBox a {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Languages {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .NavigationBarLinksBox a {
+        font-size: 1.5rem;
+    }
+
+    .Languages {
+        font-size: 1.2rem;
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .NavigationBarLinksBox a {
+        font-size: 1.3rem;
+    }
+
+    .NavigationBarLinksBox {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+
+    #MsgBox {
+        top: 60px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .NavigationBarLinksBox {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .Languages {
+        width: 14%;
+    }
+
+    #MsgBox {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .NavigationBar {
+        height: 31px;
+    }
+    .NavigationBarArea {
+        display: none;
+    }
+
+    .MenuLabel {
+        display: flex;
+        position: fixed;
+        right: 56px;
+        margin-top: 5px;
+    }
+
+    .NavigationBarArea.active {
+        border-radius: 10px;
+        height: 235px;
+
+        animation: LinksBoxAmination;
+        animation-duration: 0.7s;
+
+        .NavigationBarLinksBox {
+            width: fit-content;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        
+        .NavigationBarLinksBox a {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: rgb(188, 188, 255);
+            font-size: 1.6rem;
+
+            &:hover {
+                .glow {
+                    box-shadow: 0 0 0px 5px rgb(15, 16, 27);
+                }
+            }
+
+            animation: LinksAmination;
+            animation-duration: 0.4s;
+
+        }
+
+        .Languages {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            .RU {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    @keyframes LinksBoxAmination {
+        from {
+            background-color: transparent;
+        }
+        to {
+            background-color: rgba(150, 150, 235, 0.4);
+        }
+    }
+
+    @keyframes LinksAmination {
+        from {
+            letter-spacing: -10px;
+        }
+        to {
+            letter-spacing: normal;
+        }
+    }
+    
+
+    .Hamburger {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .Languages {
+        width: 20%;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    body {
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    #MsgBox {
+        font-size: 0.9rem;
+    }
+
+}
