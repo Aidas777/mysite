@@ -199,7 +199,7 @@ body {
 #MsgBox {
     width: 80%;
     height: 46px;
-    top: 76px;
+    top: 70px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 1rem;
@@ -263,11 +263,19 @@ body {
     .NavigationBarLinksBox a {
         font-size: 1.6rem;
     }
+
+    #MsgBox {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
     .Languages {
         width: 12%;
+    }
+
+    #MsgBox {
+        font-size: 1.1rem;
     }
 }
 
