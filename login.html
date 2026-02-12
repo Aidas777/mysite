@@ -3,11 +3,11 @@
 <div class="MiddleOfPage">
     <label class="LabelCenterTop">Login to Site</label>
 
-    <form class="LoginOuterBox">
+    <form class="LoginOuterBox" autocomplete="off">
         <div class="InputFieldsBox">
             <input class="LoginInput" placeholder="Please enter your login or e-mail"></input>
 
-            <input class="PasswInput" placeholder="Please enter password" type='password'
+            <input class="PasswInput" placeholder="Please enter password" type='password' autocomplete="new-password"
                 onmousedown="Controller(this.className, 'ShowPass')" onmouseup="Controller(this.className, 'HidePass')"
                 ontouchstart="Controller(this.className, 'ShowPass')"
                 ontouchcancel="Controller(this.className, 'HidePass')">
