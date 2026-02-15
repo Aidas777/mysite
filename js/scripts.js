@@ -61,7 +61,11 @@ function Controller(ControlName, ActionName) {
 
     } else if (ControlName == 'login.html' && ActionName == 'GenerateStars') {
         const StarsQty = 200;
-        GenerateStars(StarsQty);
+        GenerateStars(ControlName, StarsQty);
+
+    } else if (ControlName == 'contacts.html' && ActionName == 'GenerateStars') {
+        const StarsQty = 100;
+        GenerateStars(ControlName, StarsQty);
 
     // CLICK ON EN OR RU CONTROLS EVENTS
     } else if (ControlName == 'LT' && ActionName == 'ChangeLanguage') {
@@ -206,7 +210,7 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                     document.getElementById('MsgBox').insertAdjacentHTML('afterend', data);
                 }
 
-                Controller('login.html', 'GenerateStars');
+                Controller(WhatToLoad, 'GenerateStars');
                 AnimateLabelCenterTop();
                 document.querySelector('.MiddleOfPage').classList.add(CurrentdMiddleOfPage);
 
@@ -230,6 +234,9 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 document.title = GetPageTitle(WhatToLoad);
             }
 
+            if (WhatToLoad == 'contacts.html') {
+                Controller(WhatToLoad, 'GenerateStars');
+            }
             ////////////////////////////////
             // if (CurrentdMiddleOfPage.includes('aboutus')) { ATJUNGIU. JEI NEBEREIKES, TAI GAL IR FUNKCIJA ZEMIAU PANAIKINK
             //     GenerateStarsWithoutInnerHoles(CurrentdMiddleOfPage, '.CenterBottom', 200);
@@ -393,20 +400,41 @@ function ShowLabelBottomRightCreator() {
 
 
 // STARS GENERATOR
-function GenerateStars(StarsQty) {
+function GenerateStars(MiddleOfPage, StarsQty) {
 
-    const LoginInputObject = document.querySelector(".LoginInput");
-    const InputFieldsBoxObject = document.querySelector('.InputFieldsBox');
-    const PasswInputObject = document.querySelector(".PasswInput");
-    const LoginOuterBoxObject = document.querySelector('.LoginOuterBox');
+    let StarsContainerObject;
+    let LoginInputObject;
+    let InputFieldsBoxObject;
+    let PasswInputObject;
 
+    let StarsArray = [];
     const UnitsPx = "px";
-    
+    let isAnimating = true;
+
+    if (MiddleOfPage == 'login.html') {
+
+        // LoginOuterBoxObject = document.querySelector('.LoginOuterBox');
+        StarsContainerObject = document.querySelector('.LoginOuterBox');
+
+        LoginInputObject = document.querySelector(".LoginInput");
+        InputFieldsBoxObject = document.querySelector('.InputFieldsBox');
+        PasswInputObject = document.querySelector(".PasswInput");
+
+    } else if (MiddleOfPage == 'contacts.html') {
+
+        StarsContainerObject = document.querySelector('.MiddleOfPage.ContactsPage');
+
+        LoginInputObject = null;
+        InputFieldsBoxObject = null;
+        PasswInputObject = null;
+
+    }
+
     for (i = 0; i <= StarsQty; i++) {
 
         
-        let RandX = LoginOuterBoxObject.offsetWidth * Math.random();
-        let RandY = LoginOuterBoxObject.offsetHeight * Math.random();
+        let RandX = StarsContainerObject.offsetWidth * Math.random();
+        let RandY = StarsContainerObject.offsetHeight * Math.random();
 
         StarPoints = document.createElement("div");
         StarPoints.className = "StarPoints";
@@ -426,22 +454,62 @@ function GenerateStars(StarsQty) {
         StarPoints.style.left = RandX + UnitsPx;
         StarPoints.style.top = RandY + UnitsPx;
 
-        if (
-        //EXCLUDING LOGIN INPUT FIELD  
-        ((RandX < (LoginInputObject.offsetLeft ))
-        || (RandY < (LoginInputObject.offsetTop)) 
-        || (RandX > (LoginInputObject.offsetLeft + LoginInputObject.offsetWidth))
-        || (RandY > (LoginInputObject.offsetTop + LoginInputObject.offsetHeight + InputFieldsBoxObject.offsetTop))
-        )
-        
-        // EXCLUDING PASSW INPUT FIELD
-        && ((RandX < (PasswInputObject.offsetLeft ))
-        || (RandY < (PasswInputObject.offsetTop)) 
-        || (RandX > (PasswInputObject.offsetLeft + PasswInputObject.offsetWidth))
-        || (RandY > (PasswInputObject.offsetTop + PasswInputObject.offsetHeight + InputFieldsBoxObject.offsetTop))) 
-        )
-        {
-            LoginOuterBoxObject.appendChild(StarPoints);
+        if (MiddleOfPage == 'login.html') {
+
+            if (
+            //EXCLUDING LOGIN INPUT FIELD  
+            ((RandX < (LoginInputObject.offsetLeft ))
+            || (RandY < (LoginInputObject.offsetTop)) 
+            || (RandX > (LoginInputObject.offsetLeft + LoginInputObject.offsetWidth))
+            || (RandY > (LoginInputObject.offsetTop + LoginInputObject.offsetHeight + InputFieldsBoxObject.offsetTop))
+            )
+            
+            // EXCLUDING PASSW INPUT FIELD
+            && ((RandX < (PasswInputObject.offsetLeft ))
+            || (RandY < (PasswInputObject.offsetTop)) 
+            || (RandX > (PasswInputObject.offsetLeft + PasswInputObject.offsetWidth))
+            || (RandY > (PasswInputObject.offsetTop + PasswInputObject.offsetHeight + InputFieldsBoxObject.offsetTop))) 
+            )
+            {
+                StarsContainerObject.appendChild(StarPoints);
+            }
+
+        } else if (MiddleOfPage == 'contacts.html') {
+            StarPoints.style.animation = 'none';
+            StarPoints.style.zIndex = -101;
+            StarsContainerObject.appendChild(StarPoints);
+
+            StarsArray.push({
+                StarElement: StarPoints,
+                RandX: RandX * 1.4,
+                RandY: RandY * 1.4,
+                StarMoveSpeed: -0.1 + Math.random() * 2
+            })
+
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+
+            document.addEventListener('mousemove', (event) => {
+
+                if (!isAnimating) {return}
+
+                let MouseMoveX = event.clientX - centerX;
+                let MouseMoveY = event.clientY - centerY;
+
+                StarsArray.forEach((Star) => {
+
+                    const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
+                    const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
+
+                    Star.StarElement.style.left = StarNewX + "px";
+                    Star.StarElement.style.top = StarNewY + "px";
+
+                })
+            });
+
+            document.addEventListener('click', () => {
+                isAnimating = !isAnimating;
+            });
         }
     }
 }

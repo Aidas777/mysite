@@ -1,3 +1,7 @@
+.ContactsPage {
+    overflow: hidden;
+}
+
 .OuterLowerContainerCO {
     display: flex;
     position: relative;
