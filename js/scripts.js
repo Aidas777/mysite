@@ -430,30 +430,10 @@ function GenerateStars(MiddleOfPage, StarsQty) {
 
     }
 
-    console.log('offsetHeight-Y: ' + StarsContainerObject.offsetHeight  + ' getComputedStyle: ' + getComputedStyle(StarsContainerObject).height);
-    // console.log(StarsContainerObject);
-
-    console.log('(' + StarsContainerObject.className + ') getComputedStyle(StarsContainerObject).minHeight: ' + getComputedStyle(StarsContainerObject).minHeight);    
-   
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     console.log(StarsContainerObject.offsetHeight);
-    // });
-
-    let RandX;
-    let RandY;
-
     for (i = 0; i <= StarsQty; i++) {
 
-        
-        // if (StarsContainerObject.offsetWidth <= 390 && MiddleOfPage == 'contacts.html') {
-        //     RandX = StarsContainerObject.offsetWidth * Math.random();
-        //     RandY = StarsContainerObject.offsetHeight * Math.random() * 3;
-
-        // } else {
-
-            RandX = StarsContainerObject.offsetWidth * Math.random();
-            RandY = StarsContainerObject.offsetHeight * Math.random();
-        // }
+        let RandX = StarsContainerObject.offsetWidth * Math.random();
+        let RandY = StarsContainerObject.offsetHeight * Math.random();
 
         StarPoints = document.createElement("div");
         StarPoints.className = "StarPoints";
@@ -509,7 +489,7 @@ function GenerateStars(MiddleOfPage, StarsQty) {
             const centerX = window.innerWidth / 2;
             const centerY = window.innerHeight / 2;
 
-            document.addEventListener('mousemove', (event) => {
+            document.addEventListener('pointermove', (event) => {
 
                 if (!isAnimating) {return}
 
