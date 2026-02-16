@@ -504,8 +504,8 @@ function GenerateStars(MiddleOfPage, StarsQty) {
                     clientY = event.clientY;
                 }
 
-                let MouseMoveX = event.clientX - centerX;
-                let MouseMoveY = event.clientY - centerY;
+                let MouseMoveX = clientX - centerX;
+                let MouseMoveY = clientY - centerY;
 
                 StarsArray.forEach((Star) => {
 
