@@ -64,7 +64,7 @@ function Controller(ControlName, ActionName) {
         GenerateStars(ControlName, StarsQty);
 
     } else if (ControlName == 'contacts.html' && ActionName == 'GenerateStars') {
-        const StarsQty = 100;
+        const StarsQty = 200;
         GenerateStars(ControlName, StarsQty);
 
     // CLICK ON EN OR RU CONTROLS EVENTS
@@ -1075,4 +1075,5 @@ const ColorGreen = {
 const ColorRed = {
     FontColor : 'rgb(235, 150, 231)',
     BackColor : 'rgba(250, 134, 196, 0.2)'
+
 }
