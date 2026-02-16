@@ -430,14 +430,34 @@ function GenerateStars(MiddleOfPage, StarsQty) {
 
     }
 
+    console.log('offsetHeight-Y: ' + StarsContainerObject.offsetHeight  + ' getComputedStyle: ' + getComputedStyle(StarsContainerObject).height);
+    // console.log(StarsContainerObject);
+
+    console.log('(' + StarsContainerObject.className + ') getComputedStyle(StarsContainerObject).minHeight: ' + getComputedStyle(StarsContainerObject).minHeight);    
+   
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     console.log(StarsContainerObject.offsetHeight);
+    // });
+
+    let RandX;
+    let RandY;
+
     for (i = 0; i <= StarsQty; i++) {
 
         
-        let RandX = StarsContainerObject.offsetWidth * Math.random();
-        let RandY = StarsContainerObject.offsetHeight * Math.random();
+        // if (StarsContainerObject.offsetWidth <= 390 && MiddleOfPage == 'contacts.html') {
+        //     RandX = StarsContainerObject.offsetWidth * Math.random();
+        //     RandY = StarsContainerObject.offsetHeight * Math.random() * 3;
+
+        // } else {
+
+            RandX = StarsContainerObject.offsetWidth * Math.random();
+            RandY = StarsContainerObject.offsetHeight * Math.random();
+        // }
 
         StarPoints = document.createElement("div");
         StarPoints.className = "StarPoints";
+        // StarPoints.innerText = 'a';
         StarPoints.style.position = "absolute";
 
         let PointRadius;
@@ -476,14 +496,14 @@ function GenerateStars(MiddleOfPage, StarsQty) {
 
         } else if (MiddleOfPage == 'contacts.html') {
             StarPoints.style.animation = 'none';
-            StarPoints.style.zIndex = -101;
+            // StarPoints.style.zIndex = -101;
             StarsContainerObject.appendChild(StarPoints);
 
             StarsArray.push({
                 StarElement: StarPoints,
                 RandX: RandX * 1.4,
                 RandY: RandY * 1.4,
-                StarMoveSpeed: -0.1 + Math.random() * 2
+                StarMoveSpeed: -0.2 + Math.random() * 2
             })
 
             const centerX = window.innerWidth / 2;
@@ -501,8 +521,8 @@ function GenerateStars(MiddleOfPage, StarsQty) {
                     const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
                     const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
 
-                    Star.StarElement.style.left = StarNewX + "px";
-                    Star.StarElement.style.top = StarNewY + "px";
+                    Star.StarElement.style.left = StarNewX + UnitsPx;
+                    Star.StarElement.style.top = StarNewY + UnitsPx;
 
                 })
             });

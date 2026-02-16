@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .MiddleOfPage {
     display: flex;
     position: relative;
@@ -639,7 +643,7 @@
 
     .MiddleOfPage {
         margin-top: 88px;
-        height: 90%;
+        /* height: 90%; */
     }
 
     .LabelCenterTop {
