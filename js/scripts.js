@@ -489,9 +489,20 @@ function GenerateStars(MiddleOfPage, StarsQty) {
             const centerX = window.innerWidth / 2;
             const centerY = window.innerHeight / 2;
 
-            document.addEventListener('pointermove', (event) => {
+            document.addEventListener('mousemove', StarsMove);
+            document.addEventListener('touchmove', StarsMove, {passive: true});
+                
+            function StarsMove(event) {
 
                 if (!isAnimating) {return}
+
+                if (event.type === "touchmove") {
+                    clientX = event.touches[0].clientX;
+                    clientY = event.touches[0].clientY;
+                } else {
+                    clientX = event.clientX;
+                    clientY = event.clientY;
+                }
 
                 let MouseMoveX = event.clientX - centerX;
                 let MouseMoveY = event.clientY - centerY;
@@ -501,11 +512,14 @@ function GenerateStars(MiddleOfPage, StarsQty) {
                     const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
                     const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
 
-                    Star.StarElement.style.left = StarNewX + UnitsPx;
-                    Star.StarElement.style.top = StarNewY + UnitsPx;
+                    // Star.StarElement.style.left = StarNewX + UnitsPx;
+                    // Star.StarElement.style.top = StarNewY + UnitsPx;
+
+                    // Star.StarElement.style.transform = `translate(${StarNewX}px, ${StarNewY}px)`;
+                    Star.StarElement.style.transform = 'translate(' + StarNewX + UnitsPx + ', ' + StarNewY + UnitsPx + ')';
 
                 })
-            });
+            }
 
             document.addEventListener('click', () => {
                 isAnimating = !isAnimating;
