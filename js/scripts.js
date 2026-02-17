@@ -430,12 +430,12 @@ function GenerateStars(MiddleOfPage, StarsQty) {
 
     }
 
-    for (i = 0; i <= StarsQty; i++) {
+    for (let i = 0; i <= StarsQty; i++) {
 
         let RandX = StarsContainerObject.offsetWidth * Math.random();
         let RandY = StarsContainerObject.offsetHeight * Math.random();
 
-        StarPoints = document.createElement("div");
+        let StarPoints = document.createElement("div");
         StarPoints.className = "StarPoints";
         // StarPoints.innerText = 'a';
         StarPoints.style.position = "absolute";
@@ -451,8 +451,9 @@ function GenerateStars(MiddleOfPage, StarsQty) {
         StarPoints.style.width = PointRadius + UnitsPx;
         StarPoints.style.backgroundColor = "white";
 
-        StarPoints.style.left = RandX + UnitsPx;
-        StarPoints.style.top = RandY + UnitsPx;
+        // StarPoints.style.left = RandX + UnitsPx;
+        // StarPoints.style.top = RandY + UnitsPx;
+        StarPoints.style.transform = 'translate(' + RandX + UnitsPx + ', ' +  RandY + UnitsPx + ')';
 
         if (MiddleOfPage == 'login.html') {
 
@@ -476,58 +477,62 @@ function GenerateStars(MiddleOfPage, StarsQty) {
 
         } else if (MiddleOfPage == 'contacts.html') {
             StarPoints.style.animation = 'none';
-            // StarPoints.style.zIndex = -101;
+            StarPoints.style.zIndex = -101;
             StarsContainerObject.appendChild(StarPoints);
 
             StarsArray.push({
                 StarElement: StarPoints,
-                RandX: RandX * 1.4,
-                RandY: RandY * 1.4,
+                RandX: RandX * 1,
+                RandY: RandY * 1,
                 StarMoveSpeed: -0.2 + Math.random() * 2
             })
-
-            const centerX = window.innerWidth / 2;
-            const centerY = window.innerHeight / 2;
-
-            document.addEventListener('mousemove', StarsMove);
-            document.addEventListener('touchmove', StarsMove, {passive: true});
-                
-            function StarsMove(event) {
-
-                if (!isAnimating) {return}
-
-                if (event.type === "touchmove") {
-                    clientX = event.touches[0].clientX;
-                    clientY = event.touches[0].clientY;
-                } else {
-                    clientX = event.clientX;
-                    clientY = event.clientY;
-                }
-
-                let MouseMoveX = clientX - centerX;
-                let MouseMoveY = clientY - centerY;
-
-                StarsArray.forEach((Star) => {
-
-                    const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
-                    const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
-
-                    // Star.StarElement.style.left = StarNewX + UnitsPx;
-                    // Star.StarElement.style.top = StarNewY + UnitsPx;
-
-                    // Star.StarElement.style.transform = `translate(${StarNewX}px, ${StarNewY}px)`;
-                    Star.StarElement.style.transform = 'translate(' + StarNewX + UnitsPx + ', ' + StarNewY + UnitsPx + ')';
-
-                })
-            }
-
-            document.addEventListener('click', () => {
-                isAnimating = !isAnimating;
-            });
         }
     }
-}
 
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
+    function StarsMove(event) {
+
+        let clientX, clientY;
+
+        if (!isAnimating) {return}
+
+        if (event.type === "touchmove") {
+            clientX = event.touches[0].clientX;
+            clientY = event.touches[0].clientY;
+        } else {
+            clientX = event.clientX;
+            clientY = event.clientY;
+        }
+
+        let MouseMoveX = clientX - centerX;
+        let MouseMoveY = clientY - centerY;
+
+        StarsArray.forEach((Star) => {
+
+            const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
+            const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
+
+            // Star.StarElement.style.left = StarNewX + UnitsPx;
+            // Star.StarElement.style.top = StarNewY + UnitsPx;
+
+            // Star.StarElement.style.transform = `translate(${StarNewX}px, ${StarNewY}px)`;
+            Star.StarElement.style.transform = 'translate(' + StarNewX + UnitsPx + ', ' + StarNewY + UnitsPx + ')';
+
+        })
+    }
+
+    if (MiddleOfPage == 'contacts.html') {
+        document.addEventListener('mousemove', StarsMove);
+        document.addEventListener('touchmove', StarsMove, {passive: true});
+
+        document.addEventListener('click', () => {
+            isAnimating = !isAnimating;
+        });
+    }
+}
+    
 
 function GenerateStarsWithoutInnerHoles(MiddleOfPage, OnElement, StarsQty) { //KOLKAS ATJUNGIU (TAIP IR NEAISKU KAIP GAUTA TA SKAICIU 1028)
 
@@ -542,7 +547,7 @@ function GenerateStarsWithoutInnerHoles(MiddleOfPage, OnElement, StarsQty) { //K
         let RandX = ElementForStars.offsetWidth * Math.random();
         let RandY = ElementForStars.offsetHeight * Math.random();
 
-        StarPoints = document.createElement("div");
+        let StarPoints = document.createElement("div");
         StarPoints.className = "StarPoints";
         StarPoints.style.position = "absolute";
 
@@ -1075,5 +1080,4 @@ const ColorGreen = {
 const ColorRed = {
     FontColor : 'rgb(235, 150, 231)',
     BackColor : 'rgba(250, 134, 196, 0.2)'
-
 }
