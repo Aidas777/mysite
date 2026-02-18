@@ -512,7 +512,7 @@ function GenerateStars(MiddleOfPage, StarsQty) {
         StarsArray.forEach((Star) => {
 
             const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
-            const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
+            const StarNewY = Star.RandY + -100 + MouseMoveY * Star.StarMoveSpeed;
 
             // Star.StarElement.style.left = StarNewX + UnitsPx;
             // Star.StarElement.style.top = StarNewY + UnitsPx;
