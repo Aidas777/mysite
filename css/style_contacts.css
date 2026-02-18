@@ -269,14 +269,19 @@
     .MiddleOfPage.ContactsPage {
         overflow: hidden;
         min-height: 430px;
+        margin-top: 60px;
         /* height: 520px; */
         /* flex: 0 0 auto;
         flex-shrink: 0; */
     }
 
+    .ContactsPage .LabelCenterTop {
+        margin-top: 49px;
+    }
+
     .OuterLowerContainerCO {
         width: 96%;
-        top: 60px;
+        top: 86px;
         margin-top: 10px;
         /* height: 245px; */
     }
@@ -385,3 +390,10 @@
         top: 470px;
     }
 }
+
+/* @media screen and (max-width: 376px) {
+    
+    .LabelCenterTop {
+        margin-top: 47px !important;
+    }
+} */

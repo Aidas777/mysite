@@ -494,30 +494,26 @@ function GenerateStars(MiddleOfPage, StarsQty) {
 
     function StarsMove(event) {
 
-        let clientX, clientY;
+        let MouseX, MouseY;
 
         if (!isAnimating) {return}
 
         if (event.type === "touchmove") {
-            clientX = event.touches[0].clientX;
-            clientY = event.touches[0].clientY;
+            MouseX = event.touches[0].clientX;
+            MouseY = event.touches[0].clientY;
         } else {
-            clientX = event.clientX;
-            clientY = event.clientY;
+            MouseX = event.clientX;
+            MouseY = event.clientY;
         }
 
-        let MouseMoveX = clientX - centerX;
-        let MouseMoveY = clientY - centerY;
+        let MouseMoveX = MouseX - centerX;
+        let MouseMoveY = MouseY - centerY;
 
         StarsArray.forEach((Star) => {
 
             const StarNewX = Star.RandX + MouseMoveX * Star.StarMoveSpeed;
-            const StarNewY = Star.RandY + -100 + MouseMoveY * Star.StarMoveSpeed;
+            const StarNewY = Star.RandY + MouseMoveY * Star.StarMoveSpeed;
 
-            // Star.StarElement.style.left = StarNewX + UnitsPx;
-            // Star.StarElement.style.top = StarNewY + UnitsPx;
-
-            // Star.StarElement.style.transform = `translate(${StarNewX}px, ${StarNewY}px)`;
             Star.StarElement.style.transform = 'translate(' + StarNewX + UnitsPx + ', ' + StarNewY + UnitsPx + ')';
 
         })
