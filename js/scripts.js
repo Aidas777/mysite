@@ -523,8 +523,10 @@ function GenerateStars(MiddleOfPage, StarsQty) {
         document.addEventListener('mousemove', StarsMove);
         document.addEventListener('touchmove', StarsMove, {passive: true});
 
-        document.addEventListener('click', () => {
-            isAnimating = !isAnimating;
+        document.addEventListener('click', (event) => {
+            if (event.target.className != 'LT' && event.target.className != 'RU') {
+                isAnimating = !isAnimating;
+            }
         });
     }
 }
