@@ -1,3 +1,7 @@
+html body {
+    overflow: visible;
+}
+
 .MiddleOfPage.ServicesPage {
     margin-top: 10px;
     height: auto;
