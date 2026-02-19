@@ -444,7 +444,7 @@ function GenerateStars(MiddleOfPage, StarsQty) {
         if (window.innerWidth > 500) {
             PointRadius= Math.random() * 3;
         } else {
-            PointRadius = Math.random();
+            PointRadius = Math.random() * 2;
         }
 
         StarPoints.style.height = PointRadius + UnitsPx;
@@ -1084,4 +1084,5 @@ const ColorGreen = {
 const ColorRed = {
     FontColor : 'rgb(235, 150, 231)',
     BackColor : 'rgba(250, 134, 196, 0.2)'
+
 }
