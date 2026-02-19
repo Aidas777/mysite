@@ -524,8 +524,14 @@ function GenerateStars(MiddleOfPage, StarsQty) {
         document.addEventListener('touchmove', StarsMove, {passive: true});
 
         document.addEventListener('click', (event) => {
-            if (event.target.className != 'LT' && event.target.className != 'RU') {
+            if (
+                event.target.className != 'LT' && event.target.className != 'RU'
+                && event.target.className != 'CopyBtn'
+            )
+            {
                 isAnimating = !isAnimating;
+            } else {
+                isAnimating = true;
             }
         });
     }
