@@ -232,6 +232,8 @@ const LanguagesFullArray =
                     "Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius mygtukus, nuorodas, perjunkite naršymo puslapius. " +
                     "Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo.",
 
+                "DemoLabelBottomContacts" : "Fone esančias žvaigždes galite judinti (kompiuteryje su pele, mobiliajame telefone pirštu).",
+
                 "NavBarControls" :
                     {
                         "MenuLabel" : "Meniu",
@@ -494,6 +496,8 @@ const LanguagesFullArray =
                 "изпробуйте различные элементы управления, переключитесь между страницами навигации, " +
                 "также попробуйте изменить язык или проверьте на телефоне.<br>Каждый день мы учимся чему-то новому.",
 
+                "DemoLabelBottomContacts" : "Вы можете перемещать звёзды на фоне (на компьютере с помощью мыши, на мобильном — с помощью пальца).",
+
                 "Fonts" :
                     {
                         "LabelCenterTop" : "'Great Vibes', cursive"
@@ -752,6 +756,8 @@ const LanguagesFullArray =
                 "DemoLabelBottom" : "This is a Demo website. Fully responsive. Try to change browser's window size, " +
                 "interact with variuos controls, switch naviagion pages, " +
                 "also try to change language or check on phone.<br>Each day we learn something new.",
+
+                "DemoLabelBottomContacts" : "You can move the stars in the background (on a PC by using your mouse, or on a mobile by using your finger).",
 
                 "NavBarControls" :
                     {

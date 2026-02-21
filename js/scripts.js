@@ -862,7 +862,9 @@ function TranslateTexts() {
 
 // TRANSLATING DemoLabelBottom
 function TranslateDemoLabelBottom() {
-    ElementsPropertyToChange = 'DemoLabelBottom';
+    let ElementsPropertyToChange = 'DemoLabelBottom';
+    let MiddleOfPageContactsPage = document.querySelector('.ContactsPage');
+
     TitlesArrayByCurrentLanguage = GetTranslationsArrayByCurrentLanguage()['AllPages'];
     
     if (!TitlesArrayByCurrentLanguage) {
@@ -871,7 +873,12 @@ function TranslateDemoLabelBottom() {
         return;
     } else {
         ObjectForLanguageChange = document.querySelector('.' + ElementsPropertyToChange);
-        ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage[ElementsPropertyToChange];
+
+        if (!MiddleOfPageContactsPage) {
+            ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage[ElementsPropertyToChange];
+        } else {
+            ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage['DemoLabelBottomContacts'];
+        }
     }
 }
 
@@ -1084,5 +1091,4 @@ const ColorGreen = {
 const ColorRed = {
     FontColor : 'rgb(235, 150, 231)',
     BackColor : 'rgba(250, 134, 196, 0.2)'
-
 }
