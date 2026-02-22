@@ -232,7 +232,7 @@ const LanguagesFullArray =
                     "Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius mygtukus, nuorodas, perjunkite naršymo puslapius. " +
                     "Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>Kiekvieną dieną mes išmokstame kažką naujo.",
 
-                "DemoLabelBottomContacts" : "žvaigždes esančias fone galite judinti (kompiuteryje su pele, mobiliajame telefone su pirštu).",
+                "DemoLabelBottomContacts" : "Žvaigždes, esančias fone galite judinti (kompiuteryje su pele, mobiliajame telefone su pirštu).",
 
                 "NavBarControls" :
                     {
