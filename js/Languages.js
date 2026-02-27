@@ -76,7 +76,8 @@ const LanguagesFullArray =
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
-                    "1-CenterTopOT" : "Šią svetainę sukūriau nenaudodamas jokių papildomų pagalbinių įrankių ar platformų, rankiniu būdu 'nuo nulio'. " +
+                    "1-CenterTopOT" : "Šią svetainę sukūriau be jokių papildomų, paprastai resursų reikalaujančių įrankių ar platformų, rankiniu būdu 'nuo nulio', todėl visa sveatinė " +
+                    "(su paveiksliukais) užima tik apie 1 Mb. " +
                     "Tai demonstracinė svetainė. Pilnai adaptyvi ekranui. Pabandykite pakeisti naršyklės lango dydį, išbandykite įvairius mygtukus, " +
                     "nuorodas, perjunkite naršymo puslapius. Taip pat pabandykite pakeisti kalbą arba patikrinti telefone.<br>" +
                     "Kiekvieną dieną sužinome ką nors naujo."
@@ -337,7 +338,8 @@ const LanguagesFullArray =
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
                     "1-CenterTopOT" : "Я создал этот сайт без использования каких-либо " + 
-                    "дополнительных вспомогательных инструментов или платформ, вручную 'с нуля'. Это демонстрационный сайт. Полностью адаптивный. " + 
+                    "дополнительных, обычно ресурсоемких, инструментов или платформ, вручную 'с нуля', поэтому весь сайт (включая картинки) занимает всего лишь около 1 Мб. " +
+                    "Это демонстрационный сайт. Полностью адаптивный. " + 
                     "Попробуйте изменить размер окна браузера, попробуйте  разные кнопки, ссылки, переключить страницы навигации. " +
                     "Также попробуйте изменить язык или проверить на телефоне.<br>Каждый день мы учимся чему-то новому."
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
@@ -601,7 +603,8 @@ const LanguagesFullArray =
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
-                    "1-CenterTopOT" : "I created this site manually from scratch without using any additional helping tools or frameworks. " +
+                    "1-CenterTopOT" : "I created this site without using any additional, usually resource-intensive tools or frameworks, manually from scratch, " +
+                    "so the entire site (including images) takes only about 1 Mb. " +
                     "It's a Demo website. Fully responsive. Try to change browser's window size, interact with variuos controls, switch naviagion pages, " +
                     "also try to change language or check on phone.<br>Each day we learn something new. "
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
