@@ -582,7 +582,7 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
-                    "5-LeftSideRight" : "Linux and other technologies.",
+                    "5-LeftSideRight" : "Linux and other.",
 
                     "CenterBottomAU" : "I created this website manually to enjoy coding and ideas implementation and to refine my coding skills."
                 }
