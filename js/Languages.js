@@ -55,6 +55,9 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "3-LeftSideRight" : "Power BI, DI",
+
                     "5-LeftSideRight" : "Linux ir kita.",
 
                     "CenterBottomAU" : "Šią svetainę sukūriau rankiniu būdu, kad pasimėgauti programavimu ir idėjų įgyvendinimu, bei patobulinti savo programavimo įgūdžius."
@@ -315,6 +318,9 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+
+                    "3-LeftSideRight" : "Power BI, ИИ",
+
                     "5-LeftSideRight" : "Linux и другие.", 
 
                     "CenterBottomAU" : "Я создал этот сайт вручную, чтобы насладиться программированием " +
@@ -582,6 +588,7 @@ const LanguagesFullArray =
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
+                    "3-LeftSideRight" : "Power BI, AI",
                     "5-LeftSideRight" : "Linux and other.",
 
                     "CenterBottomAU" : "I created this website manually to enjoy coding and ideas implementation and to refine my coding skills."
