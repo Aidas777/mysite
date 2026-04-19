@@ -599,7 +599,7 @@
     .CenterBottomAU {
         top: 0px;
         height: 24px;
-        margin-top: 20px;
+        margin-top: 24px;
         font-size: 0.79rem;
         text-align: center;
         /* display: inline-block; */
@@ -653,10 +653,8 @@
         margin-right: 5%;
     }
 
-    /* .LabelsBottomRightBox {
-        top: 470px;
-    } */
+    /* THIS WORKS FINE IF NEEDED
     .AboutUsPage ~ .LabelsBottomRightBox {
         bottom: 20px;
-    }
+    } */
 }

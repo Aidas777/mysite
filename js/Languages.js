@@ -54,7 +54,7 @@ const LanguagesFullArray =
                     "ir <b>automatizuojant procesus</b>. Esu dirbęs su <b>MS SQL, Oracle PL/SQL, Visual Basic (VBA), JavaScript, PHP</b> ir kitomis web technologijomis.</p>" +
                     
                     "<p>Praktinėje veikloje palaikiau ir prižiūrejau ERP sistemas (Linux ir Windows), kūriau ataskaitas, automatizavau dokumentų ir duomenų apdorojimo procesus, integravau sistemas bei sprendžiau kasdienius IT incidentus. " +
-                    "Esu įpratęs dirbti tiek su laiko patikrintomis sistemomis, tiek su naujais sprendimais, orientuodamasis į <b>stabilumą, efektyvumą ir realią naudą verslui</b>. " +
+                    "Esu įpratęs dirbti tiek su laiko patikrintomis sistemomis, tiek su naujais sprendimais, orientuodamasis į stabilumą, efektyvumą ir realią naudą verslui. " +
                     "Vienos iš pagrindinių technologijų ir įrankių, su kuriais dirbau per visą savo karjerą, yra šie:</p>",
 
                     "RightSideAU" : "Mėgstu kurti efektyvius ir praktiškus sprendimus, bei nuolat mokausi naujų technologijų, kad pagerinčiau savo darbą.",
@@ -326,8 +326,8 @@ const LanguagesFullArray =
                     
                     "<p>Я занимался поддержкой и обслуживанием ERP-систем (Linux и Windows), разработкой отчетов, " +
                     "автоматизацией документооборота и процессов обработки данных, интеграцией систем, а также решением текущих ИТ-инцидентов. " +
-                    "Работаю как с устоявшимися решениями, так и с современными технологиями, уделяя основное внимание <b>стабильности, " +
-                    "эффективности и реальной пользе для бизнеса</b>. Основные технологий и инструменты, с которыми я работал включают:</p>",
+                    "Работаю как с устоявшимися решениями, так и с современными технологиями, уделяя основное внимание стабильности, " +
+                    "эффективности и реальной пользе для бизнеса. Основные технологий и инструменты, с которыми я работал включают:</p>",
 
                     "RightSideAU" : "Мне нравится создавать эффективные и практичные решения и я постоянно изучаю новые технологии, чтобы улучшить свою работу.",
 
@@ -603,7 +603,7 @@ const LanguagesFullArray =
                     
                     "<p>In my professional work, I have supported and maintained ERP systems on Linux and Windows, developed reports, automated document and data processing workflows, " +
                     "integrated systems and handled daily IT incidents. I am comfortable working with both legacy solutions and modern technologies, " +
-                    "focusing on <b>stability, efficiency</b> and <b>real business value</b>. " +
+                    "focusing on stability, efficiency and real business value. " +
                     "The majority of the technologies and tools I've worked with throughout my career include :</p>",
 
                     "RightSideAU" : "I enjoy creating efficient, practical solutions and continuously learning new technologies to improve my work.",
