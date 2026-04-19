@@ -55,7 +55,7 @@
     display: flex;
     position: relative;
     width: 60%;
-    height: 420px;
+    height: 520px;
     top: 160px;
     margin-top: 10px;
     margin-left: auto;
@@ -70,8 +70,9 @@
     margin-top: 15px;
     margin-bottom: 10px;
     width: 100%;
-    height: 120px;
+    height: 210px;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
 
     font-size: 1.4rem;  
@@ -80,6 +81,11 @@
     place-items: center;
     text-align: justify;
     text-indent: 30px;
+
+    p {
+        margin-top: unset;
+        margin-bottom: 12px;
+    }
 
     p > b {
             font-size: 1.8rem;
@@ -95,7 +101,8 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .RightSideAU, .LeftSide {
@@ -113,7 +120,8 @@
 
 .RightSideAU {
     margin-left: 20px;
-    width: 30%; 
+    width: 30%;
+    position: relative;
     font-size: 1.4rem;
     text-align: justify;
 }
@@ -213,6 +221,10 @@
     z-index: -1;
 }
 
+.DemoLabelBottom {
+    display: none;
+}
+
 
 
 
@@ -264,6 +276,11 @@
 }
 
 @media screen and (max-width: 1505px) {
+
+    .AboutUsPage .OuterLowerContainer {
+        width: 70%;
+    }
+
     .CenterBottom2AU {
         &::after {
             height: 60px;
@@ -286,9 +303,18 @@
         right: 27%;
     }
 
+    .AboutUsPage .OuterLowerContainer {
+        width: 74%;
+    }
+
 }
 
 @media screen and (max-width: 1260px) {
+
+    .AboutUsPage .OuterLowerContainer {
+        width: 76%;
+    }
+
     .CenterBottom2AU {
         &::after {
             top: -17px;
@@ -498,7 +524,7 @@
 @media screen and (max-width: 376px) {
 
     .MiddleOfPage.AboutUsPage {
-        margin-top: 50px;
+        margin-top: 46px;
     }
 
     .AboutUsPage .LabelCenterTop {
@@ -515,18 +541,24 @@
         border: 2px solid rgb(94, 94, 148);
     }
 
-    .OuterLowerContainer {
+    .AboutUsPage .OuterLowerContainer {
         width: 90%;
-        height: 275px;
+        height: 344px;
         top: 60px;
-        margin-top: 20px;
+        margin-top: 14px;
     }
 
     .CenterTop {
         font-size: 0.8rem;
-        height: 84px;
-        margin-top: 17px;
+        height: fit-content;
+        margin-top: 12px;
         margin-bottom: 0;
+        align-content: flex-start;
+
+        p {
+            margin-top: unset;
+            margin-bottom: 3px;
+        }
 
         p > b {
             font-size: 1.0rem;
@@ -535,7 +567,9 @@
 
     .CenterMiddle {
         height: 100px;
-        margin-top: 20px;
+        width: 94%;
+        margin-top: 6px;
+        padding-top: 0;
         flex-flow: column;
         place-self: center;
     }
@@ -550,7 +584,7 @@
     .RightSideAU {
         font-size: 0.8rem;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 6px;
         margin-left: 0;
         place-content: center;
         text-align: center;
@@ -564,11 +598,13 @@
 
     .CenterBottomAU {
         top: 0px;
-        margin-top: 25px;
+        height: 24px;
+        margin-top: 20px;
         font-size: 0.79rem;
         text-align: center;
-        display: inline-block;
-        word-break: break-all;
+        /* display: inline-block; */
+
+        word-break: break-word;
 
         .bright {
 
@@ -617,7 +653,10 @@
         margin-right: 5%;
     }
 
-    .LabelsBottomRightBox {
+    /* .LabelsBottomRightBox {
         top: 470px;
+    } */
+    .AboutUsPage ~ .LabelsBottomRightBox {
+        bottom: 20px;
     }
 }

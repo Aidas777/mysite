@@ -275,7 +275,7 @@ function GetPageTitle(WhatToLoad) {
 }
 
 
-// ANIMATE BLINK ALL LETTERS (NOT USED FOR NOW. USED FOR WORDS ANIMATION INSTEAD TO SAVE CPU LOAD)
+// ANIMATE BLINK ALL LETTERS (NOT USED FOR NOW. USED FOR WORDS ANIMATION INSTEAD, TO SAVE CPU LOAD)
 function AnimateBlinkWaveAllLetters(OnElement) {
 
     const ElementForAnimation = document.querySelector(OnElement);

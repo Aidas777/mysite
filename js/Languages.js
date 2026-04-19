@@ -46,21 +46,27 @@ const LanguagesFullArray =
 
             "Texts" :
                 {
-                    "CenterTop" : "<p>Mano programavimo kelionė prasidėjo su <b>Microsoft Access</b>. <b>Aštuonerius metus</b> " +
-                    "kūriau baigtines aplikacijas ir pagalbinius įrankius įvairioms įmonėms. 2021 m. studijavau <b>Baltijos Technologijos Institute</b> " +
-                    "ir įgijau <b>žiniatinklio programuotojo „Full Stack“ diplomą su pagyrimu</b>. Apie ketverius metus dirbau programuotoju " +
-                    "UAB „DS Smith Packaging Lithuania“. Vienos iš pagrindinių technologijų ir įrankių, su kuriais dirbau per visą savo karjerą, yra šie:</p>",
+                    // "CenterTop" : "<p>Mano programavimo kelionė prasidėjo su <b>Microsoft Access</b>. <b>Aštuonerius metus</b> " +
+                    // "kūriau baigtines aplikacijas ir pagalbinius įrankius įvairioms įmonėms. 2021 m. studijavau <b>Baltijos Technologijos Institute</b> " +
+                    // "ir įgijau <b>žiniatinklio programuotojo „Full Stack“ diplomą su pagyrimu</b>. Apie ketverius metus dirbau programuotoju " +
+                    // "UAB „DS Smith Packaging Lithuania“. Vienos iš pagrindinių technologijų ir įrankių, su kuriais dirbau per visą savo karjerą, yra šie:</p>",
+                    "CenterTop" : "<p><b>Programuotojas</b>, turintis patirties kuriant ir prižiūrint <b>verslo sistemas</b> bei <b>Web aplikacijas</b>, dirbant su <b>SQL duomenų bazėmis</b> " +
+                    "ir <b>automatizuojant procesus</b>. Esu dirbęs su <b>MS SQL, Oracle PL/SQL, Visual Basic (VBA), JavaScript, PHP</b> ir kitomis web technologijomis.</p>" +
+                    
+                    "<p>Praktinėje veikloje palaikiau ir prižiūrejau ERP sistemas (Linux ir Windows), kūriau ataskaitas, automatizavau dokumentų ir duomenų apdorojimo procesus, integravau sistemas bei sprendžiau kasdienius IT incidentus. " +
+                    "Esu įpratęs dirbti tiek su laiko patikrintomis sistemomis, tiek su naujais sprendimais, orientuodamasis į <b>stabilumą, efektyvumą ir realią naudą verslui</b>. " +
+                    "Vienos iš pagrindinių technologijų ir įrankių, su kuriais dirbau per visą savo karjerą, yra šie:</p>",
 
                     "RightSideAU" : "Mėgstu kurti efektyvius ir praktiškus sprendimus, bei nuolat mokausi naujų technologijų, kad pagerinčiau savo darbą.",
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
-                    "3-LeftSideRight" : "Power BI, DI",
+                    "0-LeftSideRight" : "Power BI, DI",
+                    "4-LeftSideRight" : "GS1 ženklinimas",
+                    "6-LeftSideRight" : "Linux ir kita.",
 
-                    "5-LeftSideRight" : "Linux ir kita.",
-
-                    "CenterBottomAU" : "Šią svetainę sukūriau rankiniu būdu, kad pasimėgauti programavimu ir idėjų įgyvendinimu, bei patobulinti savo programavimo įgūdžius."
+                    "CenterBottomAU" : "Šią svetainę sukūriau nuo nulio, siekdamas pademonstruoti švaraus kodo principus ir praktinį požiūrį į programavimą."
                 }
             }
         ,
@@ -308,23 +314,31 @@ const LanguagesFullArray =
 
             "Texts" :
                 {
-                    "CenterTop" : "<p>Мой путь в программировании начался с <b>Microsoft Access</b>. " +
-                    "<b>Восемь лет</b> я создавал полноценные приложения и инструменты для управления рабочими процессами для различных компаний. " +
-                    "В 2021 году я учился в <b>Балтийском Технологическом Институте</b> и получил диплом <b>веб-разработчика Full Stack с отличием</b>. " +
-                    "Около четырех лет я работал программистом в UAB DS Smith Packaging Lithuania. Основные технологий " +
-                    "и инструменты, с которыми я работал на протяжении всей своей карьеры включают:</p>",
+                    // "CenterTop" : "<p>Мой путь в программировании начался с <b>Microsoft Access</b>. " +
+                    // "<b>Восемь лет</b> я создавал полноценные приложения и инструменты для управления рабочими процессами для различных компаний. " +
+                    // "В 2021 году я учился в <b>Балтийском Технологическом Институте</b> и получил диплом <b>веб-разработчика Full Stack с отличием</b>. " +
+                    // "Около четырех лет я работал программистом в UAB DS Smith Packaging Lithuania. Основные технологий " +
+                    // "и инструменты, с которыми я работал на протяжении всей своей карьеры включают:</p>",
+
+                    "CenterTop" : "<p><b>Инженер-разработчик</b> с опытом разработки и поддержки внутренних и внешних <b>бизнес-систем</b>, " +
+                    "работы с <b>базами данных SQL</b> и <b>автоматизации процессов</b>. Имею практический опыт работы с <b>MS SQL, Oracle PL/SQL, Visual Basic (VBA), JavaScript, PHP</b> " +
+                    "и другими веб-технологиями.</p>" + 
+                    
+                    "<p>Я занимался поддержкой и обслуживанием ERP-систем (Linux и Windows), разработкой отчетов, " +
+                    "автоматизацией документооборота и процессов обработки данных, интеграцией систем, а также решением текущих ИТ-инцидентов. " +
+                    "Работаю как с устоявшимися решениями, так и с современными технологиями, уделяя основное внимание <b>стабильности, " +
+                    "эффективности и реальной пользе для бизнеса</b>. Основные технологий и инструменты, с которыми я работал включают:</p>",
 
                     "RightSideAU" : "Мне нравится создавать эффективные и практичные решения и я постоянно изучаю новые технологии, чтобы улучшить свою работу.",
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
 
-                    "3-LeftSideRight" : "Power BI, ИИ",
+                    "0-LeftSideRight" : "Power BI, ИИ",
+                    "4-LeftSideRight" : "GS1 Маркировка",
+                    "6-LeftSideRight" : "Linux и другие.", 
 
-                    "5-LeftSideRight" : "Linux и другие.", 
-
-                    "CenterBottomAU" : "Я создал этот сайт вручную, чтобы насладиться программированием " +
-                    "и воплощением идей и чтобы усовершенствовать навыки."
+                    "CenterBottomAU" : "Я создал этот сайт с нуля для демонстрации принципов чистого кода и практического подхода к веб-разработке."
                 }
             }
         ,
@@ -578,20 +592,29 @@ const LanguagesFullArray =
 
             "Texts" :
                 {
-                    "CenterTop" : "<p>I started my programming journey with <b>Microsoft Access</b> " +
-                    "where over <b>eight years</b> I built complete applications and workflow tools for various companies. " +
-                    "In 2021 I studied in <b>Baltic Institute of Technology</b> and gained <b>Web Developer Full Stack diploma with honors</b>. " +
-                    "For about four years, I worked as a programmer at UAB DS Smith Packaging Lithuania. The majority of the technologies " +
-                    "and tools I've worked with in my all career include :</p>",
+                    // "CenterTop" : "<p>I started my programming journey with <b>Microsoft Access</b> " +
+                    // "where over <b>eight years</b> I built complete applications and workflow tools for various companies. " +
+                    // "In 2021 I studied in <b>Baltic Institute of Technology</b> and gained <b>Web Developer Full Stack diploma with honors</b>. " +
+                    // "For about four years, I worked as a programmer at UAB DS Smith Packaging Lithuania. The majority of the technologies " +
+                    // "and tools I've worked with in my all career include :</p>",
+                    "CenterTop" : "<p><b>Software Developer</b> with experience in developing and maintaining internal and external <b>business systems</b>, " +
+                    "working with <b>SQL databases</b> and <b>automating processes</b>. I have hands-on experience with <b>MS SQL, Oracle PL/SQL, " +
+                    "Visual Basic (VBA), JavaScript, PHP</b> and other web technologies.</p>" +
+                    
+                    "<p>In my professional work, I have supported and maintained ERP systems on Linux and Windows, developed reports, automated document and data processing workflows, " +
+                    "integrated systems and handled daily IT incidents. I am comfortable working with both legacy solutions and modern technologies, " +
+                    "focusing on <b>stability, efficiency</b> and <b>real business value</b>. " +
+                    "The majority of the technologies and tools I've worked with throughout my career include :</p>",
 
                     "RightSideAU" : "I enjoy creating efficient, practical solutions and continuously learning new technologies to improve my work.",
 
                     // INFO: IF KEY STARTS WITH A NUMBER AND SPACE, THEN NUMBER MEANS NTH ELEMENT NUMBER ON WHOLE HTML. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
                     // INFO: IF KEY STARTS WITH A NUMBER AND -, THEN NUMBER MEANS NTH CHILD ELEMENT NUMBER IN HTML ELEMENT. NUMBER (AND 1 SPACE AFTER) ARE NOT DISPAYED.
-                    "3-LeftSideRight" : "Power BI, AI",
-                    "5-LeftSideRight" : "Linux and other.",
+                    "0-LeftSideRight" : "Power BI, AI",
+                    "4-LeftSideRight" : "GS1 Labeling",
+                    "6-LeftSideRight" : "Linux and other.",
 
-                    "CenterBottomAU" : "I created this website manually to enjoy coding and ideas implementation and to refine my coding skills."
+                    "CenterBottomAU" : "This website was built from scratch to demonstrate clean code principles and a hands-on approach to web development."
                 }
             }
         ,
