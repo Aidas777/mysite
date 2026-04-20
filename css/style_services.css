@@ -428,7 +428,7 @@ hr {
     bottom: 20px;
 }
 
-.DemoLabelBottom {
+.ServicesPage ~ .DemoLabelBottom {
     display: none;
 }
 

@@ -25,7 +25,7 @@
     
     animation-name: BackGradientSwap;
     animation-timing-function: linear;
-    animation-duration: 9s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     
     img {
@@ -222,7 +222,7 @@
     z-index: -1;
 }
 
-.DemoLabelBottom {
+.AboutUsPage ~ .DemoLabelBottom {
     display: none;
 }
 
@@ -596,7 +596,7 @@
     }
 
     .RightSideAU {
-        font-size: 0.8rem;
+        font-size: 0.79rem;
         width: 100%;
         margin-top: 6px;
         margin-left: 0;

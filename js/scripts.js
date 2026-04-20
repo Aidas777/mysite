@@ -873,14 +873,14 @@ function TranslateDemoLabelBottom() {
         return;
     } else {
         ObjectForLanguageChange = document.querySelector('.' + ElementsPropertyToChange);
-
+        
         if (!MiddleOfPageContactsPage) {
             ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage[ElementsPropertyToChange];
         } else {
             ObjectForLanguageChange.style.animation = 'none';
             void ObjectForLanguageChange.offsetWidth;
             ObjectForLanguageChange.innerHTML = TitlesArrayByCurrentLanguage['DemoLabelBottomContacts'];
-            ObjectForLanguageChange.style.animation = 'DemoBlow 5s 9s 1 forwards';
+            ObjectForLanguageChange.style.animation = 'DemoBlow 5s 9s forwards';
         }
     }
 }
