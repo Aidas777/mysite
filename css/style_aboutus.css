@@ -3,8 +3,8 @@
 }
 
 .AboutUsPage .LabelCenterTop {
-    margin-left: 32%;
-    width: 30%;
+    margin-left: 30%;
+    width: 32%;
 }
 
 .AboutUsPage .MyFoto {
@@ -135,7 +135,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: 70px;
+    height: 46px;
     top: 45px;
     display: flex;
     position: relative;
@@ -194,7 +194,7 @@
 .CenterBottom2AU {
     margin-left: auto;
     margin-right: auto;
-    top: 11vh;
+    top: 8vh;
     width: 100%;
     height: 100px;
     display: flex;
@@ -217,7 +217,8 @@
     position: absolute;
     box-shadow: inset -50px -10px 0 rgba(150, 150, 235, 0.3) , inset -60px -10px 0 rgba(94, 94, 165, 0.3);
     border-radius: 50%;
-    top: -30px;
+    /* top: -14px; */
+    bottom: 21px;
     z-index: -1;
 }
 
@@ -245,7 +246,7 @@
 
     .AboutUsPage .LabelCenterTop {
         margin-left: 32%;
-        width: 32%;
+        width: 34%;
 }
 
     .AboutUsPage .MyFoto {
@@ -270,7 +271,7 @@
     .CenterBottom2AU {
         &::after {
             height: 60px;
-            top: -1vh;
+            bottom: 21px;
         }
     }
 }
@@ -284,7 +285,7 @@
     .CenterBottom2AU {
         &::after {
             height: 60px;
-            top: -17px;
+            bottom: 21px;
         }
     }
 }
@@ -307,6 +308,12 @@
         width: 74%;
     }
 
+    .CenterBottom2AU {
+        &::after {
+            bottom: 21px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1260px) {
@@ -317,7 +324,7 @@
 
     .CenterBottom2AU {
         &::after {
-            top: -17px;
+            bottom: 21px;
         }
     }
 }
@@ -326,7 +333,7 @@
 
     .AboutUsPage .LabelCenterTop {
         margin-left: 26%;
-        width: 37%;
+        width: 38%;
         font-size: 4rem;
     }
 
@@ -352,6 +359,7 @@
     }
 
     .CenterBottomAU {
+        height: 38px;
         font-size: 1.2rem;
     }
     
@@ -359,8 +367,7 @@
         &::after {
             height: 50px;
             box-shadow: inset -40px -10px 0 rgba(150, 150, 235, 0.3) , inset -50px -10px 0 rgba(94, 94, 165, 0.3);
-            top: 2px;
-            bottom: unset;
+            bottom: 21px;
         }
     }
 
@@ -370,10 +377,15 @@
 }
 
 @media screen and (max-width: 977px) {
+
+    .AboutUsPage .LabelCenterTop {
+        width: 39%;
+    }
+
     .CenterBottom2AU {
         &::after {
             height: 42px;
-            top: 0vh;
+            bottom: 21px;
         }   
     }
 }
@@ -383,6 +395,7 @@
 
     .AboutUsPage .LabelCenterTop {
         font-size: 3.5rem;
+        width: 40%;
     }
 
     .AboutUsPage .MyFoto {
@@ -424,8 +437,8 @@
     .CenterBottom2AU {
         font-size: 3.2rem;
         &::after {
-            top: 0.5vh;
             box-shadow: inset -30px -10px 0 rgba(150, 150, 235, 0.3) , inset -40px -10px 0 rgba(94, 94, 165, 0.3);
+            bottom: 16px;
         }
     }
 
@@ -477,6 +490,7 @@
     }
 
     .CenterBottomAU {
+        height: 32px;
         font-size: 1rem;
     }
 
@@ -484,7 +498,7 @@
         &::after {
             box-shadow: inset -20px -10px 0 rgba(150, 150, 235, 0.3) , inset -30px -10px 0 rgba(94, 94, 165, 0.3);
             height: 45px;
-            top: 0.1vh;
+            bottom: 16px;
         }
     }
 }
@@ -510,7 +524,7 @@
         &::after {
             box-shadow: inset -15px -7px 0 rgba(150, 150, 235, 0.3) , inset -25px -7px 0 rgba(94, 94, 165, 0.3);
             height: 35px;
-            top: 1.1vh;
+            bottom: 16px;
         }
     }
 
@@ -543,7 +557,7 @@
 
     .AboutUsPage .OuterLowerContainer {
         width: 90%;
-        height: 344px;
+        height: 360px;
         top: 60px;
         margin-top: 14px;
     }
@@ -599,7 +613,7 @@
     .CenterBottomAU {
         top: 0px;
         height: 24px;
-        margin-top: 24px;
+        margin-top: 19px;
         font-size: 0.79rem;
         text-align: center;
         /* display: inline-block; */
@@ -624,24 +638,25 @@
     }
 
     .CenterBottom2AU {
-        display: none;
+        /* display: none; */
         top: 0px;
-        margin-top: 5px;
+        /* margin-top: 5px; */
         font-size: 1.8rem;
         height: 32px;
         text-shadow: 0 0 50px rgb(150, 150, 235), 10px 3px 9px rgb(0, 0, 0);
     }
 
     .CenterBottom2AU::after {
-    display: none;
+    /* display: none; */
     content: '';
     border-radius: 50%;
-    height: 25px;
-    width: 100%;
+    height: 23px;
+    width: 90%;
     position: absolute;
     box-shadow: inset -15px -3px 0 rgba(150, 150, 235, 0.3) , inset -25px -5px 0 rgba(94, 94, 165, 0.3);
     border-radius: 50%;
-    top: -10%;
+    /* top: -10%; */
+    bottom: 10px;
     z-index: -1;
 }
 
@@ -653,8 +668,8 @@
         margin-right: 5%;
     }
 
-    /* THIS WORKS FINE IF NEEDED
+    /* THIS WORKS FINE IF NEEDED */
     .AboutUsPage ~ .LabelsBottomRightBox {
         bottom: 20px;
-    } */
+    }
 }
