@@ -20,8 +20,16 @@ function Controller(ControlName, ActionName) {
     const MsgBoxObject = document.getElementById('MsgBox');
 
     if (ControlName == 'login.html' && ActionName == 'FirstLoad') {
-        LoadPartToPage('login.html', 'FirstLoad');
-        ChangeNavBarElementColorWhenClicked('LoginControl');
+
+        let Urlas = window.location.hash;
+
+        if (Urlas.includes('aboutme')) {
+            LoadPartToPage('aboutus.html', 'FirstLoad');
+            ChangeNavBarElementColorWhenClicked('AboutUsControl');
+        } else {
+            LoadPartToPage('login.html', 'FirstLoad');
+            ChangeNavBarElementColorWhenClicked('LoginControl');
+        }
 
     } else if (ControlName == 'bottom.html' && ActionName == 'FirstLoad') {
         LoadPartToPage('bottom.html', 'FirstLoad');
@@ -219,7 +227,9 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 ShowLabelBottomRightCreator();
 
             } else {
-                MiddleOfPageToReplace.remove();
+                if (Parameters != 'FirstLoad') {
+                    MiddleOfPageToReplace.remove();
+                }
                 document.getElementById('MsgBox').insertAdjacentHTML('afterend', data);
                 document.querySelector('.MiddleOfPage').classList.add(CurrentdMiddleOfPage);
 
@@ -234,8 +244,12 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 document.title = GetPageTitle(WhatToLoad);
             }
 
-            if (WhatToLoad == 'contacts.html') {
+            if (WhatToLoad == 'contacts.html' && Parameters == 'FirstLoad') {
                 Controller(WhatToLoad, 'GenerateStars');
+            }
+
+            if (WhatToLoad == 'aboutus.html') {
+                    AnimateBlinkWords('.CenterBottomAU');
             }
             ////////////////////////////////
             // if (CurrentdMiddleOfPage.includes('aboutus')) { ATJUNGIU. JEI NEBEREIKES, TAI GAL IR FUNKCIJA ZEMIAU PANAIKINK
@@ -369,7 +383,7 @@ function AnimateBlinkOneLetter(OnElement) {
 function AnimateElementsAfterPageOrLangChange() {
     let ElementForAnimation = '.CenterBottomAU'; // ABOUT ME (US) PAGE
     let ElementForAnimationByClass = document.querySelector(ElementForAnimation);
-    
+ 
     if (ElementForAnimationByClass) {
         AnimateBlinkWords(ElementForAnimation);
         return;
