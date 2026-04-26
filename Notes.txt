@@ -1,0 +1,8 @@
+Different urls to get to different places on the site
+
+URLS:
+
+https://aidas777.github.io/mysite
+https://aidas777.github.io/mysite/#aboutme
+https://aidas777.github.io/mysite/#apps
+https://aidas777.github.io/mysite/#apps#transport

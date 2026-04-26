@@ -26,6 +26,11 @@ function Controller(ControlName, ActionName) {
         if (Urlas.includes('aboutme')) {
             LoadPartToPage('aboutus.html', 'FirstLoad');
             ChangeNavBarElementColorWhenClicked('AboutUsControl');
+
+        } else if (Urlas.includes('apps')) {
+            LoadPartToPage('services.html', 'FirstLoad');
+            ChangeNavBarElementColorWhenClicked('ServicesControl');
+
         } else {
             LoadPartToPage('login.html', 'FirstLoad');
             ChangeNavBarElementColorWhenClicked('LoginControl');
@@ -189,7 +194,7 @@ function AnimateLabelCenterTop() {
     }
 }
 
-
+// LOADER OF PAGE PART
 function LoadPartToPage(WhatToLoad, Parameters) {
         
     let CurrentdMiddleOfPage = WhatToLoad.replace('.html','');
@@ -238,7 +243,6 @@ function LoadPartToPage(WhatToLoad, Parameters) {
             if (Parameters != 'FirstLoad') {
                 ChangeLanguageByCurrent();
             }
-            AnimateLabelCenterTop();
 
             if (!WhatToLoad.includes('bottom')) {
                 document.title = GetPageTitle(WhatToLoad);
@@ -248,9 +252,22 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 Controller(WhatToLoad, 'GenerateStars');
             }
 
-            if (WhatToLoad == 'aboutus.html') {
-                    AnimateBlinkWords('.CenterBottomAU');
+            if (WhatToLoad == 'services.html' && Parameters == 'FirstLoad') {
+                // http://127.0.0.1:5500/#apps#transport
+                let Urlas = window.location.hash;
+                if (Urlas.includes('transport')) {
+                    const JumpToElement = document.querySelector('.Item_2 .ItemTextCenterUpper')
+                    
+                    if (JumpToElement) {
+                        setTimeout(() => {
+                            JumpToElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
+                }
             }
+
+            AnimateElementsAfterPageOrLangChange();
+            AnimateLabelCenterTop();
             ////////////////////////////////
             // if (CurrentdMiddleOfPage.includes('aboutus')) { ATJUNGIU. JEI NEBEREIKES, TAI GAL IR FUNKCIJA ZEMIAU PANAIKINK
             //     GenerateStarsWithoutInnerHoles(CurrentdMiddleOfPage, '.CenterBottom', 200);
