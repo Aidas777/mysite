@@ -248,12 +248,13 @@ function LoadPartToPage(WhatToLoad, Parameters) {
                 document.title = GetPageTitle(WhatToLoad);
             }
 
-            if (WhatToLoad == 'contacts.html' && Parameters == 'FirstLoad') {
+            if (WhatToLoad == 'contacts.html') {
                 Controller(WhatToLoad, 'GenerateStars');
             }
 
             if (WhatToLoad == 'services.html' && Parameters == 'FirstLoad') {
-                // http://127.0.0.1:5500/#apps#transport
+                // SCROLLER TO "Transport orders and Containers management application"
+                // http://127.0.0.1:5500/#apps_transport
                 let Urlas = window.location.hash;
                 if (Urlas.includes('transport')) {
                     const JumpToElement = document.querySelector('.Item_2 .ItemTextCenterUpper')
